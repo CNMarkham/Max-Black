@@ -90,7 +90,7 @@ public class MenuController : MonoBehaviour {
 
 	void Update () {
 
-        if (mainMenu) {
+        if (mainMenu) { 
         //Changes the text corresponding option
         menuText.text = options[option];
 
