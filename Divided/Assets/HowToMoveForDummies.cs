@@ -19,13 +19,13 @@ public class HowToMoveForDummies : MonoBehaviour
         if (Input.GetKey(KeyCode.RightArrow))
         {
             transform.position += Vector3.right *moveSpeed * Time.deltaTime;
-            PlayerRenderer.flipX = false;
+            PlayerRenderer.flipX = true;
 
         }
         else if (Input.GetKey(KeyCode.LeftArrow))
         {
             transform.position += Vector3.left *moveSpeed * Time.deltaTime;
-            PlayerRenderer.flipX = true;
+            PlayerRenderer.flipX = false;
 
         }
 
