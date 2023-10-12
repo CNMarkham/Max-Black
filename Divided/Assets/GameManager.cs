@@ -5,7 +5,7 @@ using UnityEngine;
 public class GameManager : MonoBehaviour
 {
     public enum Classs { Warrior, Mage, Archer }
-    public Classs Classs2;
+    public static Classs Classs2;
     // Start is called before the first frame update
     void Start()
     {
@@ -28,6 +28,7 @@ public class GameManager : MonoBehaviour
         switch (Classs2)
         {
             case Classs.Warrior:
+
                 break;
             case Classs.Mage:
                 break;
