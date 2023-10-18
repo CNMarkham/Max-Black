@@ -47,9 +47,10 @@ public class Attack : MonoBehaviour
                 Invoke("Warrior", .42f);
                 break;
             case GameManager.Classs.Mage:
+                CancelInvoke();
                 GetComponent<Animator>().SetTrigger("Child2");
                 Thing2.SetActive(true);
-                Invoke("Mage", .1f);
+                Invoke("Mage", .42f);
                 break;
             case GameManager.Classs.Archer:
                 GetComponent<Animator>().SetTrigger("Child");
