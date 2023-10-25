@@ -443,7 +443,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1090,6 +1090,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1801320941}
+        m_TargetAssemblyTypeName: HP, Assembly-CSharp
+        m_MethodName: HPChangeCuzClassesBoiiii
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -2513,6 +2525,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1801320941}
+        m_TargetAssemblyTypeName: HP, Assembly-CSharp
+        m_MethodName: HPChangeCuzClassesBoiiii
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1131607335
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2927,7 +2951,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -224, y: 89}
+  m_AnchoredPosition: {x: -253.3, y: 72.9}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1315053327
@@ -3138,6 +3162,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
         m_MethodName: SetActive
         m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
+      - m_Target: {fileID: 1801320941}
+        m_TargetAssemblyTypeName: HP, Assembly-CSharp
+        m_MethodName: HPChangeCuzClassesBoiiii
+        m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -4118,6 +4154,8 @@ GameObject:
   - component: {fileID: 1801320938}
   - component: {fileID: 1801320939}
   - component: {fileID: 1801320940}
+  - component: {fileID: 1801320941}
+  - component: {fileID: 1801320942}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -4169,6 +4207,51 @@ MonoBehaviour:
   Walk: {fileID: 406998006}
   Bag: {fileID: 505905153}
   Surprise: {fileID: 279926499}
+--- !u!114 &1801320941
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1801320937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d42ba045442b23d4eabb59d5a32230fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PlayerHP: {fileID: 1924944305}
+  EnemyHP: {fileID: 391303272}
+  HPBar: {fileID: 97236942}
+  BossHPBar: {fileID: 1635679922}
+  SlidyBoiPlayer: {fileID: 990405915}
+  SlidyBoiEnemy: {fileID: 667105233}
+--- !u!114 &1801320942
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1801320937}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 41905160bf64d3c49a667d9e7fdc2d45, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ListOfInsults:
+  - You? Gaining Money? The only thing your gaining is weight.
+  - Sorry I don't have the time, nor crayons, to write this down to you on your level.
+  - Your face looks like someone tried to put out a fire with a screwdriver.
+  - Your mom is so dumb, she put a rule under her pillow to try to measure how long
+    she slept for.
+  - Your birth certificate is a apology letter from your mom.
+  - Your so fat, you ate all the food the dinosaurs wanted to eat so they starved
+    to death.
+  - Its kind of sad seeing you try to fir all your vocabulary into a sentence.
+  - You wouldn't be able to pur water out of a boot if the instructions were on the
+    heel.
+  - Your ambition outweighs your relevent skills.
+  - I smell something burning, are you trying to think again?
+  - I will not have a battle of wits with someone unarmed.
 --- !u!1 &1817739360
 GameObject:
   m_ObjectHideFlags: 0
@@ -4462,7 +4545,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -4701,7 +4784,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2040267390}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -457.009, y: -95.675964, z: 31.141724}
+  m_LocalPosition: {x: -35, y: 885, z: 31.141724}
   m_LocalScale: {x: 700, y: 700, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
