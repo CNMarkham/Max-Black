@@ -51,7 +51,7 @@ public class Attack : MonoBehaviour
                 Invoke("Warrior", .42f);
                 break;
             case GameManager.Classs.Mage:
-                CancelInvoke();
+                //CancelInvoke();
                 GetComponent<Animator>().SetTrigger("Child2");
                 Thing2.SetActive(true);
                 Invoke("Mage", .42f);

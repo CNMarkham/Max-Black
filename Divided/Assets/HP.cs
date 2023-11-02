@@ -15,6 +15,7 @@ public class HP : MonoBehaviour
     public TextMeshProUGUI BossHPBar;
     public GameObject SlidyBoiPlayer;
     public GameObject SlidyBoiEnemy;
+    public GameObject SlidyBoiPlayerButNotSwordBoi;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,6 +30,7 @@ public class HP : MonoBehaviour
 
     public void HPChangeCuzClassesBoiiii()
     {
+        EnemyHPButReal = 100;
         switch (GameManager.Classs2)
         {
             case GameManager.Classs.Warrior:
@@ -36,9 +38,11 @@ public class HP : MonoBehaviour
                 break;
             case GameManager.Classs.Mage:
                 PlayerHPButReal = 70;
+                SlidyBoiPlayerButNotSwordBoi.GetComponent<Image>().fillAmount = (float)PlayerHPButReal / 1 * 0.01f;
                 break;
             case GameManager.Classs.Archer:
                 PlayerHPButReal = 85;
+                SlidyBoiPlayerButNotSwordBoi.GetComponent<Image>().fillAmount = (float)PlayerHPButReal / 1 * 0.01f;
                 break;
             default:
                 break;

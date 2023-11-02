@@ -9,6 +9,7 @@ public class Turns : MonoBehaviour
     public GameObject Walk;
     public GameObject Bag;
     public GameObject Surprise;
+    public BossAttack BossAttack;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,6 +34,8 @@ public class Turns : MonoBehaviour
     void EnemyTurn()
     {
         Turn = 2;
+        BossAttack.BossRandomAttack();
+        //Invoke("BossRandomAttack", 3f);
         CheckTurn();
     }
 
