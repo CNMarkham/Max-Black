@@ -34,9 +34,13 @@ public class Turns : MonoBehaviour
     void EnemyTurn()
     {
         Turn = 2;
-        BossAttack.BossRandomAttack();
-        //Invoke("BossRandomAttack", 3f);
+        Invoke("Soemthing", 1.5f);
         CheckTurn();
+    }
+
+    void Soemthing()
+    {
+        BossAttack.BossRandomAttack();
     }
 
     public void CheckTurn()

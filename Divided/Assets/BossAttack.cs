@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BossAttack : MonoBehaviour
 {
@@ -22,22 +23,34 @@ public class BossAttack : MonoBehaviour
 
     public void BossRandomAttack()
     {
-        int AttackChoose = Random.Range(1, 10);
-        if (AttackChoose >= 6)
+        int AttackChoose = Random.Range(0, 10);
+        if (AttackChoose <= 6)
         {
-            BossStrongAttack.SetActive(true);
-            GetComponent<Animator>().SetTrigger("child");
-            
+            BossOkayAttack.SetActive(true);
+            GetComponent<Animator>().SetTrigger("child2");
+            HP.PlayerHPButReal -= 20;
         }
-        else if (AttackChoose <= 7 && AttackChoose >= 9)
+        else if (AttackChoose >= 7 && AttackChoose <= 9)
         {
-            BossStrongAttack.SetActive(true);
-            GetComponent<Animator>().SetTrigger("child");
+            BossWeakAttack.SetActive(true);
+            GetComponent<Animator>().SetTrigger("child3");
+            HP.PlayerHPButReal -= 10;
         }
         else
         {
             BossStrongAttack.SetActive(true);
             GetComponent<Animator>().SetTrigger("child");
+            HP.PlayerHPButReal -= 50;
         }
+        HP.MoreUseful.HPBar.text = ("Player HP: " + HP.PlayerHPButReal);
+        
+        HP.MoreUseful.SlidyBoiPlayer.GetComponent<Image>().fillAmount = (float)HP.PlayerHPButReal / 1 * 0.01f;
+    }
+
+    public void SENTTOTHEVOID()
+    {
+        BossWeakAttack.SetActive(false);
+        BossOkayAttack.SetActive(false);
+        BossStrongAttack.SetActive(false);
     }
 }

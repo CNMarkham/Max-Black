@@ -1,10 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class InsultAttack : MonoBehaviour
 {
     public string[] ListOfInsults;
+    public int INT;
+    public TextMeshPro ME;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +22,7 @@ public class InsultAttack : MonoBehaviour
 
     public void Something()
     {
-        Random.Range(0, 10);
-        
+        INT = Random.Range(0, ListOfInsults.Length);
+        ME.text = ListOfInsults[INT];
     }
 }
