@@ -7,6 +7,7 @@ public class Attack : MonoBehaviour
     public GameObject Thing3;
     public GameObject Thing2;
     public GameObject Thing;
+    public GameObject ThatChild;
 
     // Start is called before the first frame update
     void Start()
@@ -37,7 +38,6 @@ public class Attack : MonoBehaviour
         Thing.SetActive(false);
         HP.ActuallyDoingStuff(5);
     }
-
 
 
     public void Attackk()

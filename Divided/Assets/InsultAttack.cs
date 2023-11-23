@@ -6,8 +6,9 @@ using TMPro;
 public class InsultAttack : MonoBehaviour
 {
     public string[] ListOfInsults;
-    public int INT;
+    public int chosenAttack;
     public TextMeshPro ME;
+    public GameObject ThatChild;
     // Start is called before the first frame update
     void Start()
     {
@@ -22,7 +23,9 @@ public class InsultAttack : MonoBehaviour
 
     public void Something()
     {
-        INT = Random.Range(0, ListOfInsults.Length);
-        ME.text = ListOfInsults[INT];
+       chosenAttack = Random.Range(0, ListOfInsults.Length);
+        ME.text = ListOfInsults[chosenAttack];
+        ThatChild.GetComponent<Animator>().SetTrigger("ThatChild");
+        HP.ActuallyDoingStuff(Random.Range(0, 75));
     }
 }
