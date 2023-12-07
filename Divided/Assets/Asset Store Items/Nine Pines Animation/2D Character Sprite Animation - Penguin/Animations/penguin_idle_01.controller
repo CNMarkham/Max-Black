@@ -126,7 +126,7 @@ AnimatorStateMachine:
     m_Position: {x: 576.33575, y: -24.802673, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 5167700965579714969}
-    m_Position: {x: 694.6874, y: -148.29996, z: 0}
+    m_Position: {x: 700, y: -160, z: 0}
   - serializedVersion: 1
     m_State: {fileID: 3332178558245250021}
     m_Position: {x: 121.79718, y: -162.02187, z: 0}
@@ -154,19 +154,19 @@ AnimatorController:
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: Hinput
     m_Type: 1
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   - m_Name: 'To Air or Not To Air? '
     m_Type: 4
     m_DefaultFloat: 0
     m_DefaultInt: 0
     m_DefaultBool: 0
-    m_Controller: {fileID: 0}
+    m_Controller: {fileID: 9100000}
   m_AnimatorLayers:
   - serializedVersion: 5
     m_Name: Base Layer
