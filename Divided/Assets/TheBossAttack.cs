@@ -3,13 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class BossAttack : MonoBehaviour
+public class TheBossAttack : MonoBehaviour
 {
     public int AttackChoose;
     public GameObject BossWeakAttack;
     public GameObject BossOkayAttack;
     public GameObject BossStrongAttack;
-    public GameObject Parent;
     // Start is called before the first frame update
     void Start()
     {
@@ -25,13 +24,13 @@ public class BossAttack : MonoBehaviour
     public void BossRandomAttack()
     {
         int AttackChoose = Random.Range(0, 10);
-        if (AttackChoose <= 6)
+        if (AttackChoose <= 2)
         {
             BossOkayAttack.SetActive(true);
             GetComponent<Animator>().SetTrigger("child2");
             HP.PlayerHPButReal -= 20;
         }
-        else if (AttackChoose >= 7 && AttackChoose <= 9)
+        else if (AttackChoose >= 3 && AttackChoose <= 5)
         {
             BossWeakAttack.SetActive(true);
             GetComponent<Animator>().SetTrigger("child3");
@@ -53,6 +52,5 @@ public class BossAttack : MonoBehaviour
         BossWeakAttack.SetActive(false);
         BossOkayAttack.SetActive(false);
         BossStrongAttack.SetActive(false);
-        Parent.SetActive(false);
     }
 }
