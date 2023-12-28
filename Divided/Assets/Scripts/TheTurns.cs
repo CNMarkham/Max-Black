@@ -31,7 +31,7 @@ public class TheTurns : MonoBehaviour
         Surprise.SetActive(true);
     }
 
-    void EnemyTurn()
+    public void EnemyTurn()
     {
         Turn = 2;
         Invoke("Soemthing", 1.5f);

@@ -47,10 +47,5 @@ public class TheBossAttack : MonoBehaviour
         HP.MoreUseful.SlidyBoiPlayer.GetComponent<Image>().fillAmount = (float)HP.PlayerHPButReal / 1 * 0.01f;
     }
 
-    public void SENTTOTHEVOID()
-    {
-        BossWeakAttack.SetActive(false);
-        BossOkayAttack.SetActive(false);
-        BossStrongAttack.SetActive(false);
-    }
+
 }
