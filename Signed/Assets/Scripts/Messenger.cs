@@ -21,7 +21,6 @@ public class Messenger : MonoBehaviour
     void Update()
     {
         UpdateTimerUI();
-        DontDestroyOnLoad(this);
     }
 
     void UpdateTimerUI()

@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class IcePersonEncounter : MonoBehaviour
+public class SenderL2 : MonoBehaviour
 {
-    public GameObject Timer;
+    public HP HP;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,15 +15,10 @@ public class IcePersonEncounter : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
-    }
-
-    public void OnTriggerEnter(Collider other)
-    {
-        if (other.CompareTag("Player"))
+        if(HP.EnemyHPButReal <= 0)
         {
-            DontDestroyOnLoad(Timer);
-            SceneManager.LoadScene(2);
+            HP.EnemyHPButReal = 0;
+            SceneManager.LoadScene("1");
         }
     }
 }

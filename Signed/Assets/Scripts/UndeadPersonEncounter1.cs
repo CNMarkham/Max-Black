@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class FireHorseEncounter : MonoBehaviour
+public class UndeadPersonEncounter1: MonoBehaviour
 {
     public GameObject Timer;
     // Start is called before the first frame update
@@ -17,13 +17,12 @@ public class FireHorseEncounter : MonoBehaviour
     {
         
     }
-
-    public void OnTriggerEnter(Collider other)
+    public void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
             DontDestroyOnLoad(Timer);
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(9);
         }
     }
 }
