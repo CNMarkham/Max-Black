@@ -5,11 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class TheBossEncounter : MonoBehaviour
 {
-    public GameObject Timer;
     // Start is called before the first frame update
     void Start()
     {
-        
     }
 
     // Update is called once per frame
@@ -22,8 +20,7 @@ public class TheBossEncounter : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            DontDestroyOnLoad(Timer);
-            SceneManager.LoadScene(4);
+            SceneManager.LoadScene(6);
         }
     }
 }

@@ -4,29 +4,26 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
+	[Header("Speeds")]
 	public float speed = 6f;
-	public float speed2 = 3.0f;
-	public GameObject character;
+	public float Speed2 = 3.0f;
+	
+	[Header("Jumping Tools")]
 	public bool isGrounded;
 	public float JumpHold;
+
+	[Header("LayerMask")]
 	public LayerMask lPayerMask;
-    void Update()
+	void Update()
 	{
-
-        if (Input.GetKey(KeyCode.C))
-        {
-
-			transform.position += Vector3.right * speed * Time.deltaTime;
-		}
-		
 
 			if (Input.GetKey(KeyCode.RightArrow))
 		{
-			transform.position += Vector3.right * speed2 * Time.deltaTime;
+			transform.position += Vector3.right * Speed2 * Time.deltaTime;
 		}
 		if (Input.GetKey(KeyCode.LeftArrow))
 		{
-			transform.position += Vector3.left * speed2 * Time.deltaTime;
+			transform.position += Vector3.left * Speed2 * Time.deltaTime;
 
 		}
 		GetComponent<Animator>().SetFloat("Hinput", Input.GetAxis("Horizontal"));
@@ -41,11 +38,15 @@ public class PlayerMovement : MonoBehaviour
 		
 
 		}
-        if (Input.GetKeyUp(KeyCode.Z))
+		if (Input.GetKeyUp(KeyCode.Z) && isGrounded == true)
 		{
+			isGrounded = false;
 			GetComponent<Animator>().SetBool("To Air or Not To Air? ", true);
 			GetComponent<Rigidbody2D>().AddForce(new Vector2(0, JumpHold * 50));
-			isGrounded = false;
+            if (CompareTag("Floor"))
+            {
+				isGrounded = true;
+            }
 			JumpHold = 0f;
 			
 		}

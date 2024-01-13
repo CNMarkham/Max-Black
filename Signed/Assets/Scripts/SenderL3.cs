@@ -18,7 +18,7 @@ public class SenderL3 : MonoBehaviour
         if(HP.EnemyHPButReal <= 0)
         {
             HP.EnemyHPButReal = 0;
-            SceneManager.LoadScene("2");
+            SceneManager.LoadScene("Real Scene 2");
         }
     }
 }

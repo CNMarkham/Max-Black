@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class UndeadPersonEncounter: MonoBehaviour
 {
-    public GameObject Timer;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,7 +20,6 @@ public class UndeadPersonEncounter: MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            DontDestroyOnLoad(Timer);
             SceneManager.LoadScene(5);
         }
     }

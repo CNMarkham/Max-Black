@@ -20,6 +20,7 @@ public class HP : MonoBehaviour
     void Start()
     {
         MoreUseful = this;
+        EnemyHPButReal = 100;
     }
 
     // Update is called once per frame
@@ -30,7 +31,6 @@ public class HP : MonoBehaviour
 
     public void HPChangeCuzClassesBoiiii()
     {
-        EnemyHPButReal = 100;
         switch (GameManager.Classs2)
         {
             case GameManager.Classs.Warrior:
