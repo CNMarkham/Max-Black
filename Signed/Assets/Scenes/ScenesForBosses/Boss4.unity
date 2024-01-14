@@ -1175,6 +1175,7 @@ MonoBehaviour:
   chosenAttack: 0
   ME: {fileID: 507837202}
   ThatChild: {fileID: 686642064}
+  Hp: {fileID: 0}
 --- !u!1 &381516065
 GameObject:
   m_ObjectHideFlags: 0
@@ -2565,6 +2566,7 @@ GameObject:
   m_Component:
   - component: {fileID: 686642065}
   - component: {fileID: 686642066}
+  - component: {fileID: 686642067}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -2611,6 +2613,19 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &686642067
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 686642064}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 526898d3c69092243aacefd29880801c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Hp: {fileID: 1801320941}
 --- !u!1 &705818109
 GameObject:
   m_ObjectHideFlags: 0
@@ -3439,6 +3454,7 @@ MonoBehaviour:
   Thing2: {fileID: 308587206}
   Thing: {fileID: 544695600}
   ThatChild: {fileID: 0}
+  Hp: {fileID: 0}
 --- !u!1 &1224314198
 GameObject:
   m_ObjectHideFlags: 0
@@ -4080,6 +4096,7 @@ MonoBehaviour:
   Thing2: {fileID: 308587206}
   Thing: {fileID: 544695600}
   ThatChild: {fileID: 0}
+  Hp: {fileID: 0}
 --- !u!1 &1367900480
 GameObject:
   m_ObjectHideFlags: 0
@@ -4267,6 +4284,7 @@ MonoBehaviour:
   Thing2: {fileID: 308587206}
   Thing: {fileID: 544695600}
   ThatChild: {fileID: 0}
+  Hp: {fileID: 0}
 --- !u!95 &1370418914
 Animator:
   serializedVersion: 4
@@ -4856,6 +4874,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerHP: {fileID: 1924944305}
   EnemyHP: {fileID: 391303272}
+  PlayerHPButReal: 0
+  EnemyHPButReal: 0
   HPBar: {fileID: 97236942}
   BossHPBar: {fileID: 1635679922}
   SlidyBoiPlayer: {fileID: 990405915}
@@ -5095,6 +5115,7 @@ GameObject:
   - component: {fileID: 1865359615}
   - component: {fileID: 1865359614}
   - component: {fileID: 1865359617}
+  - component: {fileID: 1865359618}
   m_Layer: 0
   m_Name: Boos
   m_TagString: Untagged
@@ -5110,7 +5131,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1865359612}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 111.8, y: -34.1, z: 21.141724}
+  m_LocalPosition: {x: 143.9, y: -34.1, z: 21.141724}
   m_LocalScale: {x: 20, y: 20, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -5304,6 +5325,21 @@ MonoBehaviour:
   BossWeakAttack: {fileID: 387620893}
   BossOkayAttack: {fileID: 30785827}
   BossStrongAttack: {fileID: 406102626}
+  Hp: {fileID: 0}
+--- !u!114 &1865359618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1865359612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fa5ca2a9f20e16842aec888b5efa1638, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Hp: {fileID: 1801320941}
+  SecondPhase: 0
 --- !u!1 &1924944305
 GameObject:
   m_ObjectHideFlags: 0

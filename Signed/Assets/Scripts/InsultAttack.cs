@@ -9,6 +9,7 @@ public class InsultAttack : MonoBehaviour
     public int chosenAttack;
     public TextMeshPro ME;
     public GameObject ThatChild;
+    public HP Hp;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +27,6 @@ public class InsultAttack : MonoBehaviour
        chosenAttack = Random.Range(0, ListOfInsults.Length);
         ME.text = ListOfInsults[chosenAttack];
         ThatChild.GetComponent<Animator>().SetTrigger("ThatChild");
-        HP.ActuallyDoingStuff(Random.Range(0, 75));
+        Hp.ActuallyDoingStuff(Random.Range(0, 75));
     }
 }

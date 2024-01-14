@@ -8,6 +8,7 @@ public class Attack : MonoBehaviour
     public GameObject Thing2;
     public GameObject Thing;
     public GameObject ThatChild;
+    public HP Hp;
 
     // Start is called before the first frame update
     void Start()
@@ -24,19 +25,19 @@ public class Attack : MonoBehaviour
     void Warrior()
     {
         Thing3.SetActive(false);
-        HP.ActuallyDoingStuff(3);
+        Hp.ActuallyDoingStuff(3);
     }
 
     void Mage()
     {
         Thing2.SetActive(false);
-        HP.ActuallyDoingStuff(7);
+        Hp.ActuallyDoingStuff(7);
     }
 
     void Archer()
     {
         Thing.SetActive(false);
-        HP.ActuallyDoingStuff(5);
+        Hp.ActuallyDoingStuff(5);
     }
 
 

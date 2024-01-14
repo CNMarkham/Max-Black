@@ -10,6 +10,7 @@ public class BossAttack : MonoBehaviour
     public GameObject BossOkayAttack;
     public GameObject BossStrongAttack;
     public GameObject Parent;
+    public HP Hp;
     // Start is called before the first frame update
     void Start()
     {
@@ -29,23 +30,23 @@ public class BossAttack : MonoBehaviour
         {
             BossOkayAttack.SetActive(true);
             GetComponent<Animator>().SetTrigger("child2");
-            HP.PlayerHPButReal -= 20;
+            Hp.PlayerHPButReal -= 20;
         }
         else if (AttackChoose >= 7 && AttackChoose <= 9)
         {
             BossWeakAttack.SetActive(true);
             GetComponent<Animator>().SetTrigger("child3");
-            HP.PlayerHPButReal -= 10;
+            Hp.PlayerHPButReal -= 10;
         }
         else
         {
             BossStrongAttack.SetActive(true);
             GetComponent<Animator>().SetTrigger("child");
-            HP.PlayerHPButReal -= 50;
+            Hp.PlayerHPButReal -= 50;
         }
-        HP.MoreUseful.HPBar.text = ("Player HP: " + HP.PlayerHPButReal);
+        HP.MoreUseful.HPBar.text = ("Player HP: " + Hp.PlayerHPButReal);
         
-        HP.MoreUseful.SlidyBoiPlayer.GetComponent<Image>().fillAmount = (float)HP.PlayerHPButReal / 1 * 0.01f;
+        HP.MoreUseful.SlidyBoiPlayer.GetComponent<Image>().fillAmount = (float)Hp.PlayerHPButReal / 1 * 0.01f;
     }
 
     public void SENTTOTHEVOID()
