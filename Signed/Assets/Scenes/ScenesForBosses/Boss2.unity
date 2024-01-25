@@ -943,6 +943,7 @@ MonoBehaviour:
   BossOkayAttack: {fileID: 1536479583}
   BossStrongAttack: {fileID: 1506826525}
   Parent: {fileID: 0}
+  Hp: {fileID: 1801320941}
 --- !u!212 &202742030
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1379,6 +1380,7 @@ MonoBehaviour:
   chosenAttack: 0
   ME: {fileID: 507837202}
   ThatChild: {fileID: 686642064}
+  Hp: {fileID: 1801320941}
 --- !u!1 &381516065
 GameObject:
   m_ObjectHideFlags: 0
@@ -3544,6 +3546,7 @@ MonoBehaviour:
   Thing2: {fileID: 308587206}
   Thing: {fileID: 544695600}
   ThatChild: {fileID: 0}
+  Hp: {fileID: 1801320941}
 --- !u!1 &1224314198
 GameObject:
   m_ObjectHideFlags: 0
@@ -4185,6 +4188,7 @@ MonoBehaviour:
   Thing2: {fileID: 308587206}
   Thing: {fileID: 544695600}
   ThatChild: {fileID: 0}
+  Hp: {fileID: 1801320941}
 --- !u!1 &1367900480
 GameObject:
   m_ObjectHideFlags: 0
@@ -4372,6 +4376,7 @@ MonoBehaviour:
   Thing2: {fileID: 308587206}
   Thing: {fileID: 544695600}
   ThatChild: {fileID: 0}
+  Hp: {fileID: 1801320941}
 --- !u!95 &1370418914
 Animator:
   serializedVersion: 4
@@ -5129,6 +5134,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerHP: {fileID: 1924944305}
   EnemyHP: {fileID: 391303272}
+  PlayerHPButReal: 0
+  EnemyHPButReal: 0
   HPBar: {fileID: 97236942}
   BossHPBar: {fileID: 1635679922}
   SlidyBoiPlayer: {fileID: 990405915}

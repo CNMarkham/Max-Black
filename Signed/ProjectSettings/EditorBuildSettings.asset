@@ -6,13 +6,13 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/FirstPhase.unity
+    path: Assets/Scenes/Platformer/FirstPhase.unity
     guid: 847434afa1495624aa0c2569d94d7da2
   - enabled: 1
-    path: Assets/Scenes/SecondPhase.unity
+    path: Assets/Scenes/Platformer/SecondPhase.unity
     guid: cfc07cd2f20495046abf2d09c02f8299
   - enabled: 1
-    path: Assets/Scenes/ThirdPhase.unity
+    path: Assets/Scenes/Platformer/ThirdPhase.unity
     guid: a3ad772aa3d927e4ea07aa48e2dba359
   - enabled: 1
     path: Assets/Scenes/ScenesForBosses/Boss1.unity
@@ -27,18 +27,18 @@ EditorBuildSettings:
     path: Assets/Scenes/ScenesForBosses/Boss4.unity
     guid: e3211afa03fa19b4a9b148bc721bf1cf
   - enabled: 1
-    path: Assets/Scenes/ScenesForBosses/Boss1 1.unity
+    path: Assets/Scenes/ScenesForBosses/Boss1 Phase 2.unity
     guid: afee3f3cb3b8ffc4e856f7192b9bcf1e
   - enabled: 1
-    path: Assets/Scenes/ScenesForBosses/Boss2 1.unity
+    path: Assets/Scenes/ScenesForBosses/Boss2 Phase 2.unity
     guid: e1120a5bcd4743c459311a0ee9dea962
   - enabled: 1
-    path: Assets/Scenes/ScenesForBosses/Boss3 1.unity
+    path: Assets/Scenes/ScenesForBosses/Boss3 Phase 2.unity
     guid: 2129851e707b7da4ea6a4d20e3f63632
   - enabled: 1
-    path: Assets/Scenes/PlayerDead.unity
+    path: Assets/Scenes/Menu, DeathScreen, and WinScreen/PlayerDead.unity
     guid: 65156616bb1042e41856a19800ec40b3
   - enabled: 1
-    path: Assets/Scenes/FinishedGame.unity
+    path: Assets/Scenes/Menu, DeathScreen, and WinScreen/FinishedGame.unity
     guid: 84aa9609291f786448746e397e36c9fa
   m_configObjects: {}

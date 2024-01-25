@@ -1049,11 +1049,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!1 &308587206 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1973797488871700, guid: 48e06088b7e195f40898a828bd389ec3, type: 3}
-  m_PrefabInstance: {fileID: 844427815}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &308587208 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4469022170149554, guid: 48e06088b7e195f40898a828bd389ec3, type: 3}
@@ -1172,10 +1167,10 @@ MonoBehaviour:
   - Your ambition outweighs your relevent skills.
   - I smell something burning, are you trying to think again?
   - I will not have a battle of wits with someone unarmed.
-  chosenAttack: 0
-  ME: {fileID: 507837202}
-  ThatChild: {fileID: 686642064}
-  Hp: {fileID: 0}
+  ChosenAttack: 0
+  InsultTexts: {fileID: 0}
+  InsultAttackAnimation: {fileID: 0}
+  Hp: {fileID: 1801320941}
 --- !u!1 &381516065
 GameObject:
   m_ObjectHideFlags: 0
@@ -3450,11 +3445,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d492e04c65485e45a2659e4033d2a60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Thing3: {fileID: 1118966475}
-  Thing2: {fileID: 308587206}
-  Thing: {fileID: 544695600}
-  ThatChild: {fileID: 0}
-  Hp: {fileID: 0}
+  WarriorAttack: {fileID: 0}
+  MageAttack: {fileID: 0}
+  ArcherAttack: {fileID: 0}
+  Hp: {fileID: 1801320941}
 --- !u!1 &1224314198
 GameObject:
   m_ObjectHideFlags: 0
@@ -4092,11 +4086,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d492e04c65485e45a2659e4033d2a60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Thing3: {fileID: 1118966475}
-  Thing2: {fileID: 308587206}
-  Thing: {fileID: 544695600}
-  ThatChild: {fileID: 0}
-  Hp: {fileID: 0}
+  WarriorAttack: {fileID: 0}
+  MageAttack: {fileID: 0}
+  ArcherAttack: {fileID: 0}
+  Hp: {fileID: 1801320941}
 --- !u!1 &1367900480
 GameObject:
   m_ObjectHideFlags: 0
@@ -4280,11 +4273,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8d492e04c65485e45a2659e4033d2a60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Thing3: {fileID: 1118966475}
-  Thing2: {fileID: 308587206}
-  Thing: {fileID: 544695600}
-  ThatChild: {fileID: 0}
-  Hp: {fileID: 0}
+  WarriorAttack: {fileID: 0}
+  MageAttack: {fileID: 0}
+  ArcherAttack: {fileID: 0}
+  Hp: {fileID: 1801320941}
 --- !u!95 &1370418914
 Animator:
   serializedVersion: 4
@@ -4872,15 +4864,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d42ba045442b23d4eabb59d5a32230fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  PlayerHP: {fileID: 1924944305}
-  EnemyHP: {fileID: 391303272}
-  PlayerHPButReal: 0
-  EnemyHPButReal: 0
-  HPBar: {fileID: 97236942}
-  BossHPBar: {fileID: 1635679922}
-  SlidyBoiPlayer: {fileID: 990405915}
-  SlidyBoiEnemy: {fileID: 667105233}
-  SlidyBoiPlayerButNotSwordBoi: {fileID: 1936461348}
+  PlayerHpReferance: {fileID: 0}
+  BossHpReferance: {fileID: 0}
+  PlayerHpInt: 0
+  BossHpInt: 0
+  PlayerHpBar: {fileID: 0}
+  BossHpBar: {fileID: 0}
+  PlayerHpSlider: {fileID: 0}
+  BossHpSlider: {fileID: 0}
+  CharacterHpSlider: {fileID: 0}
 --- !u!114 &1801320942
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4898,7 +4890,7 @@ MonoBehaviour:
   Walk: {fileID: 406998006}
   Bag: {fileID: 505905153}
   Surprise: {fileID: 279926499}
-  TheBossAttack: {fileID: 1865359617}
+  BossAttacking: {fileID: 0}
 --- !u!1 &1817739360
 GameObject:
   m_ObjectHideFlags: 0
@@ -5114,8 +5106,8 @@ GameObject:
   - component: {fileID: 1865359616}
   - component: {fileID: 1865359615}
   - component: {fileID: 1865359614}
-  - component: {fileID: 1865359617}
   - component: {fileID: 1865359618}
+  - component: {fileID: 1865359619}
   m_Layer: 0
   m_Name: Boos
   m_TagString: Untagged
@@ -5309,23 +5301,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1865359617
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1865359612}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d93459cb7be0e6b40a4500bb4235ef32, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  AttackChoose: 0
-  BossWeakAttack: {fileID: 387620893}
-  BossOkayAttack: {fileID: 30785827}
-  BossStrongAttack: {fileID: 406102626}
-  Hp: {fileID: 0}
 --- !u!114 &1865359618
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5340,6 +5315,23 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Hp: {fileID: 1801320941}
   SecondPhase: 0
+--- !u!114 &1865359619
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1865359612}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d93459cb7be0e6b40a4500bb4235ef32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RandomAttack: 0
+  WeakAttack: {fileID: 0}
+  MidAttack: {fileID: 0}
+  StrongAttack: {fileID: 0}
+  Hp: {fileID: 0}
 --- !u!1 &1924944305
 GameObject:
   m_ObjectHideFlags: 0

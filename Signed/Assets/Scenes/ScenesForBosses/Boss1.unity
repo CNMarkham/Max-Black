@@ -1091,7 +1091,7 @@ MonoBehaviour:
   chosenAttack: 0
   ME: {fileID: 507837202}
   ThatChild: {fileID: 686642064}
-  Hp: {fileID: 0}
+  Hp: {fileID: 1801320941}
 --- !u!1 &381516065
 GameObject:
   m_ObjectHideFlags: 0
@@ -3285,7 +3285,7 @@ MonoBehaviour:
   Thing2: {fileID: 308587206}
   Thing: {fileID: 544695600}
   ThatChild: {fileID: 0}
-  Hp: {fileID: 0}
+  Hp: {fileID: 1801320941}
 --- !u!1 &1224314198
 GameObject:
   m_ObjectHideFlags: 0
@@ -3927,7 +3927,7 @@ MonoBehaviour:
   Thing2: {fileID: 308587206}
   Thing: {fileID: 544695600}
   ThatChild: {fileID: 0}
-  Hp: {fileID: 0}
+  Hp: {fileID: 1801320941}
 --- !u!1 &1367900480
 GameObject:
   m_ObjectHideFlags: 0
@@ -4115,7 +4115,7 @@ MonoBehaviour:
   Thing2: {fileID: 308587206}
   Thing: {fileID: 544695600}
   ThatChild: {fileID: 0}
-  Hp: {fileID: 0}
+  Hp: {fileID: 1801320941}
 --- !u!95 &1370418914
 Animator:
   serializedVersion: 4
@@ -4577,7 +4577,7 @@ MonoBehaviour:
   BossOkayAttack: {fileID: 1697443335}
   BossStrongAttack: {fileID: 1479402985}
   Parent: {fileID: 0}
-  Hp: {fileID: 0}
+  Hp: {fileID: 1801320941}
 --- !u!114 &1588334976
 MonoBehaviour:
   m_ObjectHideFlags: 0
