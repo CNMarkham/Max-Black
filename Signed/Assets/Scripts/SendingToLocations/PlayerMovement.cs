@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
 	[Header("Speeds")]
-	public float speed = 6f;
+	public float Speed = 6f;
 	public float Speed2 = 3.0f;
 	
 	[Header("Jumping Tools")]

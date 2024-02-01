@@ -138,7 +138,7 @@ GameObject:
   m_Component:
   - component: {fileID: 115770546}
   m_Layer: 0
-  m_Name: Boss Spawn
+  m_Name: Boss Spawning System
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -157,8 +157,9 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1944682709}
+  - {fileID: 305795796}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &143185848 stripped
 Transform:
@@ -204,7 +205,7 @@ Transform:
   - {fileID: 1307702254}
   - {fileID: 2011876637}
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &259442984
 GameObject:
@@ -438,7 +439,7 @@ GameObject:
   m_Component:
   - component: {fileID: 305795796}
   m_Layer: 0
-  m_Name: L1Bosses
+  m_Name: The Bosses
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -451,16 +452,16 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 305795795}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 159.22133, y: 0.24143636, z: -59.345516}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -18.847137, y: -3.8586664, z: -67.35542}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1900978004}
   - {fileID: 2093255971}
   - {fileID: 1228183589}
-  m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_Father: {fileID: 115770546}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &311910287
 GameObject:
@@ -613,7 +614,7 @@ Transform:
   - {fileID: 1437425294}
   - {fileID: 151991924}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &347094167
 GameObject:
@@ -1118,7 +1119,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2, y: 1}
+    m_SensorSize: {x: 2.3156219, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -1134,14 +1135,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 703190933}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.14000034, y: -0.6999998, z: -7.18}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -67.56137, y: -4.6353264, z: -6.092614}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 977104637}
-  m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_Father: {fileID: 1237486365}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &734345438
 GameObject:
@@ -3487,7 +3488,7 @@ GameObject:
   - component: {fileID: 1228183591}
   - component: {fileID: 1228183592}
   m_Layer: 0
-  m_Name: Megpack III Fallen Kings Undead King Berthelot
+  m_Name: That One Boss From That Zombie Movie
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3655,6 +3656,40 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d3ade3bb95001f94285d56f010248d77, type: 3}
+--- !u!1 &1237486364
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1237486365}
+  m_Layer: 0
+  m_Name: Camera System
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1237486365
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1237486364}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 67.42137, y: 3.9353268, z: -1.0873858}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 1752449363}
+  - {fileID: 703190935}
+  - {fileID: 2062029873}
+  m_Father: {fileID: 0}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1307702253
 GameObject:
   m_ObjectHideFlags: 0
@@ -4007,7 +4042,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1472870358
 MonoBehaviour:
@@ -4021,7 +4056,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 85e95a8ee9f5de244bedc3ae9a86347b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 6
+  Speed: 6
   Speed2: 3
   isGrounded: 1
   JumpHold: 0
@@ -4352,7 +4387,7 @@ GameObject:
   - component: {fileID: 1534329842}
   - component: {fileID: 1534329841}
   m_Layer: 5
-  m_Name: Canvas (1)
+  m_Name: Canvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4432,7 +4467,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -5064,7 +5099,7 @@ GameObject:
   - component: {fileID: 1752449361}
   - component: {fileID: 1752449364}
   m_Layer: 0
-  m_Name: Main Camera
+  m_Name: Camera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5128,12 +5163,12 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1752449360}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.14000034, y: -0.6999998, z: -7.18}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -67.56137, y: -4.6353264, z: -6.092614}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1237486365}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1752449364
@@ -5347,7 +5382,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1844091229
 PrefabInstance:
@@ -5419,7 +5454,7 @@ GameObject:
   - component: {fileID: 1900978006}
   - component: {fileID: 1900978007}
   m_Layer: 0
-  m_Name: Megapack III Zodiac Aries
+  m_Name: Fire Horse
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5504,7 +5539,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7719776146b046041b0c1e6fb8140d16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Timer: {fileID: 0}
 --- !u!61 &1900978007
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -5653,7 +5687,7 @@ GameObject:
   - component: {fileID: 1944682709}
   - component: {fileID: 1944682710}
   m_Layer: 0
-  m_Name: First Spawn
+  m_Name: Spawn Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5689,8 +5723,7 @@ MonoBehaviour:
   Boss1: {fileID: 1900978003}
   Boss2: {fileID: 2093255970}
   Boss3: {fileID: 1228183588}
-  ChooseDaBoss: 0
-  IfThirdBoss: 0
+  RandomizedBoss: 0
 --- !u!1 &1980201566
 GameObject:
   m_ObjectHideFlags: 0
@@ -6000,12 +6033,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2062029871}
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
-  m_LocalPosition: {x: 0, y: 3, z: 0}
+  m_LocalPosition: {x: -67.42137, y: -0.9353268, z: 1.0873858}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_Father: {fileID: 1237486365}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!4 &2076768209 stripped
 Transform:
@@ -6030,7 +6063,7 @@ GameObject:
   - component: {fileID: 2093255973}
   - component: {fileID: 2093255974}
   m_Layer: 0
-  m_Name: Megapack III Elemental Lords Ice Maiden
+  m_Name: Ice Girl
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -6115,7 +6148,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b81644884b0daa743a39f3a42d5d2960, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Timer: {fileID: 0}
 --- !u!61 &2093255974
 BoxCollider2D:
   m_ObjectHideFlags: 0

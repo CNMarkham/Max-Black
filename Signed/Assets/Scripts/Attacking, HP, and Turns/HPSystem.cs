@@ -18,6 +18,7 @@ public class HPSystem : MonoBehaviour
     public GameObject CharacterHpSlider;
     void Start()
     {
+        PlayerHpInt = 100;
         HpSystem = this;
         BossHpInt = 100;
     }
