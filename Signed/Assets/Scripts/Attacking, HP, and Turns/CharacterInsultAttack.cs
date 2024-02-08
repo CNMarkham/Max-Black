@@ -14,7 +14,7 @@ public class CharacterInsultAttack : MonoBehaviour
     {
         ChosenAttack = Random.Range(0, ListOfInsults.Length);
         InsultTexts.text = ListOfInsults[ChosenAttack];
-        InsultAttackAnimation.GetComponent<Animator>().SetTrigger("ThatChild");
+        InsultAttackAnimation.GetComponent<Animator>().SetTrigger("TriggerAnimationInsultAttack");
         Hp.BossHpSliderUpdate(Random.Range(0, 47));
     }
 }
