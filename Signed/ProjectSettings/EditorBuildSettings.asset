@@ -14,25 +14,25 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Platformer/ThirdPhase.unity
     guid: a3ad772aa3d927e4ea07aa48e2dba359
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/ScenesForBosses/Boss1.unity
     guid: b2e605f1fa9974540a1e5c9bbd508737
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/ScenesForBosses/Boss2.unity
     guid: 840e69000005a774fb51d4aaea8aaee6
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/ScenesForBosses/Boss3.unity
     guid: 4bbf3163d3789054bb36b95b366154e5
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/ScenesForBosses/Boss4.unity
     guid: e3211afa03fa19b4a9b148bc721bf1cf
   - enabled: 1
-    path: Assets/Scenes/ScenesForBosses/Boss1 Phase 2.unity
+    path: Assets/Scenes/ScenesForBosses/Fire Horse Version2.unity
     guid: afee3f3cb3b8ffc4e856f7192b9bcf1e
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/ScenesForBosses/Boss2 Phase 2.unity
     guid: e1120a5bcd4743c459311a0ee9dea962
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/ScenesForBosses/Boss3 Phase 2.unity
     guid: 2129851e707b7da4ea6a4d20e3f63632
   - enabled: 1

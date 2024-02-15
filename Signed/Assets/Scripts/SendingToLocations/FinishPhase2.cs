@@ -18,7 +18,7 @@ public class FinishPhase2 : MonoBehaviour
         if(HP.BossHpInt <= 0)
         {
             HP.BossHpInt = 0;
-            SceneManager.LoadScene("Real Scene 2");
+            SceneManager.LoadScene("2");
         }
     }
 }

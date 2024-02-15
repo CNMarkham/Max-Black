@@ -26,7 +26,7 @@ public class BossAttacking : MonoBehaviour
             GetComponent<Animator>().SetTrigger("child3");
             Hp.PlayerHpInt -= 10;
         }
-        else
+        else if (RandomAttack >= 6 && RandomAttack <= 10)
         {
             StrongAttack.SetActive(true);
             GetComponent<Animator>().SetTrigger("child");

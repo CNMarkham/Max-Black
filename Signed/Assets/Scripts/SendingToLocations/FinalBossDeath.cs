@@ -7,6 +7,8 @@ public class FinalBossDeath : MonoBehaviour
 {
     public HPSystem Hp;
     public bool SecondPhase;
+    public SpriteRenderer Change;
+    public Sprite Sign;
     // Start is called before the first frame update
     void Start()
     {
@@ -20,6 +22,7 @@ public class FinalBossDeath : MonoBehaviour
         {
             Hp.BossHpInt = 100;
             SecondPhase = true;
+            Change.sprite = Sign;
         } else if(Hp.BossHpInt <= 0 && SecondPhase == true)
         {
             SceneManager.LoadScene(11);

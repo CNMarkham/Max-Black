@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Boss1Phase2Encounter: MonoBehaviour
+public class IcePersonSenderVersion2: MonoBehaviour
 {
     public void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
-            SceneManager.LoadScene(7);
+            SceneManager.LoadScene(8);
         }
     }
 }
