@@ -922,7 +922,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 319699466}
         m_TargetAssemblyTypeName: CharacterInsultAttack, Assembly-CSharp
-        m_MethodName: Something
+        m_MethodName: TriggerInsultAttack
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1132,7 +1132,7 @@ MonoBehaviour:
   - You've got half a braincell and it's fighting itself for third place
   - Yo mama so old when she went in an antique shop they didn't let her out
   - Your gene pool needs more chlorine
-  - Your fatness doesn't run in the family. Non of your family runs
+  - Obesity doesn't run in your family. Nobody runs in your family
   - You're living proof two negatives don't make a positive
   - Remember, I play games for the same reason you put on makeup. To escape from
     reality
@@ -2492,6 +2492,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 990405915}
   m_CullTransparentMesh: 1
+--- !u!1 &1037846433 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 863496152767016117, guid: 9685746ac0dad5e448c5f6c62ddd4171, type: 3}
+  m_PrefabInstance: {fileID: 1841489837}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1058619758
 GameObject:
   m_ObjectHideFlags: 0
@@ -3892,6 +3897,11 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!1 &1417088227 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 863496152915988468, guid: 9685746ac0dad5e448c5f6c62ddd4171, type: 3}
+  m_PrefabInstance: {fileID: 1841489837}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1449666453
 GameObject:
   m_ObjectHideFlags: 0
@@ -4401,6 +4411,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1635679920}
   m_CullTransparentMesh: 1
+--- !u!1 &1704694837 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 863496152685096650, guid: 9685746ac0dad5e448c5f6c62ddd4171, type: 3}
+  m_PrefabInstance: {fileID: 1841489837}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1801320937
 GameObject:
   m_ObjectHideFlags: 0
@@ -4413,7 +4428,6 @@ GameObject:
   - component: {fileID: 1801320939}
   - component: {fileID: 1801320940}
   - component: {fileID: 1801320941}
-  - component: {fileID: 1801320942}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -4465,7 +4479,7 @@ MonoBehaviour:
   Run: {fileID: 406998006}
   Items: {fileID: 505905153}
   InsultAttack: {fileID: 279926499}
-  BossAttacking: {fileID: 0}
+  BossAttacking: {fileID: 1841489839}
 --- !u!114 &1801320941
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4487,19 +4501,6 @@ MonoBehaviour:
   PlayerHpSlider: {fileID: 990405915}
   BossHpSlider: {fileID: 667105233}
   CharacterHpSlider: {fileID: 1936461348}
---- !u!114 &1801320942
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1801320937}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 526898d3c69092243aacefd29880801c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Hp: {fileID: 1801320941}
 --- !u!1 &1817739360
 GameObject:
   m_ObjectHideFlags: 0
@@ -4758,6 +4759,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Final Boss The Road Sign
       objectReference: {fileID: 0}
+    - target: {fileID: 863496154695053268, guid: 9685746ac0dad5e448c5f6c62ddd4171, type: 3}
+      propertyPath: Hp
+      value: 
+      objectReference: {fileID: 1801320941}
+    - target: {fileID: 863496154695053268, guid: 9685746ac0dad5e448c5f6c62ddd4171, type: 3}
+      propertyPath: MidAttack
+      value: 
+      objectReference: {fileID: 1417088227}
+    - target: {fileID: 863496154695053268, guid: 9685746ac0dad5e448c5f6c62ddd4171, type: 3}
+      propertyPath: WeakAttack
+      value: 
+      objectReference: {fileID: 1704694837}
+    - target: {fileID: 863496154695053268, guid: 9685746ac0dad5e448c5f6c62ddd4171, type: 3}
+      propertyPath: StrongAttack
+      value: 
+      objectReference: {fileID: 1037846433}
+    - target: {fileID: 863496154695053269, guid: 9685746ac0dad5e448c5f6c62ddd4171, type: 3}
+      propertyPath: Hp
+      value: 
+      objectReference: {fileID: 1801320941}
     - target: {fileID: 863496154695053269, guid: 9685746ac0dad5e448c5f6c62ddd4171, type: 3}
       propertyPath: Sign
       value: 
@@ -4778,6 +4799,17 @@ SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: 863496154695053271, guid: 9685746ac0dad5e448c5f6c62ddd4171, type: 3}
   m_PrefabInstance: {fileID: 1841489837}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1841489839 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 863496154695053268, guid: 9685746ac0dad5e448c5f6c62ddd4171, type: 3}
+  m_PrefabInstance: {fileID: 1841489837}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d93459cb7be0e6b40a4500bb4235ef32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1864679463 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5049908300582056151, guid: d3ade3bb95001f94285d56f010248d77, type: 3}

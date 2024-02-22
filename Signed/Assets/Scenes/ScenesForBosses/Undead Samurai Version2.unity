@@ -4277,6 +4277,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7307602928091379501, guid: fd16960f88f083147a78a9ef5c69d162, type: 3}
+      propertyPath: HP
+      value: 
+      objectReference: {fileID: 1801320941}
     - target: {fileID: 7307602928091379536, guid: fd16960f88f083147a78a9ef5c69d162, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -4327,6 +4331,43 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fd16960f88f083147a78a9ef5c69d162, type: 3}
+--- !u!1 &1628135271 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7307602928091379538, guid: fd16960f88f083147a78a9ef5c69d162, type: 3}
+  m_PrefabInstance: {fileID: 1628135270}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1628135272 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7307602927948654660, guid: fd16960f88f083147a78a9ef5c69d162, type: 3}
+  m_PrefabInstance: {fileID: 1628135270}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1628135273 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7307602927320794564, guid: fd16960f88f083147a78a9ef5c69d162, type: 3}
+  m_PrefabInstance: {fileID: 1628135270}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1628135274 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7307602928236978984, guid: fd16960f88f083147a78a9ef5c69d162, type: 3}
+  m_PrefabInstance: {fileID: 1628135270}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1628135275
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1628135271}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d93459cb7be0e6b40a4500bb4235ef32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RandomAttack: 0
+  WeakAttack: {fileID: 1628135274}
+  MidAttack: {fileID: 1628135273}
+  StrongAttack: {fileID: 1628135272}
+  Hp: {fileID: 1801320941}
 --- !u!1 &1635679920
 GameObject:
   m_ObjectHideFlags: 0
@@ -4474,7 +4515,6 @@ GameObject:
   - component: {fileID: 1801320939}
   - component: {fileID: 1801320940}
   - component: {fileID: 1801320941}
-  - component: {fileID: 1801320942}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -4548,19 +4588,6 @@ MonoBehaviour:
   PlayerHpSlider: {fileID: 990405915}
   BossHpSlider: {fileID: 667105233}
   CharacterHpSlider: {fileID: 1936461348}
---- !u!114 &1801320942
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1801320937}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 526898d3c69092243aacefd29880801c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Hp: {fileID: 1801320941}
 --- !u!1 &1817739360
 GameObject:
   m_ObjectHideFlags: 0

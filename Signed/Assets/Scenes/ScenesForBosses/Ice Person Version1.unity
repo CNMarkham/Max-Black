@@ -922,7 +922,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 319699466}
         m_TargetAssemblyTypeName: CharacterInsultAttack, Assembly-CSharp
-        m_MethodName: Something
+        m_MethodName: TriggerInsultAttack
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1132,7 +1132,7 @@ MonoBehaviour:
   - You've got half a braincell and it's fighting itself for third place
   - Yo mama so old when she went in an antique shop they didn't let her out
   - Your gene pool needs more chlorine
-  - Your fatness doesn't run in the family. Non of your family runs
+  - Obesity doesn't run in your family. Nobody runs in your family
   - You're living proof two negatives don't make a positive
   - Remember, I play games for the same reason you put on makeup. To escape from
     reality
@@ -2229,6 +2229,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 129063531631268116, guid: 12a623b8914832c4a8b88778ed30c9b8, type: 3}
   m_PrefabInstance: {fileID: 129063531090916389}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &656714257 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7445213283699874219, guid: eb0e66efbdad6de4e9d291cae23fb245, type: 3}
+  m_PrefabInstance: {fileID: 1930444461}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &667105233
 GameObject:
   m_ObjectHideFlags: 0
@@ -2343,6 +2348,16 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: -900, y: -400}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &778813388 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7445047808014824054, guid: eb0e66efbdad6de4e9d291cae23fb245, type: 3}
+  m_PrefabInstance: {fileID: 1930444461}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &832437949 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7444693846527447516, guid: eb0e66efbdad6de4e9d291cae23fb245, type: 3}
+  m_PrefabInstance: {fileID: 1930444461}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &844427815
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4027,6 +4042,28 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1449666453}
   m_CullTransparentMesh: 1
+--- !u!1 &1601095728 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7446207375277342284, guid: eb0e66efbdad6de4e9d291cae23fb245, type: 3}
+  m_PrefabInstance: {fileID: 1930444461}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1601095733
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1601095728}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d93459cb7be0e6b40a4500bb4235ef32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RandomAttack: 0
+  WeakAttack: {fileID: 778813388}
+  MidAttack: {fileID: 656714257}
+  StrongAttack: {fileID: 832437949}
+  Hp: {fileID: 1801320941}
 --- !u!1 &1609368952
 GameObject:
   m_ObjectHideFlags: 0
@@ -4413,7 +4450,6 @@ GameObject:
   - component: {fileID: 1801320939}
   - component: {fileID: 1801320940}
   - component: {fileID: 1801320941}
-  - component: {fileID: 1801320942}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -4465,7 +4501,7 @@ MonoBehaviour:
   Run: {fileID: 406998006}
   Items: {fileID: 505905153}
   InsultAttack: {fileID: 279926499}
-  BossAttacking: {fileID: 0}
+  BossAttacking: {fileID: 1601095733}
 --- !u!114 &1801320941
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4487,19 +4523,6 @@ MonoBehaviour:
   PlayerHpSlider: {fileID: 990405915}
   BossHpSlider: {fileID: 667105233}
   CharacterHpSlider: {fileID: 1936461348}
---- !u!114 &1801320942
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1801320937}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 526898d3c69092243aacefd29880801c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Hp: {fileID: 1801320941}
 --- !u!1 &1817739360
 GameObject:
   m_ObjectHideFlags: 0
@@ -4851,6 +4874,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Ice Person
       objectReference: {fileID: 0}
+    - target: {fileID: 7446207375277342295, guid: eb0e66efbdad6de4e9d291cae23fb245, type: 3}
+      propertyPath: HP
+      value: 
+      objectReference: {fileID: 1801320941}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: eb0e66efbdad6de4e9d291cae23fb245, type: 3}
 --- !u!1 &1936461348

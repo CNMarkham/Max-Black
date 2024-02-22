@@ -9,7 +9,7 @@ public class UndeadSamuraiSenderVersion1: MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            SceneManager.LoadScene(5);
+            SceneManager.LoadScene(7);
         }
     }
 }

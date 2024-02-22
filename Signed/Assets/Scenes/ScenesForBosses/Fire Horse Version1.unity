@@ -922,7 +922,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 319699466}
         m_TargetAssemblyTypeName: CharacterInsultAttack, Assembly-CSharp
-        m_MethodName: Something
+        m_MethodName: TriggerInsultAttack
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1132,7 +1132,7 @@ MonoBehaviour:
   - You've got half a braincell and it's fighting itself for third place
   - Yo mama so old when she went in an antique shop they didn't let her out
   - Your gene pool needs more chlorine
-  - Your fatness doesn't run in the family. Non of your family runs
+  - Obesity doesn't run in your family. Nobody runs in your family
   - You're living proof two negatives don't make a positive
   - Remember, I play games for the same reason you put on makeup. To escape from
     reality
@@ -3084,7 +3084,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 526898d3c69092243aacefd29880801c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Hp: {fileID: 1801320941}
 --- !u!1 &1224314198
 GameObject:
   m_ObjectHideFlags: 0
@@ -3712,7 +3711,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 526898d3c69092243aacefd29880801c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Hp: {fileID: 1801320941}
 --- !u!1 &1367900480
 GameObject:
   m_ObjectHideFlags: 0
@@ -3933,7 +3931,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 526898d3c69092243aacefd29880801c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Hp: {fileID: 1801320941}
 --- !u!1 &1449666453
 GameObject:
   m_ObjectHideFlags: 0
@@ -4466,7 +4463,6 @@ GameObject:
   - component: {fileID: 1801320939}
   - component: {fileID: 1801320940}
   - component: {fileID: 1801320941}
-  - component: {fileID: 1801320942}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -4540,19 +4536,6 @@ MonoBehaviour:
   PlayerHpSlider: {fileID: 990405915}
   BossHpSlider: {fileID: 667105233}
   CharacterHpSlider: {fileID: 1936461348}
---- !u!114 &1801320942
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1801320937}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 526898d3c69092243aacefd29880801c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Hp: {fileID: 1801320941}
 --- !u!1 &1817739360
 GameObject:
   m_ObjectHideFlags: 0
@@ -5401,6 +5384,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6506462171305900462, guid: 933a21a1d87805742957c5ab01fa979a, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 6507270617114387809, guid: 933a21a1d87805742957c5ab01fa979a, type: 3}
       propertyPath: m_Name
       value: The Boss Fire Horse

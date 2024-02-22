@@ -9,7 +9,7 @@ public class FinalBossEncounter : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            SceneManager.LoadScene(6);
+            SceneManager.LoadScene(9);
         }
     }
 }

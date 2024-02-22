@@ -922,7 +922,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 319699466}
         m_TargetAssemblyTypeName: CharacterInsultAttack, Assembly-CSharp
-        m_MethodName: Something
+        m_MethodName: TriggerInsultAttack
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -930,7 +930,7 @@ MonoBehaviour:
           m_IntArgument: 0
           m_FloatArgument: 0
           m_StringArgument: 
-          m_BoolArgument: 0
+          m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 1801320940}
         m_TargetAssemblyTypeName: Turns, Assembly-CSharp
@@ -1132,7 +1132,7 @@ MonoBehaviour:
   - You've got half a braincell and it's fighting itself for third place
   - Yo mama so old when she went in an antique shop they didn't let her out
   - Your gene pool needs more chlorine
-  - Your fatness doesn't run in the family. Non of your family runs
+  - Obesity doesn't run in your family. Nobody from your family runs
   - You're living proof two negatives don't make a positive
   - Remember, I play games for the same reason you put on makeup. To escape from
     reality
@@ -2305,6 +2305,11 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 667105233}
   m_CullTransparentMesh: 1
+--- !u!1 &697911617 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7307602927948654660, guid: fd16960f88f083147a78a9ef5c69d162, type: 3}
+  m_PrefabInstance: {fileID: 1628135270}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &705818109
 GameObject:
   m_ObjectHideFlags: 0
@@ -2416,6 +2421,28 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 48e06088b7e195f40898a828bd389ec3, type: 3}
+--- !u!1 &942905228 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7307602928091379538, guid: fd16960f88f083147a78a9ef5c69d162, type: 3}
+  m_PrefabInstance: {fileID: 1628135270}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &942905233
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 942905228}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d93459cb7be0e6b40a4500bb4235ef32, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  RandomAttack: 0
+  WeakAttack: {fileID: 1522901929}
+  MidAttack: {fileID: 1518491685}
+  StrongAttack: {fileID: 697911617}
+  Hp: {fileID: 1801320941}
 --- !u!1 &990405915
 GameObject:
   m_ObjectHideFlags: 0
@@ -4027,6 +4054,16 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1449666453}
   m_CullTransparentMesh: 1
+--- !u!1 &1518491685 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7307602927320794564, guid: fd16960f88f083147a78a9ef5c69d162, type: 3}
+  m_PrefabInstance: {fileID: 1628135270}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &1522901929 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7307602928236978984, guid: fd16960f88f083147a78a9ef5c69d162, type: 3}
+  m_PrefabInstance: {fileID: 1628135270}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1609368952
 GameObject:
   m_ObjectHideFlags: 0
@@ -4277,6 +4314,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7307602928091379501, guid: fd16960f88f083147a78a9ef5c69d162, type: 3}
+      propertyPath: HP
+      value: 
+      objectReference: {fileID: 1801320941}
     - target: {fileID: 7307602928091379536, guid: fd16960f88f083147a78a9ef5c69d162, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -4474,7 +4515,6 @@ GameObject:
   - component: {fileID: 1801320939}
   - component: {fileID: 1801320940}
   - component: {fileID: 1801320941}
-  - component: {fileID: 1801320942}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -4526,7 +4566,7 @@ MonoBehaviour:
   Run: {fileID: 406998006}
   Items: {fileID: 505905153}
   InsultAttack: {fileID: 279926499}
-  BossAttacking: {fileID: 0}
+  BossAttacking: {fileID: 942905233}
 --- !u!114 &1801320941
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4548,19 +4588,6 @@ MonoBehaviour:
   PlayerHpSlider: {fileID: 990405915}
   BossHpSlider: {fileID: 667105233}
   CharacterHpSlider: {fileID: 1936461348}
---- !u!114 &1801320942
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1801320937}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 526898d3c69092243aacefd29880801c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Hp: {fileID: 1801320941}
 --- !u!1 &1817739360
 GameObject:
   m_ObjectHideFlags: 0

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class HPSystem : MonoBehaviour
 {
@@ -22,8 +23,18 @@ public class HPSystem : MonoBehaviour
         HpSystem = this;
         BossHpInt = 100;
     }
+
+    void Update()
+    {
+        if (PlayerHpInt <= 0)
+        {
+            SceneManager.LoadScene(10);
+        }
+    }
+
     public void PlayerAndCharacterHpSliderUpdate()
     {
+
         switch (GameManager.Classs2)
         {
             case GameManager.Classs.Warrior:
@@ -47,6 +58,13 @@ public class HPSystem : MonoBehaviour
     public void BossHpSliderUpdate(int damage)
     {
         BossHpInt -= damage;
+        HpSystem.BossHpBar.text = ("Boss HP: " + BossHpInt);
+        HpSystem.BossHpSlider.GetComponent<Image>().fillAmount = (float)BossHpInt / 1 * 0.01f;
+    }
+
+    public void FinalBossHpSliderUpdate(int damage)
+    {
+        BossHpInt = damage;
         HpSystem.BossHpBar.text = ("Boss HP: " + BossHpInt);
         HpSystem.BossHpSlider.GetComponent<Image>().fillAmount = (float)BossHpInt / 1 * 0.01f;
     }
