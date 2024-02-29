@@ -14,19 +14,19 @@ public class BossAttacking : MonoBehaviour
     public void RandomizedAttack()
     {
         int RandomAttack = Random.Range(0, 10);
-        if (RandomAttack <= 2)
+        if (RandomAttack <= 3)
         {
             MidAttack.SetActive(true);
             GetComponent<Animator>().SetTrigger("child2");
             Hp.PlayerHpInt -= 20;
         }
-        else if (RandomAttack >= 3 && RandomAttack <= 5)
+        else if (RandomAttack >= 4 && RandomAttack <= 8)
         {
             WeakAttack.SetActive(true);
             GetComponent<Animator>().SetTrigger("child3");
             Hp.PlayerHpInt -= 10;
         }
-        else if (RandomAttack >= 6 && RandomAttack <= 10)
+        else if (RandomAttack >= 9 && RandomAttack <= 10)
         {
             StrongAttack.SetActive(true);
             GetComponent<Animator>().SetTrigger("child");
