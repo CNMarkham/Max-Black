@@ -1,0 +1,14 @@
+Tennis Throw	  Buffs Hp Range by 5(For Example if original Hp range is 20-40 then after buff is 25-45), Also does damage
+Spin Boi          2 Turn Stun for First Boss, 1 Turn Stun for Second Boss, No Stun For Final Boss
+Jump but rude     AOE Attack Only Stuns Summons or Minis
+
+Fireball          AOE Attack Hits Everybody Will 2 Shot Summons or Minis 3 Shot for Final Boss Summons or Minis
+Heal		  Heal Your Self Hp
+Dem Swords	  Two Turn Charge(You use that turn and your next turn), Summons 8 Spiritual Swords, you can choose to shoot two at a single 		  enemy or divide them between two different enemies
+
+Spirit Arrow	  Stuns enemy, does not stun through buff, Also does damage, Heals you slightly
+Self Arrow	  Take Recoil, Max Hp Increases
+Arrow Rain 	  Rains Smaller Spirit Arrows, Does AOE Damage, does piercing for all enemies(piercing as in something like poison) for 3 		  turns, 2 for Boss.
+
+
+
