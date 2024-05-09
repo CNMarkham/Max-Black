@@ -4,7 +4,7 @@ using System.Collections;
 public class TrapControll : MonoBehaviour {
 
 	public bool rotationInStart = false;
-	public float speed_rotation = -5;
+	public float speed_rotation = -8;
 	
 	void Start () {
 		if(speed_rotation>0){
