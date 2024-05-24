@@ -15,9 +15,9 @@ public class FinishPhase2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(HP.BossHpInt <= 0)
+        if(HP.BossHPNum <= 0)
         {
-            HP.BossHpInt = 0;
+            HP.BossHPNum = 0;
             SceneManager.LoadScene("2");
         }
     }

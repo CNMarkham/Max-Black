@@ -18,23 +18,23 @@ public class BossAttacking : MonoBehaviour
         {
             MidAttack.SetActive(true);
             GetComponent<Animator>().SetTrigger("child2");
-            Hp.PlayerHpInt -= 20;
+            Hp.PlayerHPNum -= 20;
         }
         else if (RandomAttack >= 4 && RandomAttack <= 8)
         {
             WeakAttack.SetActive(true);
             GetComponent<Animator>().SetTrigger("child3");
-            Hp.PlayerHpInt -= 10;
+            Hp.PlayerHPNum -= 10;
         }
         else if (RandomAttack >= 9 && RandomAttack <= 10)
         {
             StrongAttack.SetActive(true);
             GetComponent<Animator>().SetTrigger("child");
-            Hp.PlayerHpInt -= 50;
+            Hp.PlayerHPNum -= 50;
         }
-        HPSystem.HpSystem.PlayerHpBar.text = ("Player HP: " + Hp.PlayerHpInt);
+        HPSystem.HpSystem.PlayerHPText.text = ("Player HP: " + Hp.PlayerHPNum);
         
-        HPSystem.HpSystem.PlayerHpSlider.GetComponent<Image>().fillAmount = (float)Hp.PlayerHpInt / 1 * 0.01f;
+        HPSystem.HpSystem.PlayerHpSlider.GetComponent<Image>().fillAmount = (float)Hp.PlayerHPNum / 1 * 0.01f;
     }
 
 

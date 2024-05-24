@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class CharacterAttacking : MonoBehaviour
 {
+    public TurnsSystem TurnsSystem;
     public GameObject WarriorAttack;
     public GameObject MageAttack;
     public GameObject ArcherAttack;
@@ -12,19 +13,19 @@ public class CharacterAttacking : MonoBehaviour
     void Warrior()
     {
         WarriorAttack.SetActive(false);
-        Hp.BossHpSliderUpdate(3);
+        Hp.BossSliderUpdate(3);
     }
 
     void Mage()
     {
         MageAttack.SetActive(false);
-        Hp.BossHpSliderUpdate(7);
+        Hp.BossSliderUpdate(7);
     }
 
     void Archer()
     {
         ArcherAttack.SetActive(false);
-        Hp.BossHpSliderUpdate(5);
+        Hp.BossSliderUpdate(5);
     }
     public void QueueAttack()
     {

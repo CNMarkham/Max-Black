@@ -18,12 +18,12 @@ public class FinalBossDeath : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Hp.BossHpInt <= 0 && SecondPhase == false)
+        if (Hp.BossHPNum <= 0 && SecondPhase == false)
         {
             Hp.FinalBossHpSliderUpdate(100);
             SecondPhase = true;
             Change.sprite = Sign;
-        } else if(Hp.BossHpInt <= 0 && SecondPhase == true)
+        } else if(Hp.BossHPNum <= 0 && SecondPhase == true)
         {
             SceneManager.LoadScene(11);
         }

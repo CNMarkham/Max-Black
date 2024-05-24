@@ -8,25 +8,28 @@ using UnityEngine.SceneManagement;
 public class HPSystem : MonoBehaviour
 {
     public static HPSystem HpSystem;
-    public GameObject PlayerHpReferance;
-    public GameObject BossHpReferance;
-    public int PlayerHpInt;
-    public int BossHpInt;
-    public TextMeshProUGUI PlayerHpBar;
+    public int PlayerHPNum;
+    public int BossHPNum;
+    public GameObject PlayerHpReference;
+    public GameObject BossHpReference;
+    public TextMeshProUGUI PlayerHPText;
     public TextMeshProUGUI BossHpBar;
     public GameObject PlayerHpSlider;
     public GameObject BossHpSlider;
-    public GameObject CharacterHpSlider;
+    public GameObject ClassesHPSlider;
+    public int DMGTaken;
+    public int BossDef;
+    public int PlayerDef;
     void Start()
     {
-        PlayerHpInt = 100;
+        PlayerHPNum = 100;
+        BossHPNum = 100;
         HpSystem = this;
-        BossHpInt = 100;
     }
 
     void Update()
     {
-        if (PlayerHpInt <= 0)
+        if (PlayerHPNum <= 0)
         {
             SceneManager.LoadScene(10);
         }
@@ -38,34 +41,27 @@ public class HPSystem : MonoBehaviour
         switch (GameManager.Classs2)
         {
             case GameManager.Classs.Warrior:
-                PlayerHpInt = 100;
+                PlayerHPNum = 100;
                 break;
             case GameManager.Classs.Mage:
-                PlayerHpInt = 70;
-                CharacterHpSlider.GetComponent<Image>().fillAmount = (float)PlayerHpInt / 1 * 0.01f;
+                PlayerHPNum = 70;
+                ClassesHPSlider.GetComponent<Image>().fillAmount = (float)PlayerHPNum / 1 * 0.01f;
                 break;
             case GameManager.Classs.Archer:
-                PlayerHpInt = 85;
-                CharacterHpSlider.GetComponent<Image>().fillAmount = (float)PlayerHpInt / 1 * 0.01f;
+                PlayerHPNum = 85;
+                ClassesHPSlider.GetComponent<Image>().fillAmount = (float)PlayerHPNum / 1 * 0.01f;
                 break;
             default:
                 break;
         } 
-        PlayerHpBar.text = ("Player HP: " + PlayerHpInt);
-                PlayerHpSlider.GetComponent<Image>().fillAmount = (float)PlayerHpInt / 1 * 0.01f;
+        PlayerHPText.text = ("Player HP: " + PlayerHPNum);
+                PlayerHpSlider.GetComponent<Image>().fillAmount = (float)PlayerHPNum / 1 * 0.01f;
     }
 
-    public void BossHpSliderUpdate(int damage)
+    public void BossSliderUpdate()
     {
-        BossHpInt -= damage;
-        HpSystem.BossHpBar.text = ("Boss HP: " + BossHpInt);
-        HpSystem.BossHpSlider.GetComponent<Image>().fillAmount = (float)BossHpInt / 1 * 0.01f;
-    }
-
-    public void FinalBossHpSliderUpdate(int damage)
-    {
-        BossHpInt = damage;
-        HpSystem.BossHpBar.text = ("Boss HP: " + BossHpInt);
-        HpSystem.BossHpSlider.GetComponent<Image>().fillAmount = (float)BossHpInt / 1 * 0.01f;
+        BossHPNum -= DMGTaken - BossDef;
+        HpSystem.BossHpBar.text = ("Boss HP: " + BossHPNum);
+        HpSystem.BossHpSlider.GetComponent<Image>().fillAmount = (float)BossHPNum / 1 * 0.01f;
     }
 }
