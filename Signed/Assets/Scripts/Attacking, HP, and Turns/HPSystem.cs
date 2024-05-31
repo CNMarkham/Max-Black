@@ -8,8 +8,14 @@ using UnityEngine.SceneManagement;
 public class HPSystem : MonoBehaviour
 {
     public static HPSystem HpSystem;
+
+    [Header("HP Number Vars")]
     public int PlayerHPNum;
     public int BossHPNum;
+    public int PlayerHPNumMax;
+    public int BossHPNumMax;
+
+
     public GameObject PlayerHpReference;
     public GameObject BossHpReference;
     public TextMeshProUGUI PlayerHPText;
@@ -33,6 +39,23 @@ public class HPSystem : MonoBehaviour
         {
             SceneManager.LoadScene(10);
         }
+        if(PlayerHPNum > PlayerHPNumMax)
+        {
+            PlayerHPNum = PlayerHPNumMax;
+        }
+    }
+
+    public void WarriorClass()
+    {
+        PlayerHPNumMax = 100;
+    }
+    public void MageClass()
+    {
+        PlayerHPNumMax = 70;
+    }
+    public void ArcherClass()
+    {
+        PlayerHPNumMax = 80;
     }
 
     public void PlayerAndCharacterHpSliderUpdate()
