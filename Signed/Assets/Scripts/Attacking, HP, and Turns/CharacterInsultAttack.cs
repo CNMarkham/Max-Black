@@ -15,7 +15,7 @@ public class CharacterInsultAttack : MonoBehaviour
         ChosenAttack = Random.Range(0, ListOfInsults.Length);
         InsultTexts.text = ListOfInsults[ChosenAttack];
         InsultAttackAnimation.GetComponent<Animator>().SetTrigger("TriggerAnimationInsultAttack");
-        Hp.BossSliderUpdate(Random.Range(0, 25));
+        //Hp.BossSliderUpdate(Random.Range(0, 25));
         Invoke("Disappear", 1f);
     }  
     public void Disappear()

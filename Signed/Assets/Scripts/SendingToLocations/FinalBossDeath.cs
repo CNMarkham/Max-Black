@@ -20,7 +20,6 @@ public class FinalBossDeath : MonoBehaviour
     {
         if (Hp.BossHPNum <= 0 && SecondPhase == false)
         {
-            Hp.FinalBossHpSliderUpdate(100);
             SecondPhase = true;
             Change.sprite = Sign;
         } else if(Hp.BossHPNum <= 0 && SecondPhase == true)
