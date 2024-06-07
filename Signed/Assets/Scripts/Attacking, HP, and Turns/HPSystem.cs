@@ -7,7 +7,9 @@ using UnityEngine.SceneManagement;
 
 public class HPSystem : MonoBehaviour
 {
+    [Header("Other Script References")]
     public static HPSystem HpSystem;
+    public TurnsSystem TurnsSystem;
 
     [Header("HP Number Vars")]
     public int PlayerHPNum;
@@ -15,17 +17,23 @@ public class HPSystem : MonoBehaviour
     public int PlayerHPNumMax;
     public int BossHPNumMax;
 
+    [Header("Slider Text")]
+    public TextMeshProUGUI PlayerHPSliderText;
+    public TextMeshProUGUI BossHPSliderText;
 
-    public GameObject PlayerHpReference;
-    public GameObject BossHpReference;
-    public TextMeshProUGUI PlayerHPText;
-    public TextMeshProUGUI BossHpBar;
-    public GameObject PlayerHpSlider;
-    public GameObject BossHpSlider;
-    public GameObject ClassesHPSlider;
-    public int DMGTaken;
+    [Header("Physical Sliders")]
+    public GameObject PlayerHPSlider;
+    public GameObject BossHPSlider;
+
+    [Header("DMG Taken")]
+    public int DMGTakenBoss;
+    public int DMGTakenPlayer;
+
+    [Header("Def Vars")]
     public int BossDef;
     public int PlayerDef;
+    public TextMeshProUGUI BossDefText;
+    public TextMeshProUGUI PlayerDefText;
     void Start()
     {
         PlayerHPNum = 100;
@@ -37,7 +45,7 @@ public class HPSystem : MonoBehaviour
     {
         if (PlayerHPNum <= 0)
         {
-            SceneManager.LoadScene(10);
+            //SceneManager.LoadScene(10);
         }
         if(PlayerHPNum > PlayerHPNumMax)
         {
@@ -48,43 +56,38 @@ public class HPSystem : MonoBehaviour
     public void WarriorClass()
     {
         PlayerHPNumMax = 100;
+        PlayerHPNum = 100;
+        PlayerDef = 0;
+        TurnsSystem.ClassCheck = 1;
     }
     public void MageClass()
     {
         PlayerHPNumMax = 70;
+        PlayerHPNum = 70;
+        PlayerDef = 0;
+        TurnsSystem.ClassCheck = 2;
     }
     public void ArcherClass()
     {
         PlayerHPNumMax = 80;
+        PlayerHPNum = 80;
+        PlayerDef = 0;
+        TurnsSystem.ClassCheck = 3;
     }
-
-    public void PlayerAndCharacterHpSliderUpdate()
+    
+    public void PlayerSliderUpdate()
     {
-
-        switch (GameManager.Classs2)
-        {
-            case GameManager.Classs.Warrior:
-                PlayerHPNum = 100;
-                break;
-            case GameManager.Classs.Mage:
-                PlayerHPNum = 70;
-                ClassesHPSlider.GetComponent<Image>().fillAmount = (float)PlayerHPNum / 1 * 0.01f;
-                break;
-            case GameManager.Classs.Archer:
-                PlayerHPNum = 85;
-                ClassesHPSlider.GetComponent<Image>().fillAmount = (float)PlayerHPNum / 1 * 0.01f;
-                break;
-            default:
-                break;
-        } 
-        PlayerHPText.text = ("Player HP: " + PlayerHPNum);
-                PlayerHpSlider.GetComponent<Image>().fillAmount = (float)PlayerHPNum / 1 * 0.01f;
+        PlayerHPNum -= DMGTakenPlayer - PlayerDef;
+        PlayerHPSliderText.text = ("Player HP: " + PlayerHPNum);
+        PlayerHPSlider.GetComponent<Image>().fillAmount = (float)PlayerHPNum / 1 * 0.01f;
+        PlayerDefText.text = (PlayerDef.ToString());
     }
 
     public void BossSliderUpdate()
     {
-        BossHPNum -= DMGTaken - BossDef;
-        HpSystem.BossHpBar.text = ("Boss HP: " + BossHPNum);
-        HpSystem.BossHpSlider.GetComponent<Image>().fillAmount = (float)BossHPNum / 1 * 0.01f;
+        BossHPNum -= DMGTakenBoss - BossDef;
+        HpSystem.BossHPSliderText.text = ("Boss HP: " + BossHPNum);
+        HpSystem.BossHPSlider.GetComponent<Image>().fillAmount = (float)BossHPNum / 1 * 0.01f;
+        BossDefText.text = (BossDefText.ToString());
     }
 }

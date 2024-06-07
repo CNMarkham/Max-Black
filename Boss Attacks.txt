@@ -1,0 +1,5 @@
+Boss Attacks
+
+._. 	Lowers Players defense by 3 does 1-3 DMG to itself
+;-;     Stuns itself for one turn does 7-12 DMG lowers its defense by 3
+O-O

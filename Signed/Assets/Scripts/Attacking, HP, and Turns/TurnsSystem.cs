@@ -5,10 +5,11 @@ using UnityEngine;
 public class TurnsSystem : MonoBehaviour
 {
     [Header("Other Script References")]
+    public AttacksSystem AttackSystem;
     
+    [Header("Ints")]
     public int Turn;
     public int ClassCheck;
-    public BossAttacking BossAttacking;
     
     [Header("Warrior Vars")]
     public GameObject TennisBallThrow;
@@ -60,17 +61,17 @@ public class TurnsSystem : MonoBehaviour
         ArrowRain.SetActive(true);
     }
 
-    void BossTurn()
+    public void BossTurn()
     {
         Turn = 2;
-        Invoke("RandomAttack", 1.5f);
-        CheckTurn();
+        Invoke("RandomBossAttack", 1.5f);
+        TurnSet();
     }
-    void RandomAttack()
+    void RandomBossAttack()
     {
-        BossAttacking.RandomizedAttack();
+        AttackSystem.BossAttack();
     }
-    public void CheckTurn()
+    public void TurnSet()
     {
         if (Turn == 1)
         {
