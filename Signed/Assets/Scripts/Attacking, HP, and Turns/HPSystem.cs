@@ -10,6 +10,7 @@ public class HPSystem : MonoBehaviour
     [Header("Other Script References")]
     public static HPSystem HpSystem;
     public TurnsSystem TurnsSystem;
+    public AttacksSystem AttacksSystem;
 
     [Header("HP Number Vars")]
     public int PlayerHPNum;
@@ -36,9 +37,16 @@ public class HPSystem : MonoBehaviour
     public TextMeshProUGUI PlayerDefText;
     void Start()
     {
+        PlayerSliderUpdate();
+        BossSliderUpdate();
+        PlayerHPNumMax = 100;
         PlayerHPNum = 100;
+        BossHPNumMax = 100;
         BossHPNum = 100;
         HpSystem = this;
+        AttacksSystem.PlayerStunned = 0;
+        AttacksSystem.BossStunned = 0;
+        AttacksSystem.BossCheck = 1;
     }
 
     void Update()
@@ -86,8 +94,8 @@ public class HPSystem : MonoBehaviour
     public void BossSliderUpdate()
     {
         BossHPNum -= DMGTakenBoss - BossDef;
-        HpSystem.BossHPSliderText.text = ("Boss HP: " + BossHPNum);
-        HpSystem.BossHPSlider.GetComponent<Image>().fillAmount = (float)BossHPNum / 1 * 0.01f;
-        BossDefText.text = (BossDefText.ToString());
+        BossHPSliderText.text = ("Boss HP: " + BossHPNum);
+        BossHPSlider.GetComponent<Image>().fillAmount = (float)BossHPNum / 1 * 0.01f;
+        BossDefText.text = (BossDef.ToString());
     }
 }

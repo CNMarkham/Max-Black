@@ -78,34 +78,79 @@ public class TurnsSystem : MonoBehaviour
             if (ClassCheck == 1)
             {
                 BossTurn();
-                Fireball.SetActive(false);
-                HealSpell.SetActive(false);
-                FlyingSwords.SetActive(false);
-            } else if(ClassCheck == 2)
+                TennisBallThrow.SetActive(false);
+                SpinAttack.SetActive(false);
+                DisrespectfulSlap.SetActive(false);
+            }
+            else if (ClassCheck == 2)
             {
                 BossTurn();
                 Fireball.SetActive(false);
                 HealSpell.SetActive(false);
                 FlyingSwords.SetActive(false);
-            } else
+            }
+            else
             {
                 BossTurn();
                 SpiritArrow.SetActive(false);
                 FallenArrow.SetActive(false);
                 ArrowRain.SetActive(false);
             }
-        } else
+        }
+        else
         {
-            if(ClassCheck == 1)
+            if (ClassCheck == 1)
             {
                 Invoke("DowntimeWarrior", 4f);
-            }  else if(ClassCheck == 2)
+            }
+            else if (ClassCheck == 2)
             {
                 Invoke("DowntimeMage", 4f);
-            } else
+            }
+            else if (ClassCheck == 3)
             {
                 Invoke("DowntimeArcher", 4f);
-            }         
+            }
         }
     }
+
+    public void UIOff()
+    {
+        BossTurn();
+        
+        TennisBallThrow.SetActive(false);
+        SpinAttack.SetActive(false);
+        DisrespectfulSlap.SetActive(false);
+        
+        Fireball.SetActive(false);
+        HealSpell.SetActive(false);
+        FlyingSwords.SetActive(false);
+        
+        SpiritArrow.SetActive(false);
+        FallenArrow.SetActive(false);
+        ArrowRain.SetActive(false);
+    }
+
+    public void UIOn()
+    {
+        if (ClassCheck == 1)
+        {
+            TennisBallThrow.SetActive(true);
+            SpinAttack.SetActive(true);
+            DisrespectfulSlap.SetActive(true);
+        }
+        else if (ClassCheck == 2)
+        {
+            Fireball.SetActive(true);
+            HealSpell.SetActive(true);
+            FlyingSwords.SetActive(true);
+        }
+        else if (ClassCheck == 3)
+        {
+            SpiritArrow.SetActive(true);
+            FallenArrow.SetActive(true);
+            ArrowRain.SetActive(true);
+        }
+    }
+
 }
