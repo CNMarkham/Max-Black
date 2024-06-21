@@ -1171,7 +1171,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &156040360
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6729,6 +6729,11 @@ MonoBehaviour:
   SpiritArrow: {fileID: 0}
   FallenArrow: {fileID: 0}
   ArrowRain: {fileID: 0}
+  TheBoss: {fileID: 0}
+  TheBossesCanvas: {fileID: 0}
+  FirstAttackObject: {fileID: 0}
+  SecondAttackObject: {fileID: 0}
+  ThirdAttackObject: {fileID: 0}
 --- !u!4 &1299586468
 Transform:
   m_ObjectHideFlags: 0
@@ -10445,6 +10450,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 1
         m_CallState: 2
+      - m_Target: {fileID: 1847185127}
+        m_TargetAssemblyTypeName: TurnsSystem, Assembly-CSharp
+        m_MethodName: DowntimeWarrior
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
 --- !u!114 &1732829626
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11209,8 +11226,8 @@ MonoBehaviour:
   DMGTakenPlayer: 0
   BossDef: 0
   PlayerDef: 0
-  BossDefText: {fileID: 279038714}
-  PlayerDefText: {fileID: 1275409334}
+  BossDefText: {fileID: 1275409334}
+  PlayerDefText: {fileID: 279038714}
 --- !u!4 &1847185125
 Transform:
   m_ObjectHideFlags: 0
@@ -11248,13 +11265,9 @@ MonoBehaviour:
   PierceDMG: 0
   PlayerBuffed: 0
   TheBoss: {fileID: 2102909481}
-  TheBossesCanvas: {fileID: 156040359}
   Warrior: {fileID: 1554817048}
   Mage: {fileID: 1563482786}
   Archer: {fileID: 1331351024}
-  FirstAttackObject: {fileID: 1211333202}
-  SecondAttackObject: {fileID: 146661868}
-  ThirdAttackObject: {fileID: 462722685}
   StunImagePlayer: {fileID: 1721273961}
   StunImageBoss: {fileID: 505829035}
   StunTextPlayer: {fileID: 1354420346}
@@ -11285,6 +11298,11 @@ MonoBehaviour:
   SpiritArrow: {fileID: 1945668934}
   FallenArrow: {fileID: 820444402}
   ArrowRain: {fileID: 609785685}
+  TheBoss: {fileID: 2102909481}
+  TheBossesCanvas: {fileID: 156040359}
+  FirstAttackObject: {fileID: 1211333202}
+  SecondAttackObject: {fileID: 146661868}
+  ThirdAttackObject: {fileID: 462722685}
 --- !u!1 &1891395916
 GameObject:
   m_ObjectHideFlags: 0

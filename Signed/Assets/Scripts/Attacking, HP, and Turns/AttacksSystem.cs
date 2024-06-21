@@ -15,7 +15,6 @@ public class AttacksSystem : MonoBehaviour
     public bool BossBuffed; 
 
     [Header("Player Vars")]
-
     public int DMGRoll;
     public int BossPierced;
     public int PierceDMG; 
@@ -23,15 +22,9 @@ public class AttacksSystem : MonoBehaviour
 
     [Header("GameObjects")]
     public GameObject TheBoss;
-    public GameObject TheBossesCanvas;
     public GameObject Warrior;
     public GameObject Mage;
     public GameObject Archer;
-
-    [Header("The Boss Attacks GameObjects")]
-    public GameObject FirstAttackObject;
-    public GameObject SecondAttackObject;
-    public GameObject ThirdAttackObject;
 
     [Header("Stun GameObjects")]
     public GameObject StunImagePlayer;
@@ -200,46 +193,40 @@ public class AttacksSystem : MonoBehaviour
             {
 
                 int Diceroll = Random.Range(1, 4);
+                Debug.Log(Diceroll);
                 if (Diceroll == 1)
                 {
-                    TheBossesCanvas.SetActive(true);
-                    FirstAttackObject.SetActive(true);
+                    TurnsSystem.TheBossesCanvas.SetActive(true);
+                    TurnsSystem.FirstAttackObject.SetActive(true);
                     TheBoss.GetComponent<Animator>().SetTrigger("1stAttack");
                     int DMGRoll = Random.Range(1, 4);
                     HPSystem.DMGTakenBoss = DMGRoll;
                     HPSystem.PlayerDef -= 3;
                     HPSystem.PlayerSliderUpdate();
                     HPSystem.BossSliderUpdate();
-                    TheBossesCanvas.SetActive(false);
-                    FirstAttackObject.SetActive(false);
-                    TurnsSystem.UIOn();
                 }
                 else if (Diceroll == 2)
                 {
-                    TheBossesCanvas.SetActive(true);
-                    SecondAttackObject.SetActive(true);
+                    TurnsSystem.TheBossesCanvas.SetActive(true);
+                    TurnsSystem.SecondAttackObject.SetActive(true);
                     TheBoss.GetComponent<Animator>().SetTrigger("2ndAttack");
                     int DMGRoll = Random.Range(7, 13);
                     HPSystem.DMGTakenPlayer = DMGRoll;
                     HPSystem.BossDef -= 3;
                     HPSystem.PlayerSliderUpdate();
                     HPSystem.BossSliderUpdate();
-                    TheBossesCanvas.SetActive(false);
-                    SecondAttackObject.SetActive(false);
-                    TurnsSystem.UIOn();
+                    TurnsSystem.TheBossesCanvas.SetActive(false);
+                    TurnsSystem.SecondAttackObject.SetActive(false);
                 }
                 else if (Diceroll == 3)
                 {
-                    TheBossesCanvas.SetActive(true);
-                    ThirdAttackObject.SetActive(true);
+                    TurnsSystem.TheBossesCanvas.SetActive(true);
+                    TurnsSystem.ThirdAttackObject.SetActive(true);
                     TheBoss.GetComponent<Animator>().SetTrigger("3rdAttack");
                     HPSystem.BossDef += 2;
                     HPSystem.BossHPNum += 4;
                     HPSystem.PlayerSliderUpdate();
                     HPSystem.BossSliderUpdate();
-                    TheBossesCanvas.SetActive(false);
-                    ThirdAttackObject.SetActive(false);
-                    TurnsSystem.UIOn();
                 }
             }
             else if (BossCheck == 2)

@@ -25,6 +25,13 @@ public class TurnsSystem : MonoBehaviour
     public GameObject SpiritArrow;
     public GameObject FallenArrow;
     public GameObject ArrowRain;
+    
+    [Header("Boss GameObjects")]
+    public GameObject TheBoss;
+    public GameObject TheBossesCanvas;
+    public GameObject FirstAttackObject;
+    public GameObject SecondAttackObject;
+    public GameObject ThirdAttackObject;
 
     #region MyRegion
 
@@ -64,14 +71,27 @@ public class TurnsSystem : MonoBehaviour
     public void BossTurn()
     {
         Turn = 2;
-        Invoke("RandomBossAttack", 1.5f);
+        UIOff();        
+        Invoke("BossAttackPlayer", 2f);
+        Invoke("TurnOffGameObjects", 7f);
+
+    }
+
+    void TurnOffGameObjects()
+    {
+        TheBossesCanvas.SetActive(false);
+        FirstAttackObject.SetActive(false);
+        SecondAttackObject.SetActive(false);
+        ThirdAttackObject.SetActive(false);
         TurnSet();
     }
-    void RandomBossAttack()
+
+    void BossAttackPlayer()
     {
         AttackSystem.BossAttack();
     }
     public void TurnSet()
+
     {
         if (Turn == 1)
         {
@@ -116,8 +136,6 @@ public class TurnsSystem : MonoBehaviour
 
     public void UIOff()
     {
-        BossTurn();
-        
         TennisBallThrow.SetActive(false);
         SpinAttack.SetActive(false);
         DisrespectfulSlap.SetActive(false);
