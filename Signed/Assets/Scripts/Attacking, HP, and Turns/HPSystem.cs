@@ -47,13 +47,19 @@ public class HPSystem : MonoBehaviour
         AttacksSystem.PlayerStunned = 0;
         AttacksSystem.BossStunned = 0;
         AttacksSystem.BossCheck = 1;
+        AttacksSystem.PlayerBuffed = false;
+        AttacksSystem.BossBuffed = false;
     }
 
     void Update()
     {
         if (PlayerHPNum <= 0)
         {
-            //SceneManager.LoadScene(10);
+            SceneManager.LoadScene(0);
+        }
+        if(BossHPNum <= 0)
+        {
+            SceneManager.LoadScene(1);
         }
         if(PlayerHPNum > PlayerHPNumMax)
         {
@@ -85,6 +91,10 @@ public class HPSystem : MonoBehaviour
     
     public void PlayerSliderUpdate()
     {
+        if(DMGTakenPlayer < PlayerDef)
+        {
+            DMGTakenPlayer = PlayerDef;
+        }
         PlayerHPNum -= DMGTakenPlayer - PlayerDef;
         PlayerHPSliderText.text = ("Player HP: " + PlayerHPNum);
         PlayerHPSlider.GetComponent<Image>().fillAmount = (float)PlayerHPNum / 1 * 0.01f;
@@ -93,6 +103,10 @@ public class HPSystem : MonoBehaviour
 
     public void BossSliderUpdate()
     {
+        if (DMGTakenBoss < BossDef)
+        {
+            DMGTakenBoss = BossDef;
+        }
         BossHPNum -= DMGTakenBoss - BossDef;
         BossHPSliderText.text = ("Boss HP: " + BossHPNum);
         BossHPSlider.GetComponent<Image>().fillAmount = (float)BossHPNum / 1 * 0.01f;

@@ -106,7 +106,7 @@ public class AttacksSystem : MonoBehaviour
     {
         TurnsSystem.UIOff();
         Mage.GetComponent<Animator>().SetTrigger("1stAttack");
-        int DMGRoll = Random.Range(10, 16);
+        int DMGRoll = Random.Range(10, 14);
         HPSystem.DMGTakenBoss = DMGRoll;
         TurnsSystem.BossTurn();
         HPSystem.PlayerSliderUpdate();
@@ -143,7 +143,7 @@ public class AttacksSystem : MonoBehaviour
         {
             TurnsSystem.UIOff();
             Archer.GetComponent<Animator>().SetTrigger("1stAttack");
-            int DMGRoll = Random.Range(8, 14);
+            int DMGRoll = Random.Range(8, 12);
             HPSystem.DMGTakenBoss = DMGRoll;
             HPSystem.PlayerHPNum += 7;
             TurnsSystem.BossTurn();
@@ -193,7 +193,6 @@ public class AttacksSystem : MonoBehaviour
             {
 
                 int Diceroll = Random.Range(1, 4);
-                Debug.Log(Diceroll);
                 if (Diceroll == 1)
                 {
                     TurnsSystem.TheBossesCanvas.SetActive(true);
@@ -212,7 +211,7 @@ public class AttacksSystem : MonoBehaviour
                     TheBoss.GetComponent<Animator>().SetTrigger("2ndAttack");
                     int DMGRoll = Random.Range(7, 13);
                     HPSystem.DMGTakenPlayer = DMGRoll;
-                    HPSystem.BossDef -= 3;
+                    HPSystem.BossDef -= 2;
                     HPSystem.PlayerSliderUpdate();
                     HPSystem.BossSliderUpdate();
                     TurnsSystem.TheBossesCanvas.SetActive(false);
