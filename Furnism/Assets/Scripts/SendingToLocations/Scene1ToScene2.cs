@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class FinishPhase1 : MonoBehaviour
+public class Scene1ToScene2 : MonoBehaviour
 {
-    public HPSystem HP;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,10 +14,12 @@ public class FinishPhase1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(HP.BossHPNum <= 0)
-        {
-            HP.BossHPNum = 0;
-            SceneManager.LoadScene(1);
-        }
+        
     }
+
+    private void OnCollisionEnter2D(Collision2D collision)
+    {
+        SceneManager.LoadScene(5);
+    }
+
 }

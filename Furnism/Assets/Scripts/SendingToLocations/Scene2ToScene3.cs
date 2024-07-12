@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class ToPhase1FromMenu : MonoBehaviour
+public class Scene2ToScene3 : MonoBehaviour
 {
     // Start is called before the first frame update
     void Start()
@@ -17,8 +17,8 @@ public class ToPhase1FromMenu : MonoBehaviour
         
     }
 
-    public void Send()
+    private void OnCollisionEnter2D(Collision2D collision)
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(6);
     }
 }

@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class FinishPhase2 : MonoBehaviour
+public class Menu2Scene1 : MonoBehaviour
 {
-    public HPSystem HP;
     // Start is called before the first frame update
     void Start()
     {
@@ -15,10 +14,11 @@ public class FinishPhase2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(HP.BossHPNum <= 0)
-        {
-            HP.BossHPNum = 0;
-            SceneManager.LoadScene("2");
-        }
+        
+    }
+    
+    public void ToScene1()
+    {
+        SceneManager.LoadScene(4);
     }
 }
