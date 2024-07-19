@@ -44,7 +44,7 @@ public class PlayerMovement : MonoBehaviour
 
 		}
 
-		RaycastHit2D hit = Physics2D.Raycast(transform.position, -Vector2.up, 1, lPayerMask);
+		RaycastHit2D hit = Physics2D.Raycast(transform.position, -Vector2.up, 3, lPayerMask);
 		if (hit.collider != null)
 		{
 			isGrounded = true;
@@ -64,7 +64,6 @@ public class PlayerMovement : MonoBehaviour
 			JumpHold = 1f;
 			
 		}
-
 		
 	}
 }
