@@ -20,6 +20,11 @@ public class TouchDie : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        SceneManager.LoadScene(0);
+        SceneManager.LoadScene(4);
+    }
+
+    public void PlayAgain()
+    {
+        SceneManager.LoadScene(PlayerPrefs.GetInt("LevelRespawnAt") * 1);
     }
 }

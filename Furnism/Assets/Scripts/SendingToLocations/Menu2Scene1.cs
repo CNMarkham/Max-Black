@@ -19,6 +19,6 @@ public class Menu2Scene1 : MonoBehaviour
     
     public void ToScene1()
     {
-        SceneManager.LoadScene(4);
+        SceneManager.LoadScene(1);
     }
 }

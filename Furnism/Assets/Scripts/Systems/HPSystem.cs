@@ -55,11 +55,11 @@ public class HPSystem : MonoBehaviour
     {
         if (PlayerHPNum <= 0)
         {
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(4);
         }
         if(BossHPNum <= 0)
         {
-            SceneManager.LoadScene(1);
+            SceneManager.LoadScene(5);
         }
         if(PlayerHPNum > PlayerHPNumMax)
         {

@@ -5,11 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class Scene1ToScene2 : MonoBehaviour
 {
-    int PlayerLevel;
     // Start is called before the first frame update
     void Start()
     {
-        
+        PlayerPrefs.SetInt("LevelRespawnAt", 1);
     }
 
     // Update is called once per frame
@@ -20,8 +19,8 @@ public class Scene1ToScene2 : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        SceneManager.LoadScene(5);
-        PlayerLevel = PlayerPrefs.GetInt("LevelRespawnAt", 2);
+        SceneManager.LoadScene(2);
+        PlayerPrefs.SetInt("LevelRespawnAt", 2);
     }
 
 }

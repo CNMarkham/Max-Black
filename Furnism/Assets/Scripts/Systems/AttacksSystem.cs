@@ -228,38 +228,6 @@ public class AttacksSystem : MonoBehaviour
                     HPSystem.BossSliderUpdate();
                 }
             }
-            else if (BossCheck == 2)
-            {
-                int Diceroll = Random.Range(0, 3);
-                if (Diceroll == 1)
-                {
-
-                }
-                else if (Diceroll == 2)
-                {
-
-                }
-                else
-                {
-
-                }
-            }
-            else
-            {
-                int Diceroll = Random.Range(0, 3);
-                if (Diceroll == 1)
-                {
-
-                }
-                else if (Diceroll == 2)
-                {
-
-                }
-                else
-                {
-
-                }
-            } 
         } else
         {
             BossStunned -= 1;

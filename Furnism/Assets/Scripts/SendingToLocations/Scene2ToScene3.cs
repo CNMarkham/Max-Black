@@ -19,6 +19,7 @@ public class Scene2ToScene3 : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        SceneManager.LoadScene(6);
+        SceneManager.LoadScene(3);
+        PlayerPrefs.SetInt("LevelRespawnAt", 3);
     }
 }
