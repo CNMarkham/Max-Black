@@ -36,6 +36,10 @@ public class AttacksSystem : MonoBehaviour
     public int PlayerStunned;
     public int BossStunned;
 
+    [Header("Audio")]
+    public AudioSource BDamage;
+    public AudioSource PDamage;
+
     // Start is called before the first frame update
 
     public void Update()
@@ -72,8 +76,7 @@ public class AttacksSystem : MonoBehaviour
         int DMGRoll = Random.Range(7, 11);
         HPSystem.DMGTakenBoss = DMGRoll;
         TurnsSystem.BossTurn();
-        HPSystem.PlayerSliderUpdate();
-        HPSystem.BossSliderUpdate();
+        Invoke("SlowBAudio", 1.5f);
     }
     public void SpinAttack()
     {
@@ -83,8 +86,7 @@ public class AttacksSystem : MonoBehaviour
         BossStunned += 1;
         HPSystem.DMGTakenBoss = DMGRoll;
         TurnsSystem.BossTurn();
-        HPSystem.PlayerSliderUpdate();
-        HPSystem.BossSliderUpdate();
+        Invoke("SlowBAudio", 1.5f);
     }
     public void DisrespectfulSlap()
     {
@@ -95,8 +97,7 @@ public class AttacksSystem : MonoBehaviour
         HPSystem.PlayerDef += 2;
         PlayerBuffed = true;
         TurnsSystem.BossTurn();
-        HPSystem.PlayerSliderUpdate();
-        HPSystem.BossSliderUpdate();
+        Invoke("SlowBAudio", 1.5f);
     }
 
 
@@ -109,8 +110,7 @@ public class AttacksSystem : MonoBehaviour
         int DMGRoll = Random.Range(10, 14);
         HPSystem.DMGTakenBoss = DMGRoll;
         TurnsSystem.BossTurn();
-        HPSystem.PlayerSliderUpdate();
-        HPSystem.BossSliderUpdate();
+        Invoke("SlowBAudio", 1.5f);
     }
     public void HealSpell()
     {
@@ -147,8 +147,7 @@ public class AttacksSystem : MonoBehaviour
             HPSystem.DMGTakenBoss = DMGRoll;
             HPSystem.PlayerHPNum += 7;
             TurnsSystem.BossTurn();
-            HPSystem.PlayerSliderUpdate();
-            HPSystem.BossSliderUpdate();
+            Invoke("SlowBAudio", 1.5f);
         } else
         {
             TurnsSystem.UIOff();
@@ -165,8 +164,7 @@ public class AttacksSystem : MonoBehaviour
         HPSystem.PlayerHPNum -= 7;
         HPSystem.PlayerHPNumMax += 10;
         TurnsSystem.BossTurn();
-        HPSystem.PlayerSliderUpdate();
-        HPSystem.BossSliderUpdate();
+        Invoke("SlowBAudio", 1.5f);
     }
     public void ArrowRain()
     {
@@ -178,12 +176,22 @@ public class AttacksSystem : MonoBehaviour
         PierceDMG = 5;
         HPSystem.BossDef -= 3;
         TurnsSystem.BossTurn();
-        HPSystem.PlayerSliderUpdate();
-        HPSystem.BossSliderUpdate();
+        Invoke("SlowBAudio", 1.5f);
     }
 
+    void SlowBAudio()
+    {
+        HPSystem.PlayerSliderUpdate();
+        HPSystem.BossSliderUpdate();
+        BDamage.Play();
+    }
 
-
+    void SlowPAudio()
+    {
+        HPSystem.PlayerSliderUpdate();
+        HPSystem.BossSliderUpdate();
+        PDamage.Play();
+    }
 
     public void BossAttack()
     {
@@ -201,8 +209,7 @@ public class AttacksSystem : MonoBehaviour
                     int DMGRoll = Random.Range(1, 4);
                     HPSystem.DMGTakenBoss = DMGRoll;
                     HPSystem.PlayerDef -= 3;
-                    HPSystem.PlayerSliderUpdate();
-                    HPSystem.BossSliderUpdate();
+                    Invoke("SlowPAudio", 1.5f);
                 }
                 else if (Diceroll == 2)
                 {
@@ -212,10 +219,7 @@ public class AttacksSystem : MonoBehaviour
                     int DMGRoll = Random.Range(7, 13);
                     HPSystem.DMGTakenPlayer = DMGRoll;
                     HPSystem.BossDef -= 2;
-                    HPSystem.PlayerSliderUpdate();
-                    HPSystem.BossSliderUpdate();
-                    TurnsSystem.TheBossesCanvas.SetActive(false);
-                    TurnsSystem.SecondAttackObject.SetActive(false);
+                    Invoke("SlowPAudio", 1.5f);
                 }
                 else if (Diceroll == 3)
                 {

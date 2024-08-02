@@ -37,8 +37,6 @@ public class HPSystem : MonoBehaviour
     public TextMeshProUGUI PlayerDefText;
     void Start()
     {
-        PlayerSliderUpdate();
-        BossSliderUpdate();
         PlayerHPNumMax = 100;
         PlayerHPNum = 100;
         BossHPNumMax = 100;
@@ -49,6 +47,8 @@ public class HPSystem : MonoBehaviour
         AttacksSystem.BossCheck = 1;
         AttacksSystem.PlayerBuffed = false;
         AttacksSystem.BossBuffed = false;
+        PlayerSliderUpdate();
+        BossSliderUpdate();
     }
 
     void Update()
@@ -73,6 +73,8 @@ public class HPSystem : MonoBehaviour
         PlayerHPNum = 100;
         PlayerDef = 0;
         TurnsSystem.ClassCheck = 1;
+        PlayerSliderUpdate();
+        BossSliderUpdate();
     }
     public void MageClass()
     {
@@ -80,6 +82,8 @@ public class HPSystem : MonoBehaviour
         PlayerHPNum = 70;
         PlayerDef = 0;
         TurnsSystem.ClassCheck = 2;
+        PlayerSliderUpdate();
+        BossSliderUpdate();
     }
     public void ArcherClass()
     {
@@ -87,6 +91,8 @@ public class HPSystem : MonoBehaviour
         PlayerHPNum = 80;
         PlayerDef = 0;
         TurnsSystem.ClassCheck = 3;
+        PlayerSliderUpdate();
+        BossSliderUpdate();
     }
     
     public void PlayerSliderUpdate()
