@@ -121,15 +121,49 @@ public class TurnsSystem : MonoBehaviour
         {
             if (ClassCheck == 1)
             {
-                Invoke("DowntimeWarrior", 4f);
+                if (AttackSystem.PlayerStunned == 0)
+                {
+                    Invoke("DowntimeWarrior", 4f);
+                } else
+                {
+                    AttackSystem.PlayerStunned -= 1;
+                    if(AttackSystem.PlayerStunned == 0)
+                    {
+                    }
+                }
+                
             }
             else if (ClassCheck == 2)
             {
-                Invoke("DowntimeMage", 4f);
+                if (AttackSystem.PlayerStunned == 0)
+                {
+
+                    Invoke("DowntimeMage", 4f);
+                }
+                else
+                {
+                    AttackSystem.PlayerStunned -= 1;
+                    if (AttackSystem.PlayerStunned == 0)
+                    {
+                    }
+                }
+
             }
             else if (ClassCheck == 3)
             {
-                Invoke("DowntimeArcher", 4f);
+                if (AttackSystem.PlayerStunned == 0)
+                {
+                    Invoke("DowntimeArcher", 4f);
+                }
+                else
+                {
+                    AttackSystem.PlayerStunned -= 1;
+                    if (AttackSystem.PlayerStunned == 0)
+                    {
+
+                    }
+                }
+
             }
         }
     }

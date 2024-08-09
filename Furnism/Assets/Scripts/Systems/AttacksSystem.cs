@@ -26,12 +26,6 @@ public class AttacksSystem : MonoBehaviour
     public GameObject Mage;
     public GameObject Archer;
 
-    [Header("Stun GameObjects")]
-    public GameObject StunImagePlayer;
-    public GameObject StunImageBoss;
-    public TextMeshProUGUI StunTextPlayer;
-    public TextMeshProUGUI StunTextBoss;
-
     [Header("Attack Vars")]
     public int PlayerStunned;
     public int BossStunned;
@@ -44,29 +38,7 @@ public class AttacksSystem : MonoBehaviour
 
     public void Update()
     {
-        if(PlayerStunned >= 1)
-        {
-            StunImagePlayer.SetActive(true);
-            StunTextPlayer.text = (PlayerStunned.ToString());
-        }
-
-        if(BossStunned >= 1)
-        {
-            StunImageBoss.SetActive(true);
-            StunTextBoss.text = (BossStunned.ToString());
-        }
-
-        if(PlayerStunned == 0)
-        {
-            StunImagePlayer.SetActive(false);
-            StunTextPlayer.text = " ";
-        }
-
-        if(BossStunned == 0)
-        {
-            StunImageBoss.SetActive(false);
-            StunTextBoss.text = " ";
-        }
+        
     }
 
     public void TennisBallThrow()
@@ -82,9 +54,9 @@ public class AttacksSystem : MonoBehaviour
     {
         TurnsSystem.UIOff();
         Warrior.GetComponent<Animator>().SetTrigger("2ndAttack");
-        int DMGRoll = Random.Range(5, 9);
-        BossStunned += 1;
+        int DMGRoll = Random.Range(6, 9);
         HPSystem.DMGTakenBoss = DMGRoll;
+        HPSystem.PlayerDef += 1;
         TurnsSystem.BossTurn();
         Invoke("SlowBAudio", 1.5f);
     }
@@ -95,7 +67,6 @@ public class AttacksSystem : MonoBehaviour
         int DMGRoll = Random.Range(4, 7);
         HPSystem.DMGTakenBoss = DMGRoll;
         HPSystem.PlayerDef += 2;
-        PlayerBuffed = true;
         TurnsSystem.BossTurn();
         Invoke("SlowBAudio", 1.5f);
     }
@@ -129,6 +100,7 @@ public class AttacksSystem : MonoBehaviour
         BossPierced = 2;
         PierceDMG = 6;
         PlayerStunned += 1;
+
         TurnsSystem.BossTurn();
         HPSystem.PlayerSliderUpdate();
         HPSystem.BossSliderUpdate();
@@ -146,6 +118,8 @@ public class AttacksSystem : MonoBehaviour
             int DMGRoll = Random.Range(8, 12);
             HPSystem.DMGTakenBoss = DMGRoll;
             HPSystem.PlayerHPNum += 7;
+            BossStunned += 1;
+
             TurnsSystem.BossTurn();
             Invoke("SlowBAudio", 1.5f);
         } else
@@ -235,6 +209,10 @@ public class AttacksSystem : MonoBehaviour
         } else
         {
             BossStunned -= 1;
+            if(BossStunned == 0)
+            {
+
+            }
             TurnsSystem.TurnSet();
         }
 

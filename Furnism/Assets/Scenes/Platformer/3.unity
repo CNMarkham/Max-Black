@@ -3481,183 +3481,6 @@ PolygonCollider2D:
       - {x: 0.02, y: 0.16}
       - {x: -0.02, y: 0.16}
   m_UseDelaunayMesh: 0
---- !u!1 &101497904
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 101497905}
-  - component: {fileID: 101497906}
-  - component: {fileID: 101497907}
-  m_Layer: 0
-  m_Name: Bridge_3
-  m_TagString: Ground
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &101497905
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 101497904}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: 0.7483986, w: 0.6632492}
-  m_LocalPosition: {x: 84.45, y: -3.1, z: 0}
-  m_LocalScale: {x: 1, y: 0.9891, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1443133478}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 96.904}
---- !u!212 &101497906
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 101497904}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_StaticShadowCaster: 0
-  m_MotionVectors: 1
-  m_LightProbeUsage: 0
-  m_ReflectionProbeUsage: 0
-  m_RayTracingMode: 0
-  m_RayTraceProcedural: 0
-  m_RenderingLayerMask: 1
-  m_RendererPriority: 0
-  m_Materials:
-  - {fileID: 2100000, guid: 4d5734c87f1c14741863f90f5a678e64, type: 2}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_ReceiveGI: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 1
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300004, guid: 3471a1273739c224f8286c4de9e4683a, type: 3}
-  m_Color: {r: 0, g: 0, b: 0, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
---- !u!60 &101497907
-PolygonCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 101497904}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 4.48, y: 0.66}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: 2.24, y: -0.01}
-      - {x: 2.24, y: 0.32999998}
-      - {x: -2.22, y: 0.32999998}
-      - {x: -2.24, y: 0.31}
-      - {x: -2.24, y: 0.16}
-      - {x: -2.19, y: 0.12}
-      - {x: -2.24, y: -0.049999997}
-      - {x: -2.24, y: -0.32999998}
-      - {x: 2.24, y: -0.32999998}
-      - {x: 2.24, y: -0.17}
-      - {x: 2.21, y: -0.14}
-    - - {x: -1.4, y: 0.089999996}
-      - {x: -1.17, y: -0.13}
-      - {x: -1.62, y: -0.13}
-      - {x: -1.61, y: -0.13}
-    - - {x: -0.45999998, y: 0.099999994}
-      - {x: -0.22999999, y: -0.13}
-      - {x: -0.69, y: -0.13}
-      - {x: -0.68, y: -0.13}
-    - - {x: 0.45, y: 0.099999994}
-      - {x: 0.68, y: -0.13}
-      - {x: 0.22, y: -0.13}
-      - {x: 0.22999999, y: -0.13}
-    - - {x: 1.4399999, y: 0.089999996}
-      - {x: 1.67, y: -0.13}
-      - {x: 1.22, y: -0.13}
-      - {x: 1.23, y: -0.13}
-    - - {x: 0.71, y: 0.13}
-      - {x: 1.1899999, y: 0.13}
-      - {x: 0.95, y: -0.11}
-      - {x: 0.95, y: -0.099999994}
-    - - {x: -1.87, y: 0.12}
-      - {x: -1.65, y: 0.13}
-      - {x: -1.88, y: -0.099999994}
-      - {x: -1.87, y: -0.099999994}
-    - - {x: -1.14, y: 0.13}
-      - {x: -0.71999997, y: 0.13}
-      - {x: -0.93, y: -0.08}
-      - {x: -0.93, y: -0.07}
-    - - {x: -0.21, y: 0.13}
-      - {x: 0.19999999, y: 0.13}
-      - {x: 0, y: -0.07}
-      - {x: -0.01, y: -0.06}
-    - - {x: 1.6999999, y: 0.13}
-      - {x: 1.87, y: 0.12}
-      - {x: 1.88, y: -0.049999997}
-      - {x: 1.88, y: -0.04}
-  m_UseDelaunayMesh: 0
 --- !u!1 &112485990
 GameObject:
   m_ObjectHideFlags: 0
@@ -10430,7 +10253,8 @@ GameObject:
   - component: {fileID: 294053967}
   - component: {fileID: 294053969}
   - component: {fileID: 294053968}
-  m_Layer: 0
+  - component: {fileID: 294053970}
+  m_Layer: 6
   m_Name: Bridge_3 (3)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -10596,6 +10420,33 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &294053970
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 294053966}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &326113243
 GameObject:
   m_ObjectHideFlags: 0
@@ -13239,7 +13090,8 @@ GameObject:
   - component: {fileID: 375256770}
   - component: {fileID: 375256772}
   - component: {fileID: 375256771}
-  m_Layer: 0
+  - component: {fileID: 375256773}
+  m_Layer: 6
   m_Name: Bridge_3 (6)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -13405,6 +13257,33 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &375256773
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 375256769}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &408712868
 GameObject:
   m_ObjectHideFlags: 0
@@ -18688,7 +18567,8 @@ GameObject:
   - component: {fileID: 571535169}
   - component: {fileID: 571535171}
   - component: {fileID: 571535170}
-  m_Layer: 0
+  - component: {fileID: 571535172}
+  m_Layer: 6
   m_Name: Bridge_3 (9)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -18854,6 +18734,33 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &571535172
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 571535168}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &572363170
 GameObject:
   m_ObjectHideFlags: 0
@@ -19135,7 +19042,8 @@ GameObject:
   - component: {fileID: 574386076}
   - component: {fileID: 574386078}
   - component: {fileID: 574386077}
-  m_Layer: 0
+  - component: {fileID: 574386079}
+  m_Layer: 6
   m_Name: Bridge_3 (8)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -19301,6 +19209,33 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &574386079
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 574386075}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &575332109
 GameObject:
   m_ObjectHideFlags: 0
@@ -21405,6 +21340,211 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1917547708}
+--- !u!1 &617182552
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 617182553}
+  - component: {fileID: 617182555}
+  - component: {fileID: 617182554}
+  - component: {fileID: 617182556}
+  m_Layer: 6
+  m_Name: Bridge_3 (4)
+  m_TagString: Ground
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &617182553
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 617182552}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: 0.77581495, w: 0.6309606}
+  m_LocalPosition: {x: 84.66, y: -4.21, z: 0}
+  m_LocalScale: {x: 1.4346, y: 0.9891, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1443133478}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 101.758}
+--- !u!60 &617182554
+PolygonCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 617182552}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_ForceSendLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ForceReceiveLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_ContactCaptureLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_CallbackLayers:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 4.48, y: 0.66}
+    newSize: {x: 1, y: 1}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  m_Points:
+    m_Paths:
+    - - {x: 2.24, y: -0.01}
+      - {x: 2.24, y: 0.32999998}
+      - {x: -2.22, y: 0.32999998}
+      - {x: -2.24, y: 0.31}
+      - {x: -2.24, y: 0.16}
+      - {x: -2.19, y: 0.12}
+      - {x: -2.24, y: -0.049999997}
+      - {x: -2.24, y: -0.32999998}
+      - {x: 2.24, y: -0.32999998}
+      - {x: 2.24, y: -0.17}
+      - {x: 2.21, y: -0.14}
+    - - {x: -1.4, y: 0.089999996}
+      - {x: -1.17, y: -0.13}
+      - {x: -1.62, y: -0.13}
+      - {x: -1.61, y: -0.13}
+    - - {x: -0.45999998, y: 0.099999994}
+      - {x: -0.22999999, y: -0.13}
+      - {x: -0.69, y: -0.13}
+      - {x: -0.68, y: -0.13}
+    - - {x: 0.45, y: 0.099999994}
+      - {x: 0.68, y: -0.13}
+      - {x: 0.22, y: -0.13}
+      - {x: 0.22999999, y: -0.13}
+    - - {x: 1.4399999, y: 0.089999996}
+      - {x: 1.67, y: -0.13}
+      - {x: 1.22, y: -0.13}
+      - {x: 1.23, y: -0.13}
+    - - {x: 0.71, y: 0.13}
+      - {x: 1.1899999, y: 0.13}
+      - {x: 0.95, y: -0.11}
+      - {x: 0.95, y: -0.099999994}
+    - - {x: -1.87, y: 0.12}
+      - {x: -1.65, y: 0.13}
+      - {x: -1.88, y: -0.099999994}
+      - {x: -1.87, y: -0.099999994}
+    - - {x: -1.14, y: 0.13}
+      - {x: -0.71999997, y: 0.13}
+      - {x: -0.93, y: -0.08}
+      - {x: -0.93, y: -0.07}
+    - - {x: -0.21, y: 0.13}
+      - {x: 0.19999999, y: 0.13}
+      - {x: 0, y: -0.07}
+      - {x: -0.01, y: -0.06}
+    - - {x: 1.6999999, y: 0.13}
+      - {x: 1.87, y: 0.12}
+      - {x: 1.88, y: -0.049999997}
+      - {x: 1.88, y: -0.04}
+  m_UseDelaunayMesh: 0
+--- !u!212 &617182555
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 617182552}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_StaticShadowCaster: 0
+  m_MotionVectors: 1
+  m_LightProbeUsage: 0
+  m_ReflectionProbeUsage: 0
+  m_RayTracingMode: 0
+  m_RayTraceProcedural: 0
+  m_RenderingLayerMask: 1
+  m_RendererPriority: 0
+  m_Materials:
+  - {fileID: 2100000, guid: 4d5734c87f1c14741863f90f5a678e64, type: 2}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_ReceiveGI: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 1
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300004, guid: 3471a1273739c224f8286c4de9e4683a, type: 3}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+  m_SpriteSortPoint: 0
+--- !u!50 &617182556
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 617182552}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &622785468
 GameObject:
   m_ObjectHideFlags: 0
@@ -27351,7 +27491,8 @@ GameObject:
   - component: {fileID: 856846758}
   - component: {fileID: 856846760}
   - component: {fileID: 856846759}
-  m_Layer: 0
+  - component: {fileID: 856846761}
+  m_Layer: 6
   m_Name: Bridge_3 (5)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -27517,6 +27658,33 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &856846761
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 856846757}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &856914372
 GameObject:
   m_ObjectHideFlags: 0
@@ -39732,7 +39900,8 @@ GameObject:
   - component: {fileID: 1227436194}
   - component: {fileID: 1227436196}
   - component: {fileID: 1227436195}
-  m_Layer: 0
+  - component: {fileID: 1227436197}
+  m_Layer: 6
   m_Name: Bridge_3 (1)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -39898,6 +40067,33 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1227436197
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1227436193}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1241173825
 GameObject:
   m_ObjectHideFlags: 0
@@ -41579,7 +41775,7 @@ GameObject:
   - component: {fileID: 1361068168}
   - component: {fileID: 1361068170}
   - component: {fileID: 1361068169}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Bridge_3 (11)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -44517,7 +44713,6 @@ Transform:
   - {fileID: 676714169}
   - {fileID: 1581211450}
   - {fileID: 2140459311}
-  - {fileID: 101497905}
   - {fileID: 856846758}
   - {fileID: 375256770}
   - {fileID: 1900754724}
@@ -44526,6 +44721,7 @@ Transform:
   - {fileID: 2009208438}
   - {fileID: 1361068168}
   - {fileID: 1227436194}
+  - {fileID: 617182553}
   - {fileID: 1707481150}
   - {fileID: 294053967}
   - {fileID: 1095173316}
@@ -55290,7 +55486,8 @@ GameObject:
   - component: {fileID: 1707481150}
   - component: {fileID: 1707481152}
   - component: {fileID: 1707481151}
-  m_Layer: 0
+  - component: {fileID: 1707481153}
+  m_Layer: 6
   m_Name: Bridge_3 (2)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -55456,6 +55653,33 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1707481153
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1707481149}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1709836711
 GameObject:
   m_ObjectHideFlags: 0
@@ -61422,7 +61646,8 @@ GameObject:
   - component: {fileID: 1900754724}
   - component: {fileID: 1900754726}
   - component: {fileID: 1900754725}
-  m_Layer: 0
+  - component: {fileID: 1900754727}
+  m_Layer: 6
   m_Name: Bridge_3 (7)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -61588,6 +61813,33 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &1900754727
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1900754723}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &1908439006
 GameObject:
   m_ObjectHideFlags: 0
@@ -62194,7 +62446,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 1
 --- !u!212 &1917547711
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -63946,7 +64198,8 @@ GameObject:
   - component: {fileID: 2009208438}
   - component: {fileID: 2009208440}
   - component: {fileID: 2009208439}
-  m_Layer: 0
+  - component: {fileID: 2009208441}
+  m_Layer: 6
   m_Name: Bridge_3 (10)
   m_TagString: Ground
   m_Icon: {fileID: 0}
@@ -64112,6 +64365,33 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!50 &2009208441
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2009208437}
+  m_BodyType: 1
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 0
 --- !u!1 &2020954585
 GameObject:
   m_ObjectHideFlags: 0
