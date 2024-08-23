@@ -2,11 +2,10 @@ D1
 My name is Maximus and I've been at code ninjas for 2 and a half years. One, I can use a laptop that works, two, I learn how to code, three, I can make a games. The name of my game is Furnism because I named the guy you play as a Furn. I want to make a turn based rpg.
 
 D2
-
+So most of the things i planned I didn't implement so almost all the stuff from my plans ended up being useless. A challenge I faced was wondering what the plot should be like how you beat the game, I overcame this by, thinking of a plot. I foresee many animation challenges and many small bugs that will need to be fixed.
 
 
 D3
-
 [Pretend Demo of Platforming Fails]
 
 The game was hard so I made it easier also I couldn't beat the game how I originally intended it to be beat so I made checkpoints. I did this because of the feedback. That's how it affected me dev
