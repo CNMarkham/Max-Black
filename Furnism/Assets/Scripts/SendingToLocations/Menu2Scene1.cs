@@ -5,18 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class Menu2Scene1 : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-    
+    //Sends you from the Menu to the first scene
     public void ToScene1()
     {
         SceneManager.LoadScene(1);

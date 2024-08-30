@@ -6,23 +6,14 @@ using UnityEngine.SceneManagement;
 public class TouchDie : MonoBehaviour
 {
     public GameObject Player;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-
+    
+    //When you die you get sent to the death screen
     private void OnCollisionEnter2D(Collision2D collision)
     {
         SceneManager.LoadScene(4);
     }
 
+    //Sends you back to the level you died at so you can play again
     public void PlayAgain()
     {
         SceneManager.LoadScene(PlayerPrefs.GetInt("LevelRespawnAt") * 1);

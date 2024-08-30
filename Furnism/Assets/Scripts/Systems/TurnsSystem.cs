@@ -33,6 +33,7 @@ public class TurnsSystem : MonoBehaviour
     public GameObject SecondAttackObject;
     public GameObject ThirdAttackObject;
 
+    //Sets the first turn to the players
     #region MyRegion
 
     #endregion
@@ -41,6 +42,7 @@ public class TurnsSystem : MonoBehaviour
         Turn = 1;
     }
 
+    //Sets ClassCheck to 1, the turn to 1 (the players turn), and activates all the warriors attack buttons 
     public void DowntimeWarrior()
     {
         ClassCheck = 1;
@@ -50,6 +52,7 @@ public class TurnsSystem : MonoBehaviour
         DisrespectfulSlap.SetActive(true);
     }
 
+    //Sets ClassCheck to 2, the turn to 1 (the players turn), and activates all the mages attack buttons
     public void DowntimeMage()
     {
         ClassCheck = 2;
@@ -59,6 +62,7 @@ public class TurnsSystem : MonoBehaviour
         FlyingSwords.SetActive(true);
     }
 
+    //Sets the ClassCheck to 3, the turn to 1 (the players turn), and activates all the archers attack buttons
     public void DowntimeArcher()
     {
         ClassCheck = 3;
@@ -68,6 +72,7 @@ public class TurnsSystem : MonoBehaviour
         ArrowRain.SetActive(true);
     }
 
+    //Sets the turn to 2 (the bosses turn), turns off all buttons, 
     public void BossTurn()
     {
         Turn = 2;
