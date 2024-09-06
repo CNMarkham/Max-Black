@@ -68,7 +68,7 @@ public class PlayerMovement : MonoBehaviour
 			isGrounded = false;
 			JumpsLeft -= 1;
 			GetComponent<Animator>().SetTrigger("TriggerJump");
-			GetComponent<Rigidbody2D>().AddForce(new Vector2(0, JumpHold * 50));
+			GetComponent<Rigidbody2D>().AddForce(new Vector2(0, JumpHold * 250));
 			JumpHold = 1f;
 			
 		}

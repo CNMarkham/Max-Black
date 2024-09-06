@@ -3,14 +3,13 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class WarriorButtonHover : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
+public class ButtonHover : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
-    public GameObject WarriorHoverInfoText;
+    public GameObject PanelInfo;
 
-    //Check if you are hovering over the Warrior text if you are the Warrior panel shows up
     public void OnPointerEnter(PointerEventData eventData)
     {
-        WarriorHoverInfoText.SetActive(true);
+        PanelInfo.SetActive(true);
 
     }
 
@@ -18,6 +17,6 @@ public class WarriorButtonHover : MonoBehaviour, IPointerEnterHandler, IPointerE
     //Checks if you have stopped hovering over the Warrior text and deactivates the Warrior panel
     public void OnPointerExit(PointerEventData eventData)
     {
-        WarriorHoverInfoText.SetActive(false);
+        PanelInfo.SetActive(false);
     }
 }

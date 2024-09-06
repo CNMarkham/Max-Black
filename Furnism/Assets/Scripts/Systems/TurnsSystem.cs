@@ -72,7 +72,7 @@ public class TurnsSystem : MonoBehaviour
         ArrowRain.SetActive(true);
     }
 
-    //Sets the turn to 2 (the bosses turn), turns off all buttons, 
+    //Sets the turn to 2 (the bosses turn), turns off all buttons, tells the boss to attack the player, and turns off all the bosses game objects after that
     public void BossTurn()
     {
         Turn = 2;
@@ -82,6 +82,7 @@ public class TurnsSystem : MonoBehaviour
 
     }
 
+    //Turns off all the bosses game objects, and checks whos turn it is
     void TurnOffGameObjects()
     {
         TheBossesCanvas.SetActive(false);
@@ -91,13 +92,16 @@ public class TurnsSystem : MonoBehaviour
         TurnSet();
     }
 
+    //Makes the boss choose an attack to attack the player with
     void BossAttackPlayer()
     {
         AttackSystem.BossAttack();
     }
+
     public void TurnSet()
 
     {
+        //If its the players turn, it then checks what class the player chose, and turns off that classes attack buttons, and if its not the players turn, then it first checks what class the player is, then checks for stun, if the player isn't stunned it will make it the players turn and turn all of that classes attack buttons on, however if the player is stunned then it takes away 1 turn of stun
         if (Turn == 1)
         {
             if (ClassCheck == 1)
@@ -173,6 +177,7 @@ public class TurnsSystem : MonoBehaviour
         }
     }
 
+    //Turns off all attack buttons no matter what class the player is
     public void UIOff()
     {
         TennisBallThrow.SetActive(false);
@@ -188,6 +193,7 @@ public class TurnsSystem : MonoBehaviour
         ArrowRain.SetActive(false);
     }
 
+    //Turns on all attack buttons no matter what class the player is
     public void UIOn()
     {
         if (ClassCheck == 1)

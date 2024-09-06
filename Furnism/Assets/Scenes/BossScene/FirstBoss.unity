@@ -6089,8 +6089,8 @@ GameObject:
   - component: {fileID: 1261634151}
   - component: {fileID: 1261634150}
   - component: {fileID: 1261634149}
-  - component: {fileID: 1261634154}
   - component: {fileID: 1261634155}
+  - component: {fileID: 1261634156}
   m_Layer: 5
   m_Name: Mage
   m_TagString: Untagged
@@ -6408,19 +6408,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1261634146}
   m_CullTransparentMesh: 0
---- !u!114 &1261634154
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1261634146}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 06b98198b621e364f91bd4637c3d1bf4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  MageHoverInfoText: {fileID: 1481315383}
 --- !u!82 &1261634155
 AudioSource:
   m_ObjectHideFlags: 0
@@ -6517,6 +6504,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1261634156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1261634146}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55c9126b074b2a545a2479d9246e1849, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PanelInfo: {fileID: 1481315383}
 --- !u!1 &1275409332
 GameObject:
   m_ObjectHideFlags: 0
@@ -9042,8 +9042,8 @@ GameObject:
   - component: {fileID: 1610803456}
   - component: {fileID: 1610803455}
   - component: {fileID: 1610803454}
-  - component: {fileID: 1610803459}
   - component: {fileID: 1610803460}
+  - component: {fileID: 1610803461}
   m_Layer: 5
   m_Name: Archer
   m_TagString: Untagged
@@ -9362,19 +9362,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1610803452}
   m_CullTransparentMesh: 0
---- !u!114 &1610803459
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1610803452}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b9c2a418fbd5224ca725e0f08c0f83b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ArcherHoverInfoText: {fileID: 1946267489}
 --- !u!82 &1610803460
 AudioSource:
   m_ObjectHideFlags: 0
@@ -9471,6 +9458,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1610803461
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1610803452}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55c9126b074b2a545a2479d9246e1849, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PanelInfo: {fileID: 1946267489}
 --- !u!1 &1667386166
 GameObject:
   m_ObjectHideFlags: 0
@@ -9978,8 +9978,8 @@ GameObject:
   - component: {fileID: 1732829625}
   - component: {fileID: 1732829624}
   - component: {fileID: 1732829623}
-  - component: {fileID: 1732829622}
   - component: {fileID: 1732829628}
+  - component: {fileID: 1732829629}
   m_Layer: 5
   m_Name: Warrior
   m_TagString: Untagged
@@ -10007,19 +10007,6 @@ RectTransform:
   m_AnchoredPosition: {x: -501, y: 255}
   m_SizeDelta: {x: 519, y: 110}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1732829622
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1732829620}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23747eabde3d80944a39614f5365ad1c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  WarriorHoverInfoText: {fileID: 20178948}
 --- !u!114 &1732829623
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10406,6 +10393,19 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &1732829629
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1732829620}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55c9126b074b2a545a2479d9246e1849, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  PanelInfo: {fileID: 20178948}
 --- !u!1 &1768503528
 GameObject:
   m_ObjectHideFlags: 0
@@ -11175,10 +11175,6 @@ MonoBehaviour:
   Warrior: {fileID: 1554817048}
   Mage: {fileID: 1563482786}
   Archer: {fileID: 1331351024}
-  StunImagePlayer: {fileID: 1721273961}
-  StunImageBoss: {fileID: 505829035}
-  StunTextPlayer: {fileID: 1354420346}
-  StunTextBoss: {fileID: 645082896}
   PlayerStunned: 0
   BossStunned: 0
   BDamage: {fileID: 1847185128}

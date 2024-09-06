@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class TouchDie : MonoBehaviour
 {
     public GameObject Player;
-    
+
     //When you die you get sent to the death screen
     private void OnCollisionEnter2D(Collision2D collision)
     {
@@ -16,6 +16,6 @@ public class TouchDie : MonoBehaviour
     //Sends you back to the level you died at so you can play again
     public void PlayAgain()
     {
-        SceneManager.LoadScene(PlayerPrefs.GetInt("LevelRespawnAt") * 1);
+        SceneManager.LoadScene(PlayerPrefs.GetInt("LevelRespawnAt"));
     }
 }
