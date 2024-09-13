@@ -16,6 +16,7 @@ public class AttacksSystem : MonoBehaviour
 
     [Header("Player Vars")]
     public int DMGRoll;
+    public int HEALAmount;
     public int BossPierced;
     public int PierceDMG; 
     public bool PlayerBuffed;
@@ -34,12 +35,56 @@ public class AttacksSystem : MonoBehaviour
     public AudioSource BDamage;
     public AudioSource PDamage;
 
+    [Header("Texts")]
+    public TextMeshProUGUI PlayerAttackValue;
+    public TextMeshProUGUI HealText;
+    public TextMeshProUGUI BossAttackValue;
+
+    //PlayerAttackValue text makes itself the damage output of the attack.
+    public void PlayerAttackTextON()
+    {
+        PlayerAttackValue.text = ("-" + DMGRoll.ToString());
+    }
+
+    //PlayerAttackValue text looks blank 
+    public void PlayerAttackTextOFF()
+    {
+        PlayerAttackValue.text = "";
+    }
+
+    //HealText shows you the amount you healed
+    public void HealAmountTextON()
+    {
+        HealText.text = ("+" + HEALAmount.ToString());
+    }
+
+    //HealText looks blank
+    public void HealAmountTextOFF()
+    {
+        HealText.text = "";
+    }
+
+    //BossAttackValue text looks blank 
+    public void BossAttackTextON()
+    {
+        BossAttackValue.text = ("-" + DMGRoll.ToString());
+    }
+
+    //BossAttackValue text looks blank 
+    public void BossAttackTextOFF()
+    {
+        BossAttackValue.text = "";
+    }
+
+
     //Turn the buttons off, trigger the Tennis Ball Throw animation, roll for damage, do that damage, tell the system its now the bosses turn, and trigger the sound effects
     public void TennisBallThrow()
     {
         TurnsSystem.UIOff();
+        DMGRoll = Random.Range(7, 11);
+        Invoke("PlayerAttackTextON", 1.5f);
+        Invoke("PlayerAttackTextOFF", 8f);
         Warrior.GetComponent<Animator>().SetTrigger("1stAttack");
-        int DMGRoll = Random.Range(7, 11);
         HPSystem.DMGTakenBoss = DMGRoll;
         TurnsSystem.BossTurn();
         Invoke("SlowBAudio", 1.5f);
@@ -49,8 +94,10 @@ public class AttacksSystem : MonoBehaviour
     public void SpinAttack()
     {
         TurnsSystem.UIOff();
+        DMGRoll = Random.Range(6, 9);
+        Invoke("PlayerAttackTextON", 1.5f);
+        Invoke("PlayerAttackTextOFF", 8f);
         Warrior.GetComponent<Animator>().SetTrigger("2ndAttack");
-        int DMGRoll = Random.Range(6, 9);
         HPSystem.DMGTakenBoss = DMGRoll;
         HPSystem.PlayerDef += 1;
         TurnsSystem.BossTurn();
@@ -61,8 +108,10 @@ public class AttacksSystem : MonoBehaviour
     public void DisrespectfulSlap()
     {
         TurnsSystem.UIOff();
+        DMGRoll = Random.Range(4, 7);
+        Invoke("PlayerAttackTextON", 1.5f);
+        Invoke("PlayerAttackTextOFF", 8f);
         Warrior.GetComponent<Animator>().SetTrigger("3rdAttack");
-        int DMGRoll = Random.Range(4, 7);
         HPSystem.DMGTakenBoss = DMGRoll;
         HPSystem.PlayerDef += 2;
         TurnsSystem.BossTurn();
@@ -75,8 +124,10 @@ public class AttacksSystem : MonoBehaviour
     public void Fireball()
     {
         TurnsSystem.UIOff();
+        DMGRoll = Random.Range(10, 14);
+        Invoke("PlayerAttackTextON", 1.5f);
+        Invoke("PlayerAttackTextOFF", 8f);
         Mage.GetComponent<Animator>().SetTrigger("1stAttack");
-        int DMGRoll = Random.Range(10, 14);
         HPSystem.DMGTakenBoss = DMGRoll;
         TurnsSystem.BossTurn();
         Invoke("SlowBAudio", 1.5f);
@@ -86,6 +137,9 @@ public class AttacksSystem : MonoBehaviour
     public void HealSpell()
     {
         TurnsSystem.UIOff();
+        HEALAmount = 25;
+        Invoke("HealAmountTextON", 1.5f);
+        Invoke("HealAmountTextOFF", 8f);
         Mage.GetComponent<Animator>().SetTrigger("2ndAttack");
         HPSystem.PlayerHPNum += 25;
         HPSystem.PlayerDef -= 4;
@@ -115,6 +169,9 @@ public class AttacksSystem : MonoBehaviour
         if(BossBuffed == false)
         {
             TurnsSystem.UIOff();
+            HEALAmount = 7;
+            Invoke("HealAmountTextON", 1.5f);
+            Invoke("HealAmountTextOFF", 8f);
             Archer.GetComponent<Animator>().SetTrigger("1stAttack");
             int DMGRoll = Random.Range(8, 12);
             HPSystem.DMGTakenBoss = DMGRoll;
@@ -125,6 +182,9 @@ public class AttacksSystem : MonoBehaviour
         } else
         {
             TurnsSystem.UIOff();
+            HEALAmount = 7;
+            Invoke("HealAmountTextON", 1.5f);
+            Invoke("HealAmountTextOFF", 8f);
             HPSystem.PlayerHPNum += 7;
             TurnsSystem.BossTurn();
             HPSystem.PlayerSliderUpdate();
@@ -147,8 +207,10 @@ public class AttacksSystem : MonoBehaviour
     public void ArrowRain()
     {
         TurnsSystem.UIOff();
+        DMGRoll = Random.Range(2, 8);
+        Invoke("PlayerAttackTextON", 1.5f);
+        Invoke("PlayerAttackTextOFF", 8f);
         Archer.GetComponent<Animator>().SetTrigger("3rdAttack");
-        int DMGRoll = Random.Range(2, 8);
         HPSystem.DMGTakenBoss = DMGRoll;
         BossPierced = 1;
         PierceDMG = 5;
@@ -188,8 +250,10 @@ public class AttacksSystem : MonoBehaviour
             {
                 TurnsSystem.TheBossesCanvas.SetActive(true);
                 TurnsSystem.FirstAttackObject.SetActive(true);
+                DMGRoll = Random.Range(1, 4);
+                Invoke("BossAttackTextON", 1.5f);
+                Invoke("BossAttackTextOFF", 8f);
                 TheBoss.GetComponent<Animator>().SetTrigger("1stAttack");
-                int DMGRoll = Random.Range(1, 4);
                 HPSystem.DMGTakenBoss = DMGRoll;
                 HPSystem.PlayerDef -= 3;
                 Invoke("SlowPAudio", 1.5f);
@@ -200,8 +264,10 @@ public class AttacksSystem : MonoBehaviour
             {
                 TurnsSystem.TheBossesCanvas.SetActive(true);
                 TurnsSystem.SecondAttackObject.SetActive(true);
+                DMGRoll = Random.Range(7, 13);
+                Invoke("BossAttackTextON", 1.5f);
+                Invoke("BossAttackTextOFF", 8f);
                 TheBoss.GetComponent<Animator>().SetTrigger("2ndAttack");
-                int DMGRoll = Random.Range(7, 13);
                 HPSystem.DMGTakenPlayer = DMGRoll;
                 HPSystem.BossDef -= 2;
                 Invoke("SlowPAudio", 1.5f);
