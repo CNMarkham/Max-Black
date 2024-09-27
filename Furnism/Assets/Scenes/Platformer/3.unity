@@ -41804,8 +41804,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23e880065902572468ece163fd3c7a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneToLoad: 0
-  LevelToRespawnAt: 1
+  SceneToLoad: 1
+  LevelToRespawnAt: 2
   Reset: 0
 --- !u!1 &1355453038
 GameObject:

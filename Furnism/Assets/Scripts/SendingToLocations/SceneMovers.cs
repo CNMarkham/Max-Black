@@ -13,7 +13,7 @@ public class SceneMovers : MonoBehaviour
     {
         if(Reset == true)
         {
-            LevelToRespawnAt = 1;
+            LevelToRespawnAt = 2;
             PlayerPrefs.SetInt("LevelRespawnAt", LevelToRespawnAt);
         }
     }

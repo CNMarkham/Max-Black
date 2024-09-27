@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/Menu, DeathScreen, and WinScreen/Main Menu.unity
+    guid: 829a86ba161cdd840842063447f41aab
+  - enabled: 1
     path: Assets/Scenes/BossScene/FirstBoss.unity
     guid: 7832e9cf061209a4b9d74c4d7b85b3ae
   - enabled: 1
@@ -23,7 +26,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Menu, DeathScreen, and WinScreen/FinishedGame.unity
     guid: 84aa9609291f786448746e397e36c9fa
-  - enabled: 1
-    path: Assets/Scenes/Menu, DeathScreen, and WinScreen/Main Menu.unity
-    guid: 829a86ba161cdd840842063447f41aab
   m_configObjects: {}
