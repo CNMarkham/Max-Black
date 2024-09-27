@@ -10,7 +10,7 @@ public class TouchDie : MonoBehaviour
     //When you die you get sent to the death screen
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        SceneManager.LoadScene(4);
+        SceneManager.LoadScene(5);
     }
 
     //Sends you back to the level you died at so you can play again
