@@ -155,7 +155,6 @@ public class AttacksSystem : MonoBehaviour
         Mage.GetComponent<Animator>().SetTrigger("3rdAttack");
         BossPierced = 2;
         PierceDMG = 6;
-        PlayerStunned += 1;
         TurnsSystem.BossTurn();
         HPSystem.PlayerSliderUpdate();
         HPSystem.BossSliderUpdate();
