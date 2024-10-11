@@ -14,7 +14,7 @@ public class Menu2Scene1 : MonoBehaviour
     public void ToScene1()
     {
         PlayerPrefs.SetInt("LevelRespawnAt", 2);
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(2);
 
     }
 }
