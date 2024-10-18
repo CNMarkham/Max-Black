@@ -63,12 +63,12 @@ public class PlayerMovement : MonoBehaviour
 		}
 
 		//Checks if your are or aren't on the ground if you are and you have 1 or more jumps left then it jumps
-		if (Input.GetKeyUp(KeyCode.Z) && isGrounded == true && JumpsLeft >= 1)
+		if (Input.GetKey(KeyCode.Z) && isGrounded == true && JumpsLeft >= 1)
 		{
 			isGrounded = false;
 			JumpsLeft -= 1;
 			GetComponent<Animator>().SetTrigger("TriggerJump");
-			GetComponent<Rigidbody2D>().AddForce(new Vector2(0, JumpHold * 70));
+			GetComponent<Rigidbody2D>().AddForce(new Vector2(0, JumpHold * 40));
 			JumpHold = 1f;
 			
 		}
