@@ -954,7 +954,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 352418612076567228, guid: 0a68be1bd13d8694e8d8fe85574ac075, type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 352423760116714556, guid: 0a68be1bd13d8694e8d8fe85574ac075, type: 3}
       propertyPath: m_IsActive
@@ -1046,7 +1046,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 352872237221693926, guid: 0a68be1bd13d8694e8d8fe85574ac075, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 352915704992195996, guid: 0a68be1bd13d8694e8d8fe85574ac075, type: 3}
       propertyPath: m_Name
@@ -1162,7 +1162,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 393085612096672790, guid: 0a68be1bd13d8694e8d8fe85574ac075, type: 3}
       propertyPath: m_text
-      value: Hovl Studio
+      value: ICON Kit Sword
       objectReference: {fileID: 0}
     - target: {fileID: 393085612096672790, guid: 0a68be1bd13d8694e8d8fe85574ac075, type: 3}
       propertyPath: m_textAlignment
@@ -1182,7 +1182,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 393116251265264344, guid: 0a68be1bd13d8694e8d8fe85574ac075, type: 3}
       propertyPath: m_text
-      value: Black SP
+      value: Black SP - Background and Death Objects
+      objectReference: {fileID: 0}
+    - target: {fileID: 393116251265264344, guid: 0a68be1bd13d8694e8d8fe85574ac075, type: 3}
+      propertyPath: m_margin.z
+      value: -510.2199
       objectReference: {fileID: 0}
     - target: {fileID: 393116251265264344, guid: 0a68be1bd13d8694e8d8fe85574ac075, type: 3}
       propertyPath: m_textAlignment
@@ -1210,9 +1214,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 393129783655653182, guid: 0a68be1bd13d8694e8d8fe85574ac075, type: 3}
       propertyPath: m_text
-      value: 'FreeWeapons
-
-'
+      value: Hovl Studio
       objectReference: {fileID: 0}
     - target: {fileID: 393129783655653182, guid: 0a68be1bd13d8694e8d8fe85574ac075, type: 3}
       propertyPath: m_textAlignment
@@ -1232,9 +1234,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 393146334362751890, guid: 0a68be1bd13d8694e8d8fe85574ac075, type: 3}
       propertyPath: m_text
-      value: 'Black Thorn Pod
+      value: 'Black Thorn Pod - Boss Sprite
 
 '
+      objectReference: {fileID: 0}
+    - target: {fileID: 393146334362751890, guid: 0a68be1bd13d8694e8d8fe85574ac075, type: 3}
+      propertyPath: m_margin.z
+      value: -275.2041
       objectReference: {fileID: 0}
     - target: {fileID: 393146334362751890, guid: 0a68be1bd13d8694e8d8fe85574ac075, type: 3}
       propertyPath: m_textAlignment
@@ -1270,9 +1276,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 393208149278750846, guid: 0a68be1bd13d8694e8d8fe85574ac075, type: 3}
       propertyPath: m_text
-      value: 'IS - Bow and Arrow
-
-        Low Poly Fire'
+      value: Low Poly Fire
       objectReference: {fileID: 0}
     - target: {fileID: 393208149278750846, guid: 0a68be1bd13d8694e8d8fe85574ac075, type: 3}
       propertyPath: m_textAlignment
@@ -1344,9 +1348,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 393687524281803700, guid: 0a68be1bd13d8694e8d8fe85574ac075, type: 3}
       propertyPath: m_text
-      value: 'FantasyStatusIcons
-
-'
+      value: FreeWeapons - The Archer's Arrows
+      objectReference: {fileID: 0}
+    - target: {fileID: 393687524281803700, guid: 0a68be1bd13d8694e8d8fe85574ac075, type: 3}
+      propertyPath: m_margin.z
+      value: -629.60547
       objectReference: {fileID: 0}
     - target: {fileID: 393687524281803700, guid: 0a68be1bd13d8694e8d8fe85574ac075, type: 3}
       propertyPath: m_textAlignment
@@ -1372,7 +1378,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 393744495748658778, guid: 0a68be1bd13d8694e8d8fe85574ac075, type: 3}
       propertyPath: m_text
-      value: ICON Kit Sword
+      value: InfiniAssets
       objectReference: {fileID: 0}
     - target: {fileID: 393744495748658778, guid: 0a68be1bd13d8694e8d8fe85574ac075, type: 3}
       propertyPath: m_textAlignment
@@ -1434,7 +1440,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 393932427236186536, guid: 0a68be1bd13d8694e8d8fe85574ac075, type: 3}
       propertyPath: m_text
-      value: InfiniAssets
+      value: IS - Bow and Arrow
       objectReference: {fileID: 0}
     - target: {fileID: 393932427236186536, guid: 0a68be1bd13d8694e8d8fe85574ac075, type: 3}
       propertyPath: m_textAlignment
