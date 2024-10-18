@@ -9,7 +9,7 @@ public class AnyScreen2Menu : MonoBehaviour
     //Sends you from the Menu to the first scene
     public void ToMenu()
     {
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(0);
 
     }
 }
