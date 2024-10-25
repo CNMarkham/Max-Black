@@ -17,7 +17,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void Start()
     {
-		JumpsLeft = 2;
+
     }
     
 	void Update()
@@ -59,14 +59,12 @@ public class PlayerMovement : MonoBehaviour
 		if (hit.collider != null)
 		{
 			isGrounded = true;
-			JumpsLeft = 2;
 		}
 
 		//Checks if your are or aren't on the ground if you are and you have 1 or more jumps left then it jumps
-		if (Input.GetKey(KeyCode.Z) && isGrounded == true && JumpsLeft >= 1)
+		if (Input.GetKey(KeyCode.Z) && isGrounded == true)
 		{
 			isGrounded = false;
-			JumpsLeft -= 1;
 			GetComponent<Animator>().SetTrigger("TriggerJump");
 			GetComponent<Rigidbody2D>().AddForce(new Vector2(0, JumpHold * 40));
 			JumpHold = 1f;
