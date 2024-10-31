@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
+using UnityEngine.UI;
 
 public class PlayerMovement : MonoBehaviour
 {
@@ -14,6 +16,8 @@ public class PlayerMovement : MonoBehaviour
 
 	[Header("LayerMask")]
 	public LayerMask lPayerMask;
+
+	public Slider jumpSlider;
 
     public void Start()
     {
@@ -44,13 +48,12 @@ public class PlayerMovement : MonoBehaviour
 		//Jump, when you click the Z Key, it will also make you jump higher the longer you hold Z 
 		if (Input.GetKey(KeyCode.Z))
         {
-			JumpHold  += 0.1f;
+			JumpHold  += 4 * Time.deltaTime;
 			if(JumpHold >= 6f)
             {	
 				JumpHold = 6f;
             }
 
-		
 
 		}
 
@@ -62,15 +65,15 @@ public class PlayerMovement : MonoBehaviour
 		}
 
 		//Checks if your are or aren't on the ground if you are and you have 1 or more jumps left then it jumps
-		if (Input.GetKey(KeyCode.Z) && isGrounded == true)
+		if (Input.GetKeyUp(KeyCode.Z) && isGrounded == true)
 		{
 			isGrounded = false;
 			GetComponent<Animator>().SetTrigger("TriggerJump");
 			GetComponent<Rigidbody2D>().AddForce(new Vector2(0, JumpHold * 65));
 			JumpHold = 1f;
-			
 		}
-		
+		jumpSlider.value = JumpHold;
+
 	}
 }
 
