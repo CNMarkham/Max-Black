@@ -13,6 +13,7 @@ public class PlayerMovement : MonoBehaviour
 	public int JumpsLeft;
 	public bool isGrounded;
 	public float JumpHold;
+	public bool DevMode;
 
 	[Header("LayerMask")]
 	public LayerMask lPayerMask;
@@ -21,7 +22,7 @@ public class PlayerMovement : MonoBehaviour
 
     public void Start()
     {
-
+		DevMode = false;
     }
     
 	void Update()
@@ -74,6 +75,12 @@ public class PlayerMovement : MonoBehaviour
 		}
 		jumpSlider.value = JumpHold;
 
+
+		//If you have clicked and lifted your finger off the P key it activates DevMode
+		if (Input.GetKeyUp(KeyCode.P))
+        {
+			DevMode = true;
+        };
 	}
 }
 

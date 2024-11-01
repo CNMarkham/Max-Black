@@ -6,11 +6,18 @@ using UnityEngine.SceneManagement;
 public class TouchDie : MonoBehaviour
 {
     public GameObject Player;
+    public PlayerMovement PlayerMoveScript;
 
-    //When you die you get sent to the death screen
+    //If DevMode is off and you touch a damaging object you die, if DevMode is on and you touch a damaging object it says in the debug log "Damage Nullified"
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        SceneManager.LoadScene(5);
+        if(collision.gameObject.GetComponent<PlayerMovement>().DevMode == false)
+        {
+            SceneManager.LoadScene(5);
+        } else if(collision.gameObject.GetComponent<PlayerMovement>().DevMode == true)
+        {
+            Debug.Log("Damage Nullified");
+        }
     }
 
     //Sends you back to the level you died at so you can play again
