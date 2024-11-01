@@ -64,7 +64,7 @@ public class PlayerMovement : MonoBehaviour
 			isGrounded = true;
 		}
 
-		//Checks if your are or aren't on the ground if you are and you have 1 or more jumps left then it jumps
+		//Checks if your are or aren't on the ground if you are and you have clicked and lifted your finger off the Z key it jumps
 		if (Input.GetKeyUp(KeyCode.Z) && isGrounded == true)
 		{
 			isGrounded = false;
