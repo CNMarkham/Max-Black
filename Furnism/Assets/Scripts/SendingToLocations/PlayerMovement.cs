@@ -20,8 +20,18 @@ public class PlayerMovement : MonoBehaviour
 
 	public Slider jumpSlider;
 
+	public TextMeshProUGUI DevModeOnText;
+
+    public void Awake()
+    {
+		transform.position = new Vector3(1f, 1f);
+		Debug.Log("k");
+	}
+
     public void Start()
     {
+		DontDestroyOnLoad(DevModeOnText);
+		DontDestroyOnLoad(gameObject);
 		DevMode = false;
     }
     
@@ -79,7 +89,17 @@ public class PlayerMovement : MonoBehaviour
 		//If you have clicked and lifted your finger off the P key it activates DevMode
 		if (Input.GetKeyUp(KeyCode.P))
         {
-			DevMode = true;
+			if(DevMode == true)
+            {
+				DevMode = false;
+				DevModeOnText.text = ("DevModeOff");
+            } else
+            {
+				DontDestroyOnLoad(DevModeOnText);
+				DontDestroyOnLoad(gameObject);
+				DevMode = true;
+				DevModeOnText.text = ("DevModeOn");
+			}
         };
 	}
 }
