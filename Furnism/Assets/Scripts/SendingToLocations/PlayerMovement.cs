@@ -25,19 +25,18 @@ public class PlayerMovement : MonoBehaviour
     public void Awake()
     {
 		transform.position = new Vector3(1f, 1f);
-		Debug.Log("k");
 	}
 
     public void Start()
     {
 		DontDestroyOnLoad(DevModeOnText);
-		DontDestroyOnLoad(gameObject);
+		DontDestroyOnLoad(jumpSlider);
+		DontDestroyOnLoad(DevModeOnText);
 		DevMode = false;
     }
     
 	void Update()
 	{
-
 		//When you click the Right Arrow Key you move right
 		if (Input.GetKey(KeyCode.RightArrow))
 		{
@@ -85,7 +84,6 @@ public class PlayerMovement : MonoBehaviour
 		}
 		jumpSlider.value = JumpHold;
 
-
 		//If you have clicked and lifted your finger off the P key it activates DevMode
 		if (Input.GetKeyUp(KeyCode.P))
         {
@@ -97,6 +95,8 @@ public class PlayerMovement : MonoBehaviour
             {
 				DontDestroyOnLoad(DevModeOnText);
 				DontDestroyOnLoad(gameObject);
+				DontDestroyOnLoad(jumpSlider);
+				DontDestroyOnLoad(DevModeOnText);
 				DevMode = true;
 				DevModeOnText.text = ("DevModeOn");
 			}

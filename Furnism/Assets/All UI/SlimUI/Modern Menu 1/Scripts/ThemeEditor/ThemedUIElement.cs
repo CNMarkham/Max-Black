@@ -22,10 +22,10 @@ namespace SlimUI.ModernMenu{
 
 		
 
-			if(isText){
-				print(GetComponent<TextMeshPro>());
-				GetComponent<TextMeshPro>().color = themeController.textColor;
-			}
+			//if(isText){
+				//print(GetComponent<TextMeshPro>());
+				//GetComponent<TextMeshPro>().color = themeController.textColor;
+			//}
 		}
 	}
 }
