@@ -31,8 +31,21 @@ public class PlayerMovement : MonoBehaviour
     {
 		DontDestroyOnLoad(DevModeOnText);
 		DontDestroyOnLoad(jumpSlider);
-		DontDestroyOnLoad(DevModeOnText);
 		DevMode = false;
+		Invoke("ImmunityOff", 2f);
+		Immunity();
+    }
+
+	void Immunity()
+    {
+		DevMode = true;
+		DevModeOnText.text = ("DevModeOn");
+    }
+
+	void ImmunityOff()
+    {
+		DevMode = false;
+		DevModeOnText.text = ("DevModeOff");
     }
     
 	void Update()
@@ -93,10 +106,6 @@ public class PlayerMovement : MonoBehaviour
 				DevModeOnText.text = ("DevModeOff");
             } else
             {
-				DontDestroyOnLoad(DevModeOnText);
-				DontDestroyOnLoad(gameObject);
-				DontDestroyOnLoad(jumpSlider);
-				DontDestroyOnLoad(DevModeOnText);
 				DevMode = true;
 				DevModeOnText.text = ("DevModeOn");
 			}

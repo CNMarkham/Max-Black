@@ -8,6 +8,7 @@ public class SceneMovers : MonoBehaviour
     public int SceneToLoad;
     public int LevelToRespawnAt;
     public bool Reset;
+    public PlayerMovement PMovement;
 
     private void Start()
     {
