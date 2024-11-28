@@ -39,13 +39,13 @@ public class PlayerMovement : MonoBehaviour
 	void Immunity()
     {
 		DevMode = true;
-		DevModeOnText.text = ("DevModeOn");
+		DevModeOnText.text = ("");
     }
 
 	void ImmunityOff()
     {
 		DevMode = false;
-		DevModeOnText.text = ("DevModeOff");
+		DevModeOnText.text = ("");
     }
     
 	void Update()
@@ -103,7 +103,7 @@ public class PlayerMovement : MonoBehaviour
 			if(DevMode == true)
             {
 				DevMode = false;
-				DevModeOnText.text = ("DevModeOff");
+				DevModeOnText.text = ("");
             } else
             {
 				DevMode = true;

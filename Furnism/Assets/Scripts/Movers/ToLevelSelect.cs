@@ -11,10 +11,9 @@ public class Menu2Scene1 : MonoBehaviour
         PlayerPrefs.DeleteAll();
     }
     //Sends you from the Menu to the first scene
-    public void ToScene1()
+    public void LevelSelect()
     {
-        PlayerPrefs.SetInt("LevelRespawnAt", 2);
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(7); 
 
     }
 }

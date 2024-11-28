@@ -58,13 +58,13 @@ public class HPSystem : MonoBehaviour
         //Checks if the players HP is less than 0, if it is it sends you to the death screen
         if (PlayerHPNum <= 0)
         {
-            SceneManager.LoadScene(4);
+            SceneManager.LoadScene(5);
         }
 
         //Checks if the bosses HP is less than 0, if it is it sends you to the win screen
         if(BossHPNum <= 0)
         {
-            SceneManager.LoadScene(5);
+            SceneManager.LoadScene(6);
         }
 
         //Checks if at any point the player has more HP than their max HP then it sets their HP to their maximum HP
