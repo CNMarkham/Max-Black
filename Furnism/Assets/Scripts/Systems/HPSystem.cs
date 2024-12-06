@@ -11,6 +11,7 @@ public class HPSystem : MonoBehaviour
     public static HPSystem HpSystem;
     public TurnsSystem TurnsSystem;
     public AttacksSystem AttacksSystem;
+    public SceneMovers SM;
 
     [Header("HP Number Vars")]
     public int PlayerHPNum;
@@ -59,6 +60,7 @@ public class HPSystem : MonoBehaviour
         if (PlayerHPNum <= 0)
         {
             SceneManager.LoadScene(5);
+            SM.LevelToRespawnAt = 1;
         }
 
         //Checks if the bosses HP is less than 0, if it is it sends you to the win screen
@@ -121,7 +123,7 @@ public class HPSystem : MonoBehaviour
         //Takes away the players HP for how much they should take from the attack, sets the players HP bar to say "Player HP: (Whatever HP they should be at) ", then sets the HP bars slider to whatever it should be at, and lastly sets the players defense text to their defense amount
         PlayerHPNum -= DMGTakenPlayer;
         PlayerHPSliderText.text = ("Player HP: " + PlayerHPNum);
-        PlayerHPSlider.GetComponent<Image>().fillAmount = (float)PlayerHPNum / 1 * 0.01f;
+        PlayerHPSlider.GetComponent<Slider>().value = (float)PlayerHPNum / 1 * 0.01f;
         PlayerDefText.text = (PlayerDef.ToString());
     }
 

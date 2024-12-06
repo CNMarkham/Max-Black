@@ -77591,9 +77591,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SceneToLoad: 1
-  LevelToRespawnAt: 2
+  LevelToRespawnAt: 1
   Reset: 1
-  PMovement: {fileID: 0}
+  HighestLevel: 4
+  LevelNumber: 0
+  BossLevel: {fileID: 0}
 --- !u!60 &1338036608
 PolygonCollider2D:
   m_ObjectHideFlags: 0

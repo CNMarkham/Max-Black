@@ -3,22 +3,26 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class LevelLock : MonoBehaviour
+public class LevelScript : MonoBehaviour
 {
-    public SceneMovers sceneMovers;
+    public SceneMovers SM;
     // Start is called before the first frame update
     void Start()
     {
-        sceneMovers = GetComponent<SceneMovers>();
+        
     }
 
     // Update is called once per frame
     void Update()
     {
-
-        if (PlayerPrefs.GetInt("HighestLevel", 1) >= sceneMovers.LevelNumber)
+        if (PlayerPrefs.GetInt("HighestLevel", 1) >= 4)
         {
-            GetComponent<Button>().onClick.AddListener(sceneMovers.LoadLevel);
+            SM.BossLevel.text = "Boss Level";
+        }
+
+        if (PlayerPrefs.GetInt("HighestLevel", 1) >= SM.LevelNumber)
+        {
+            SM.GetComponent<Button>().onClick.AddListener(SM.LoadLevel);
             GetComponent<Button>().interactable = true;
         }
         else

@@ -11246,7 +11246,9 @@ MonoBehaviour:
   SceneToLoad: 3
   LevelToRespawnAt: 3
   Reset: 0
-  PMovement: {fileID: 0}
+  HighestLevel: 2
+  LevelNumber: 0
+  BossLevel: {fileID: 0}
 --- !u!1 &695022725
 GameObject:
   m_ObjectHideFlags: 0
@@ -21336,7 +21338,9 @@ MonoBehaviour:
   SceneToLoad: 3
   LevelToRespawnAt: 3
   Reset: 0
-  PMovement: {fileID: 0}
+  HighestLevel: 2
+  LevelNumber: 0
+  BossLevel: {fileID: 0}
 --- !u!1 &1551596598
 GameObject:
   m_ObjectHideFlags: 0
@@ -29711,7 +29715,9 @@ MonoBehaviour:
   SceneToLoad: 3
   LevelToRespawnAt: 3
   Reset: 0
-  PMovement: {fileID: 0}
+  HighestLevel: 2
+  LevelNumber: 0
+  BossLevel: {fileID: 0}
 --- !u!1 &2056652673
 GameObject:
   m_ObjectHideFlags: 0

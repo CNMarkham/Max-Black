@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class SceneMovers : MonoBehaviour
 {
@@ -11,10 +12,11 @@ public class SceneMovers : MonoBehaviour
     public bool Reset;
     public int HighestLevel;
     public int LevelNumber;
+    public TextMeshPro BossLevel;
 
     private void Start()
     {
-        if(Reset == true)
+        if (Reset == true)
         {
             LevelToRespawnAt = 2;
             PlayerPrefs.SetInt("LevelRespawnAt", SceneToLoad);
@@ -27,10 +29,7 @@ public class SceneMovers : MonoBehaviour
     {
         SceneManager.LoadScene(SceneToLoad);
         PlayerPrefs.SetInt("LevelRespawnAt", LevelToRespawnAt);
-
-        
     }
-
     public void LoadLevel()
     {
         SceneManager.LoadScene(SceneToLoad);
