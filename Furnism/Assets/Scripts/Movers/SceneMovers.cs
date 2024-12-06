@@ -30,9 +30,4 @@ public class SceneMovers : MonoBehaviour
         SceneManager.LoadScene(SceneToLoad);
         PlayerPrefs.SetInt("LevelRespawnAt", LevelToRespawnAt);
     }
-    public void LoadLevel()
-    {
-        SceneManager.LoadScene(SceneToLoad);
-        PlayerPrefs.SetInt("LevelRespawnAt", LevelToRespawnAt);
-    }
 }

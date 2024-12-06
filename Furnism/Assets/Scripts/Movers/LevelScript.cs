@@ -29,5 +29,12 @@ public class LevelScript : MonoBehaviour
         {
             GetComponent<Button>().interactable = false;
         }
+
+        public void LoadLevel()
+        {
+            SM.SceneManager.LoadScene(SceneToLoad);
+            PlayerPrefs.SetInt("LevelRespawnAt", LevelToRespawnAt);
+        }
+        
     }
 }
