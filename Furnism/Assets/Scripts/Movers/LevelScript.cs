@@ -2,18 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class LevelScript : MonoBehaviour
 {
     public SceneMovers SM;
     // Start is called before the first frame update
     void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
-    void Update()
     {
         if (PlayerPrefs.GetInt("HighestLevel", 1) >= 4)
         {
@@ -22,19 +17,24 @@ public class LevelScript : MonoBehaviour
 
         if (PlayerPrefs.GetInt("HighestLevel", 1) >= SM.LevelNumber)
         {
-            SM.GetComponent<Button>().onClick.AddListener(SM.LoadLevel);
+            SM.GetComponent<Button>().onClick.AddListener(LoadLevel);
             GetComponent<Button>().interactable = true;
         }
         else
         {
             GetComponent<Button>().interactable = false;
         }
+    }
 
-        public void LoadLevel()
-        {
-            SM.SceneManager.LoadScene(SceneToLoad);
-            PlayerPrefs.SetInt("LevelRespawnAt", LevelToRespawnAt);
-        }
+    // Update is called once per frame
+    void Update()
+    {
         
+    }   
+    
+    public void LoadLevel()
+    { 
+        SceneManager.LoadScene(SM.SceneToLoad);
+        PlayerPrefs.SetInt("LevelRespawnAt", SM.LevelToRespawnAt);
     }
 }
