@@ -222,7 +222,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1917547708}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!60 &13731895
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -678,7 +678,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1917547708}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!60 &28650577
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -897,7 +897,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1917547708}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!60 &44369400
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1436,7 +1436,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1917547708}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!60 &69387230
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -1707,7 +1707,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1917547708}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!60 &83863649
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -2948,7 +2948,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1917547708}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!1 &218512948
 GameObject:
   m_ObjectHideFlags: 0
@@ -3305,7 +3305,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1917547708}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!60 &230515772
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -3654,7 +3654,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1917547708}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!1 &239212152
 GameObject:
   m_ObjectHideFlags: 0
@@ -3754,7 +3754,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1917547708}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!60 &239212156
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4025,7 +4025,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1917547708}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!60 &251559875
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4380,7 +4380,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1917547708}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!60 &292367539
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -4985,7 +4985,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1917547708}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!60 &346672575
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5444,7 +5444,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1917547708}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!60 &356062965
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -5665,7 +5665,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1917547708}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!114 &359498071
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5893,7 +5893,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1917547708}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!60 &373064350
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -6164,7 +6164,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1917547708}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!60 &373892474
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -6648,7 +6648,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1917547708}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!60 &409954708
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -6919,7 +6919,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1917547708}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!60 &413254517
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -7268,7 +7268,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1917547708}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!1 &501939126
 GameObject:
   m_ObjectHideFlags: 0
@@ -7656,7 +7656,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1917547708}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!60 &545839489
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -7927,7 +7927,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1917547708}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!60 &561556154
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -8444,7 +8444,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1917547708}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!1 &615329652
 GameObject:
   m_ObjectHideFlags: 0
@@ -8934,7 +8934,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1917547708}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!60 &656840605
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -10619,7 +10619,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1917547708}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!1 &676815679
 GameObject:
   m_ObjectHideFlags: 0
@@ -10669,7 +10669,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1917547708}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!114 &676815682
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11348,7 +11348,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1917547708}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!60 &695022729
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -11926,7 +11926,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1917547708}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!60 &743556543
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -12197,7 +12197,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1917547708}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!60 &751813711
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -12468,7 +12468,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1917547708}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!60 &758593843
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -12870,7 +12870,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1917547708}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!1 &827572525
 GameObject:
   m_ObjectHideFlags: 0
@@ -13758,7 +13758,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1917547708}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!60 &913585786
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -14029,7 +14029,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1917547708}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!60 &915971708
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -14300,7 +14300,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1917547708}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!60 &943423331
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -14942,7 +14942,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1917547708}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!1 &1045166369
 GameObject:
   m_ObjectHideFlags: 0
@@ -15210,7 +15210,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1917547708}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!60 &1065211257
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -15481,7 +15481,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1917547708}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!60 &1066896110
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -16122,7 +16122,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1917547708}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!60 &1096591154
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -16393,7 +16393,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1917547708}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!60 &1114134210
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -17047,7 +17047,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1917547708}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!60 &1194679201
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -17268,7 +17268,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1917547708}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!114 &1197907224
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17580,7 +17580,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1917547708}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!60 &1241173829
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -17899,7 +17899,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1917547708}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!60 &1246422648
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -18400,7 +18400,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1917547708}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!1 &1355453038
 GameObject:
   m_ObjectHideFlags: 0
@@ -18579,6 +18579,7 @@ RectTransform:
   m_Children:
   - {fileID: 1941289694}
   - {fileID: 1592255595}
+  - {fileID: 4039759265999246503}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -18685,7 +18686,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1917547708}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!60 &1372993797
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -19533,7 +19534,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1917547708}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!60 &1396684705
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -20563,7 +20564,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1917547708}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!1 &1487751465
 GameObject:
   m_ObjectHideFlags: 0
@@ -20663,7 +20664,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1917547708}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!60 &1487751469
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -20934,7 +20935,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1917547708}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!60 &1515718473
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -21518,7 +21519,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1917547708}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!1 &1555833222
 GameObject:
   m_ObjectHideFlags: 0
@@ -22015,7 +22016,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1917547708}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!60 &1573344685
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -22703,7 +22704,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1917547708}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!60 &1656056888
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -22974,7 +22975,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1917547708}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!60 &1667641509
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -23323,7 +23324,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1917547708}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!1 &1670039238
 GameObject:
   m_ObjectHideFlags: 0
@@ -23507,7 +23508,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1917547708}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!60 &1680993007
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -23801,7 +23802,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1917547708}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!1 &1698269135
 GameObject:
   m_ObjectHideFlags: 0
@@ -24142,7 +24143,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1917547708}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!1 &1707481149
 GameObject:
   m_ObjectHideFlags: 0
@@ -24468,7 +24469,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1917547708}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!60 &1741567849
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -24739,7 +24740,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1917547708}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!60 &1763220096
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -25184,7 +25185,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1917547708}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!60 &1778782512
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -25455,7 +25456,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1917547708}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!60 &1782012368
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -26173,7 +26174,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1917547708}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!60 &1796737819
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -26392,7 +26393,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1917547708}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!60 &1821760870
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -26793,7 +26794,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1917547708}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!1 &1861765157
 GameObject:
   m_ObjectHideFlags: 0
@@ -26843,7 +26844,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1917547708}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!114 &1861765160
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27071,7 +27072,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1917547708}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!60 &1878551876
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -27426,7 +27427,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1917547708}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!60 &1908439010
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -27645,7 +27646,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1917547708}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!60 &1912734370
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -27968,7 +27969,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1917547708}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!60 &1915615383
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -28322,7 +28323,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1917547708}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!1 &1940654429
 GameObject:
   m_ObjectHideFlags: 0
@@ -28422,7 +28423,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1917547708}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!60 &1940654433
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -28877,7 +28878,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1917547708}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!60 &2020954589
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -29311,7 +29312,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1917547708}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!60 &2034597794
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -29817,7 +29818,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1917547708}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!60 &2056652677
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -30088,7 +30089,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1917547708}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!60 &2072039051
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -30599,7 +30600,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 1917547708}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!60 &2084280956
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -31742,6 +31743,108 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ea1c8358cf2bc354c962541eae367464, type: 3}
+--- !u!1001 &4039759265999246502
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 1366809662}
+    m_Modifications:
+    - target: {fileID: 6032918272950602369, guid: a182a194d049e584c8d6a399b17b0f32, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6032918272950602369, guid: a182a194d049e584c8d6a399b17b0f32, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6032918272950602369, guid: a182a194d049e584c8d6a399b17b0f32, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6032918272950602369, guid: a182a194d049e584c8d6a399b17b0f32, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6032918272950602369, guid: a182a194d049e584c8d6a399b17b0f32, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6032918272950602369, guid: a182a194d049e584c8d6a399b17b0f32, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6032918272950602369, guid: a182a194d049e584c8d6a399b17b0f32, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6032918272950602369, guid: a182a194d049e584c8d6a399b17b0f32, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6032918272950602369, guid: a182a194d049e584c8d6a399b17b0f32, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6032918272950602369, guid: a182a194d049e584c8d6a399b17b0f32, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6032918272950602369, guid: a182a194d049e584c8d6a399b17b0f32, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6032918272950602369, guid: a182a194d049e584c8d6a399b17b0f32, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6032918272950602369, guid: a182a194d049e584c8d6a399b17b0f32, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6032918272950602369, guid: a182a194d049e584c8d6a399b17b0f32, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6032918272950602369, guid: a182a194d049e584c8d6a399b17b0f32, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6032918272950602369, guid: a182a194d049e584c8d6a399b17b0f32, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6032918272950602369, guid: a182a194d049e584c8d6a399b17b0f32, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6032918272950602369, guid: a182a194d049e584c8d6a399b17b0f32, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6032918272950602369, guid: a182a194d049e584c8d6a399b17b0f32, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6032918272950602369, guid: a182a194d049e584c8d6a399b17b0f32, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8410982764933595328, guid: a182a194d049e584c8d6a399b17b0f32, type: 3}
+      propertyPath: m_Name
+      value: HeartGauge
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a182a194d049e584c8d6a399b17b0f32, type: 3}
+--- !u!224 &4039759265999246503 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 6032918272950602369, guid: a182a194d049e584c8d6a399b17b0f32, type: 3}
+  m_PrefabInstance: {fileID: 4039759265999246502}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &4188467806443508299
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -31816,11 +31919,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8201201272217135777, guid: dde6df73c32794940bbdf864bc071a39, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 60.3
+      value: 60.30005
       objectReference: {fileID: 0}
     - target: {fileID: 8201201272217135777, guid: dde6df73c32794940bbdf864bc071a39, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 16.6
+      value: 16.599976
       objectReference: {fileID: 0}
     - target: {fileID: 8201201272217135777, guid: dde6df73c32794940bbdf864bc071a39, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

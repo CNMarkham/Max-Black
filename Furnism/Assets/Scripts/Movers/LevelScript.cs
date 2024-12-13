@@ -25,13 +25,8 @@ public class LevelScript : MonoBehaviour
             GetComponent<Button>().interactable = false;
         }
     }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }   
     
+    //Loads the last level you were at and makes sure that the level you will respawn at next time is the level your on
     public void LoadLevel()
     { 
         SceneManager.LoadScene(SM.SceneToLoad);

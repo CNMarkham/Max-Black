@@ -14,6 +14,7 @@ public class SceneMovers : MonoBehaviour
     public int LevelNumber;
     public TextMeshPro BossLevel;
 
+    //When reset is active you will respawn and start at Level 1
     private void Start()
     {
         if (Reset == true)

@@ -357,7 +357,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!114 &22930922
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1083,7 +1083,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!212 &94955849
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1543,7 +1543,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!1 &129795548
 GameObject:
   m_ObjectHideFlags: 0
@@ -2880,7 +2880,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!1 &218512948
 GameObject:
   m_ObjectHideFlags: 0
@@ -3187,7 +3187,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!114 &230980472
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3577,7 +3577,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!1001 &323515894
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4208,7 +4208,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!114 &373579308
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4761,7 +4761,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!1 &424613635
 GameObject:
   m_ObjectHideFlags: 0
@@ -5211,7 +5211,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!1 &501939126
 GameObject:
   m_ObjectHideFlags: 0
@@ -5787,7 +5787,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!1 &615329652
 GameObject:
   m_ObjectHideFlags: 0
@@ -6317,7 +6317,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!212 &641864236
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -8048,7 +8048,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!1 &822776687
 GameObject:
   m_ObjectHideFlags: 0
@@ -8145,6 +8145,7 @@ RectTransform:
   m_Children:
   - {fileID: 1129839831}
   - {fileID: 708981002}
+  - {fileID: 1012175989}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -8463,7 +8464,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!1 &860884768
 GameObject:
   m_ObjectHideFlags: 0
@@ -9315,7 +9316,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!212 &883637512
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -9655,7 +9656,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!1 &903628531
 GameObject:
   m_ObjectHideFlags: 0
@@ -9705,7 +9706,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!114 &903628534
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10065,7 +10066,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!1 &919955938
 GameObject:
   m_ObjectHideFlags: 0
@@ -10471,6 +10472,108 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1001 &1012175988
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 822776691}
+    m_Modifications:
+    - target: {fileID: 6032918272950602369, guid: a182a194d049e584c8d6a399b17b0f32, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6032918272950602369, guid: a182a194d049e584c8d6a399b17b0f32, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6032918272950602369, guid: a182a194d049e584c8d6a399b17b0f32, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6032918272950602369, guid: a182a194d049e584c8d6a399b17b0f32, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6032918272950602369, guid: a182a194d049e584c8d6a399b17b0f32, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6032918272950602369, guid: a182a194d049e584c8d6a399b17b0f32, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 6032918272950602369, guid: a182a194d049e584c8d6a399b17b0f32, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6032918272950602369, guid: a182a194d049e584c8d6a399b17b0f32, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 6032918272950602369, guid: a182a194d049e584c8d6a399b17b0f32, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6032918272950602369, guid: a182a194d049e584c8d6a399b17b0f32, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6032918272950602369, guid: a182a194d049e584c8d6a399b17b0f32, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6032918272950602369, guid: a182a194d049e584c8d6a399b17b0f32, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6032918272950602369, guid: a182a194d049e584c8d6a399b17b0f32, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6032918272950602369, guid: a182a194d049e584c8d6a399b17b0f32, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6032918272950602369, guid: a182a194d049e584c8d6a399b17b0f32, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6032918272950602369, guid: a182a194d049e584c8d6a399b17b0f32, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6032918272950602369, guid: a182a194d049e584c8d6a399b17b0f32, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6032918272950602369, guid: a182a194d049e584c8d6a399b17b0f32, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6032918272950602369, guid: a182a194d049e584c8d6a399b17b0f32, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6032918272950602369, guid: a182a194d049e584c8d6a399b17b0f32, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8410982764933595328, guid: a182a194d049e584c8d6a399b17b0f32, type: 3}
+      propertyPath: m_Name
+      value: HeartGauge
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: a182a194d049e584c8d6a399b17b0f32, type: 3}
+--- !u!224 &1012175989 stripped
+RectTransform:
+  m_CorrespondingSourceObject: {fileID: 6032918272950602369, guid: a182a194d049e584c8d6a399b17b0f32, type: 3}
+  m_PrefabInstance: {fileID: 1012175988}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1016610232
 GameObject:
   m_ObjectHideFlags: 0
@@ -10654,7 +10757,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!60 &1017916559
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -11030,7 +11133,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!1 &1045166369
 GameObject:
   m_ObjectHideFlags: 0
@@ -11345,7 +11448,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!1 &1064381300
 GameObject:
   m_ObjectHideFlags: 0
@@ -11529,7 +11632,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!60 &1069739381
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -12701,7 +12804,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!114 &1184565790
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13071,7 +13174,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!1 &1207654966
 GameObject:
   m_ObjectHideFlags: 0
@@ -13378,7 +13481,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!1 &1273521762
 GameObject:
   m_ObjectHideFlags: 0
@@ -13690,7 +13793,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!1 &1278257932
 GameObject:
   m_ObjectHideFlags: 0
@@ -14324,7 +14427,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!1 &1355453038
 GameObject:
   m_ObjectHideFlags: 0
@@ -16359,7 +16462,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!1 &1483866158
 GameObject:
   m_ObjectHideFlags: 0
@@ -16587,7 +16690,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!1 &1547818474
 GameObject:
   m_ObjectHideFlags: 0
@@ -17000,7 +17103,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!1 &1555833222
 GameObject:
   m_ObjectHideFlags: 0
@@ -17871,7 +17974,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!1 &1569857370
 GameObject:
   m_ObjectHideFlags: 0
@@ -17971,7 +18074,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!60 &1569857374
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -18472,7 +18575,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!1 &1606366158
 GameObject:
   m_ObjectHideFlags: 0
@@ -18734,7 +18837,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!1 &1625448526
 GameObject:
   m_ObjectHideFlags: 0
@@ -18996,7 +19099,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!1 &1670039238
 GameObject:
   m_ObjectHideFlags: 0
@@ -19299,7 +19402,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!212 &1688725817
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -19758,7 +19861,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!1 &1709836711
 GameObject:
   m_ObjectHideFlags: 0
@@ -19950,7 +20053,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!60 &1741978927
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -21826,7 +21929,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!114 &1877651097
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -22132,7 +22235,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!1 &1883101078
 GameObject:
   m_ObjectHideFlags: 0
@@ -22554,7 +22657,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!1 &1984331036
 GameObject:
   m_ObjectHideFlags: 0
@@ -24251,7 +24354,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

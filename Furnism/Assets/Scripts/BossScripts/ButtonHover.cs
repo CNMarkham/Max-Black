@@ -7,10 +7,10 @@ public class ButtonHover : MonoBehaviour, IPointerEnterHandler, IPointerExitHand
 {
     public GameObject PanelInfo;
 
+    //If you cursors on it turn on that classes attack information for the player to see
     public void OnPointerEnter(PointerEventData eventData)
     {
         PanelInfo.SetActive(true);
-
     }
 
 

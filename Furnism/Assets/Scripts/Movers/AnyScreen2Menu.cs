@@ -5,8 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class AnyScreen2Menu : MonoBehaviour
 {
-    // Start is called before the first frame update
-    //Sends you from the Menu to the first scene
+    //Sends you to the Main Menu
     public void ToMenu()
     {
         SceneManager.LoadScene(0);

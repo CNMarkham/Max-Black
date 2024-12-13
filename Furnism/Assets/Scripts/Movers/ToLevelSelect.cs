@@ -5,7 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class Menu2Scene1 : MonoBehaviour
 {
-
+    //Resets all PlayerPrefs
      void Start()
     {
         PlayerPrefs.DeleteAll();

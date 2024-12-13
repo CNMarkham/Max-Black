@@ -22,11 +22,14 @@ public class PlayerMovement : MonoBehaviour
 
 	public TextMeshProUGUI DevModeOnText;
 
+
+	//On awake make a new vector
     public void Awake()
     {
 		transform.position = new Vector3(1f, 1f);
 	}
 
+	//Keep the DevModeOnText and the jumpSlider when going to a new seen, DevMode is set to false and you have a two second immunity when starting the game
     public void Start()
     {
 		DontDestroyOnLoad(DevModeOnText);
@@ -36,13 +39,15 @@ public class PlayerMovement : MonoBehaviour
 		Immunity();
     }
 
-	void Immunity()
+	//Sets invicibility on without telling the player to start the two second immunity
+	public void Immunity()
     {
 		DevMode = true;
 		DevModeOnText.text = ("");
     }
 
-	void ImmunityOff()
+	//Sets invicibility off without telling the player to end the two second immunity
+	public void ImmunityOff()
     {
 		DevMode = false;
 		DevModeOnText.text = ("");

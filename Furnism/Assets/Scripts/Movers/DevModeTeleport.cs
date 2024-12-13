@@ -4,11 +4,9 @@ using UnityEngine;
 
 public class DevModeTeleport : MonoBehaviour
 {
-    // Start is called before the first frame update
+    //Finds a player movement script and makes a new vector at a position
     void Start()
     {
         FindObjectOfType<PlayerMovement>().transform.position = new Vector3(1f, 1f);
     }
-
-
 }
