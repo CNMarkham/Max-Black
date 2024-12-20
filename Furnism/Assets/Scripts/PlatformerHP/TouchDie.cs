@@ -17,6 +17,7 @@ public class TouchDie : MonoBehaviour
     public void TDImmunity()
     {
         PMovement.DevMode = true;
+        PMovement.GetComponent<SpriteRenderer>().color = (new Color(1,0.5f, 0.01f));
         PMovement.DevModeOnText.text = ("");
     }
 
