@@ -10,12 +10,12 @@ public class LevelScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        if (PlayerPrefs.GetInt("HighestLevel", 1) >= 4)
+        if (PlayerPrefs.GetInt("HighestLevel") >= 4)
         {
             SM.BossLevel.text = "Boss Level";
         }
 
-        if (PlayerPrefs.GetInt("HighestLevel", 1) >= SM.LevelNumber)
+        if (PlayerPrefs.GetInt("HighestLevel") >= SM.LevelNumber)
         {
             SM.GetComponent<Button>().onClick.AddListener(LoadLevel);
             GetComponent<Button>().interactable = true;

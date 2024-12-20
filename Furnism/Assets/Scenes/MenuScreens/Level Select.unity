@@ -350,9 +350,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SceneToLoad: 3
   LevelToRespawnAt: 3
-  Reset: 0
-  HighestLevel: 0
+  HighestLevel: 2
   LevelNumber: 2
+  Reset: 0
   BossLevel: {fileID: 730804731}
 --- !u!114 &419207416
 MonoBehaviour:
@@ -671,7 +671,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5388172141496654257, guid: 817319833dd713d45af5c2121e9649c7, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.size
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5388172141496654257, guid: 817319833dd713d45af5c2121e9649c7, type: 3}
       propertyPath: m_Delegates.Array.data[0].callback.m_PersistentCalls.m_Calls.Array.data[0].m_Target
@@ -692,14 +692,14 @@ PrefabInstance:
     - target: {fileID: 5388222474218088325, guid: 817319833dd713d45af5c2121e9649c7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1781988525}
     - target: {fileID: 5388222474218088325, guid: 817319833dd713d45af5c2121e9649c7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: LoadLevel
       objectReference: {fileID: 0}
     - target: {fileID: 5388222474218088325, guid: 817319833dd713d45af5c2121e9649c7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
-      value: SceneMovers, Assembly-CSharp
+      value: LevelScript, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 5388222474218088325, guid: 817319833dd713d45af5c2121e9649c7, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_StringArgument
@@ -776,9 +776,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SceneToLoad: 2
   LevelToRespawnAt: 2
-  Reset: 1
-  HighestLevel: 0
+  HighestLevel: 1
   LevelNumber: 1
+  Reset: 1
   BossLevel: {fileID: 730804731}
 --- !u!114 &1406833481
 MonoBehaviour:
@@ -983,9 +983,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SceneToLoad: 4
   LevelToRespawnAt: 4
-  Reset: 0
-  HighestLevel: 0
+  HighestLevel: 3
   LevelNumber: 3
+  Reset: 0
   BossLevel: {fileID: 730804731}
 --- !u!114 &1649985201
 MonoBehaviour:
@@ -1024,9 +1024,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SceneToLoad: 0
   LevelToRespawnAt: 2
-  Reset: 1
   HighestLevel: 0
   LevelNumber: 0
+  Reset: 1
   BossLevel: {fileID: 730804731}
 --- !u!114 &1781988525
 MonoBehaviour:
@@ -1242,9 +1242,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   SceneToLoad: 1
   LevelToRespawnAt: 1
-  Reset: 0
-  HighestLevel: 0
+  HighestLevel: 4
   LevelNumber: 4
+  Reset: 0
   BossLevel: {fileID: 730804731}
 --- !u!114 &2069761440
 MonoBehaviour:

@@ -33,5 +33,6 @@ public class SceneMovers : MonoBehaviour
     {
         SceneManager.LoadScene(SceneToLoad);
         PlayerPrefs.SetInt("LevelRespawnAt", LevelToRespawnAt);
+        PlayerPrefs.SetInt("HighestLevel", HighestLevel);
     }
 }

@@ -11217,8 +11217,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23e880065902572468ece163fd3c7a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneToLoad: 3
-  LevelToRespawnAt: 3
+  SceneToLoad: 2
+  LevelToRespawnAt: 2
   HighestLevel: 2
   LevelNumber: 0
   Reset: 0
@@ -21287,8 +21287,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23e880065902572468ece163fd3c7a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneToLoad: 3
-  LevelToRespawnAt: 3
+  SceneToLoad: 2
+  LevelToRespawnAt: 2
   HighestLevel: 2
   LevelNumber: 0
   Reset: 0
@@ -29632,8 +29632,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23e880065902572468ece163fd3c7a14, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SceneToLoad: 3
-  LevelToRespawnAt: 3
+  SceneToLoad: 2
+  LevelToRespawnAt: 2
   HighestLevel: 2
   LevelNumber: 0
   Reset: 0
