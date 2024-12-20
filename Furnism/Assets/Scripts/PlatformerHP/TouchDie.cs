@@ -13,7 +13,7 @@ public class TouchDie : MonoBehaviour
         PMovement = FindObjectOfType<PlayerMovement>();
     }
 
-    //PlayerMovement immunity script but made to work on this script
+    //PlayerMovement immunity script but made to work on this script 
     public void TDImmunity()
     {
         PMovement.DevMode = true;
@@ -25,6 +25,7 @@ public class TouchDie : MonoBehaviour
     public void TDImmunityOff()
     {
         PMovement.DevMode = false;
+        PMovement.GetComponent<SpriteRenderer>().color = (new Color(1, 1f, 1f));
         PMovement.DevModeOnText.text = ("");
     }
 

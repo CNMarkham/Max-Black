@@ -43,6 +43,7 @@ public class PlayerMovement : MonoBehaviour
 	public void Immunity()
     {
 		DevMode = true;
+		GetComponent<SpriteRenderer>().color = (new Color(1, 0.5f, 0.01f));
 		DevModeOnText.text = ("");
     }
 
@@ -50,6 +51,7 @@ public class PlayerMovement : MonoBehaviour
 	public void ImmunityOff()
     {
 		DevMode = false;
+		GetComponent<SpriteRenderer>().color = (new Color(1, 1f, 1f));
 		DevModeOnText.text = ("");
     }
     
