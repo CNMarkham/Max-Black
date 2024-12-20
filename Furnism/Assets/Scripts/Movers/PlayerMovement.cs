@@ -29,7 +29,7 @@ public class PlayerMovement : MonoBehaviour
 		transform.position = new Vector3(1f, 1f);
 	}
 
-	//Keep the DevModeOnText and the jumpSlider when going to a new seen, DevMode is set to false and you have a two second immunity when starting the game
+	//Keep the DevModeOnText and the jumpSlider when going to a new seen, DevMode is set to false and you have a two second immunity when starting the game also sets your color to red
     public void Start()
     {
 		DontDestroyOnLoad(DevModeOnText);
@@ -39,7 +39,7 @@ public class PlayerMovement : MonoBehaviour
 		Immunity();
     }
 
-	//Sets invicibility on without telling the player to start the two second immunity
+	//Sets invicibility on without telling the player to start the two second immunity also sets your color back to normal
 	public void Immunity()
     {
 		DevMode = true;
