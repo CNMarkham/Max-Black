@@ -17,6 +17,7 @@ public class AbsoluteDeath : MonoBehaviour
         
     }
 
+    //Kills the player 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.GetComponent<PlayerMovement>())
