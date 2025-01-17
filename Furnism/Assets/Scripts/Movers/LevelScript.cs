@@ -10,6 +10,11 @@ public class LevelScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        Debug.Log(PlayerPrefs.GetInt("HighestLevel"));
+        if(PlayerPrefs.GetInt("HighestLevel") <= 0)
+        {
+            PlayerPrefs.SetInt("HighestLevel", 1);
+        }
         if (PlayerPrefs.GetInt("HighestLevel") >= 4)
         {
             SM.BossLevel.text = "Boss Level";

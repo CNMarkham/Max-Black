@@ -28,11 +28,17 @@ public class SceneMovers : MonoBehaviour
             PlayerPrefs.SetInt("LevelRespawnAt", SceneToLoad);
         }
     }
+
+    private void Update()
+    {
+        LevelToRespawnAt = HighestLevel;
+    }
     //Load the next scene and set LevelRespawnAt to whatever level it needs to be at for you to respawn at the corresponding level you died at
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        SceneManager.LoadScene(SceneToLoad);
         PlayerPrefs.SetInt("LevelRespawnAt", LevelToRespawnAt);
         PlayerPrefs.SetInt("HighestLevel", HighestLevel);
+        SceneManager.LoadScene(SceneToLoad);
+
     }
 }

@@ -141,7 +141,7 @@ public class HPSystem : MonoBehaviour
         //Takes away the bosses HP for how much they should take from the attack, sets the bosses HP bar to say "Boss HP: (Whatever HP they should be at) ", then sets the HP bars slider to whatever it should be at, and lastly sets the bosses defense text to their defense amount
         BossHPNum -= DMGTakenBoss;
         BossHPSliderText.text = ("Boss HP: " + BossHPNum);
-        BossHPSlider.GetComponent<Image>().fillAmount = (float)BossHPNum / 1 * 0.01f;
+        BossHPSlider.GetComponent<Slider>().value = (float)BossHPNum / 1 * 0.01f;
         BossDefText.text = (BossDef.ToString());
     }
 }

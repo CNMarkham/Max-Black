@@ -8,7 +8,7 @@ public class Menu2Scene1 : MonoBehaviour
     //Resets all PlayerPrefs
      void Start()
     {
-        PlayerPrefs.DeleteAll();
+       // PlayerPrefs.DeleteAll();
     }
     //Sends you from the Menu to the first scene
     public void LevelSelect()
