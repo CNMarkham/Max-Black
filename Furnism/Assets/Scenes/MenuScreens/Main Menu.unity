@@ -582,11 +582,11 @@ MonoBehaviour:
 
 
     If
-    you hit the edge of the camera you wil die (Including the floor)
+    you hit the left or right edge of the camera you will die
 
 
-    Click
-    the key P to activate DevMode
+    Click the key
+    P to activate DevMode
 
 
 '

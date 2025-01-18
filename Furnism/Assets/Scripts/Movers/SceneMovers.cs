@@ -22,16 +22,16 @@ public class SceneMovers : MonoBehaviour
     //When reset is active you will respawn and start at Level 1
     private void Start()
     {
-        if (Reset == true)
-        {
-            LevelToRespawnAt = 2;
-            PlayerPrefs.SetInt("LevelRespawnAt", SceneToLoad);
-        }
+        //if (Reset == true)
+        //{
+            //LevelToRespawnAt = 2;
+            //PlayerPrefs.SetInt("LevelRespawnAt", SceneToLoad);
+        //}
     }
 
     private void Update()
     {
-        LevelToRespawnAt = HighestLevel;
+
     }
     //Load the next scene and set LevelRespawnAt to whatever level it needs to be at for you to respawn at the corresponding level you died at
     private void OnCollisionEnter2D(Collision2D collision)

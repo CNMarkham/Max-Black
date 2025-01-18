@@ -33,8 +33,8 @@ public class LevelScript : MonoBehaviour
     
     //Loads the last level you were at and makes sure that the level you will respawn at next time is the level your on
     public void LoadLevel()
-    { 
+    {
+        PlayerPrefs.SetInt("LevelRespawnAt", SM.SceneToLoad);
         SceneManager.LoadScene(SM.SceneToLoad);
-        PlayerPrefs.SetInt("LevelRespawnAt", SM.LevelToRespawnAt);
     }
 }
