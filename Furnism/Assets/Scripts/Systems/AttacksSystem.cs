@@ -28,8 +28,8 @@ public class AttacksSystem : MonoBehaviour
     public GameObject Archer;
 
     [Header("Attack Vars")]
-    public int PlayerStunned;
-    public int BossStunned;
+    public bool PlayerStunned;
+    public bool BossStunned;
 
     [Header("Audio")]
     public AudioSource BDamage;
@@ -81,7 +81,7 @@ public class AttacksSystem : MonoBehaviour
     public void TennisBallThrow()
     {
         TurnsSystem.UIOff();
-        DMGRoll = Random.Range(7, 11);
+        DMGRoll = Random.Range(5, 9);
         Invoke("PlayerAttackTextON", 1.5f);
         Invoke("PlayerAttackTextOFF", 8f);
         Warrior.GetComponent<Animator>().SetTrigger("1stAttack");
@@ -91,29 +91,30 @@ public class AttacksSystem : MonoBehaviour
     }
 
     //Turn the buttons off, trigger the Spin Attack animation, roll for damage, do that damage, add defense stats, tell the system its now the bosses turn, and trigger the sound effects
-    public void SpinAttack()
+    public void SpinSmack()
     {
         TurnsSystem.UIOff();
-        DMGRoll = Random.Range(6, 9);
+        DMGRoll = Random.Range(3, 7);
         Invoke("PlayerAttackTextON", 1.5f);
         Invoke("PlayerAttackTextOFF", 8f);
         Warrior.GetComponent<Animator>().SetTrigger("2ndAttack");
         HPSystem.DMGTakenBoss = DMGRoll;
-        HPSystem.PlayerDef += 1;
+        HPSystem.PlayerDef += 2;
         TurnsSystem.BossTurn();
         Invoke("SlowBAudio", 1.5f);
     }
 
     //Turn the buttons off, trigger the Disrespectful Slap animation, roll for damage, do that damage, add defense stats, tell the system its now the bosses turn, and trigger the sound effects
-    public void DisrespectfulSlap()
+    public void StrongSlap()
     {
         TurnsSystem.UIOff();
-        DMGRoll = Random.Range(4, 7);
+        DMGRoll = Random.Range(4, 8);
         Invoke("PlayerAttackTextON", 1.5f);
         Invoke("PlayerAttackTextOFF", 8f);
         Warrior.GetComponent<Animator>().SetTrigger("3rdAttack");
         HPSystem.DMGTakenBoss = DMGRoll;
         HPSystem.PlayerDef += 2;
+        BossStunned = true;
         TurnsSystem.BossTurn();
         Invoke("SlowBAudio", 1.5f);
     }
@@ -149,15 +150,19 @@ public class AttacksSystem : MonoBehaviour
     }
 
     //Turn the buttons off, trigger the Flying Swords animation, set the amount of pierce turns, set pierce damage, stun the player, tell the system its now the bosses turn, and update the HP bars
-    public void FlyingSwords()
+    public void TwoSwords()
     {
         TurnsSystem.UIOff();
+        DMGRoll = Random.Range(16, 20);
+        Invoke("PlayerAttackTextON", 1.5f);
+        Invoke("PlayerAttackTextOFF", 8f);
         Mage.GetComponent<Animator>().SetTrigger("3rdAttack");
-        BossPierced = 2;
-        PierceDMG = 6;
+        HPSystem.DMGTakenBoss = DMGRoll;
+        HPSystem.PlayerDef -= 5;
         TurnsSystem.BossTurn();
         HPSystem.PlayerSliderUpdate();
         HPSystem.BossSliderUpdate();
+        Invoke("SlowBAudio", 1.5f);
     }
 
 
@@ -165,29 +170,39 @@ public class AttacksSystem : MonoBehaviour
     //Check if the boss has buffed itself yet, if it hasnt, turn the buttons off, trigger the Spirit Arrow animation, roll for damage, do that damage, add HP, stun the boss, tell the system its now the bosses turn, and trigger the sound effects, but if the boss has buffed itself then it will turn the buttons off, heal HP, tell the system its now the bosses turns, and lastly update the HP bars
     public void SpiritArrow()
     {
-        if(BossBuffed == false)
+        if(HPSystem.BossDef >= 1)
         {
             TurnsSystem.UIOff();
-            HEALAmount = 7;
+            DMGRoll = Random.Range(6, 10);
+            HEALAmount = 5;
             Invoke("HealAmountTextON", 1.5f);
             Invoke("HealAmountTextOFF", 8f);
+            Invoke("PlayerAttackTextON", 1.5f);
+            Invoke("PlayerAttackTextOFF", 8f);
             Archer.GetComponent<Animator>().SetTrigger("1stAttack");
-            int DMGRoll = Random.Range(8, 12);
             HPSystem.DMGTakenBoss = DMGRoll;
             HPSystem.PlayerHPNum += 7;
-            BossStunned += 1;
+            BossStunned = true;
             TurnsSystem.BossTurn();
+            HPSystem.PlayerSliderUpdate();
+            HPSystem.BossSliderUpdate();
             Invoke("SlowBAudio", 1.5f);
         } else
         {
             TurnsSystem.UIOff();
-            HEALAmount = 7;
+            DMGRoll = Random.Range(6, 10);
+            HEALAmount = 5;
             Invoke("HealAmountTextON", 1.5f);
             Invoke("HealAmountTextOFF", 8f);
+            Invoke("PlayerAttackTextON", 1.5f);
+            Invoke("PlayerAttackTextOFF", 8f);
+            Archer.GetComponent<Animator>().SetTrigger("1stAttack");
+            HPSystem.DMGTakenBoss = DMGRoll;
             HPSystem.PlayerHPNum += 7;
             TurnsSystem.BossTurn();
             HPSystem.PlayerSliderUpdate();
             HPSystem.BossSliderUpdate();
+            Invoke("SlowBAudio", 1.5f);
         }
     }
 
@@ -196,23 +211,21 @@ public class AttacksSystem : MonoBehaviour
     {
         TurnsSystem.UIOff();
         Archer.GetComponent<Animator>().SetTrigger("2ndAttack");
-        HPSystem.PlayerHPNum -= 7;
-        HPSystem.PlayerHPNumMax += 10;
+        HPSystem.PlayerHPNum -= 5;
+        HPSystem.PlayerDef += 3;
         TurnsSystem.BossTurn();
-        Invoke("SlowBAudio", 1.5f);
+        Invoke("SlowPAudio", 1.5f);
     }
 
     //Turn the buttons off, trigger the Arrow Rain animation, roll for damage, do that damage, set the amount of Boss pierced turns, set pierce damage, take away the bosses defense, tell the system its now the bosses turn, and trigger the sound effects
     public void ArrowRain()
     {
         TurnsSystem.UIOff();
-        DMGRoll = Random.Range(2, 8);
+        DMGRoll = Random.Range(3, 7);
         Invoke("PlayerAttackTextON", 1.5f);
         Invoke("PlayerAttackTextOFF", 8f);
         Archer.GetComponent<Animator>().SetTrigger("3rdAttack");
         HPSystem.DMGTakenBoss = DMGRoll;
-        BossPierced = 1;
-        PierceDMG = 5;
         HPSystem.BossDef -= 3;
         TurnsSystem.BossTurn();
         Invoke("SlowBAudio", 1.5f);
@@ -286,10 +299,9 @@ public class AttacksSystem : MonoBehaviour
         } else 
         {
             //Takes away a stun count for the turn and afters tells the system its now the players turn
-            BossStunned -= 1;
-            if(BossStunned == 0)
+            if(BossStunned == true)
             {
-
+                BossStunned = false;
             }
             TurnsSystem.TurnSet();
         }
