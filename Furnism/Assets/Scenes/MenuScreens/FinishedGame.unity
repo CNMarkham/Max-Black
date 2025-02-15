@@ -390,6 +390,14 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3651126566646577789, guid: bd07400ec21890442965eb3d6cd5bf75, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 787980290}
+    - target: {fileID: 3651126566646577789, guid: bd07400ec21890442965eb3d6cd5bf75, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: ToMenu
+      objectReference: {fileID: 0}
     - target: {fileID: 4126501101380193435, guid: bd07400ec21890442965eb3d6cd5bf75, type: 3}
       propertyPath: m_fontSize
       value: 48

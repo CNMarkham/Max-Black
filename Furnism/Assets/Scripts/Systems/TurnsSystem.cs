@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class TurnsSystem : MonoBehaviour
 {
@@ -12,14 +13,14 @@ public class TurnsSystem : MonoBehaviour
     public int ClassCheck;
     
     [Header("Warrior Vars")]
-    public GameObject TennisBallThrow;
-    public GameObject SpinAttack;
-    public GameObject DisrespectfulSlap;
+    public GameObject BallThrow;
+    public GameObject SpinSmack;
+    public GameObject StrongSlap;
 
     [Header("Mage Vars")]
     public GameObject Fireball;
     public GameObject HealSpell;
-    public GameObject FlyingSwords;
+    public GameObject TwoSwords;
 
     [Header("Archer Vars")]
     public GameObject SpiritArrow;
@@ -32,6 +33,7 @@ public class TurnsSystem : MonoBehaviour
     public GameObject FirstAttackObject;
     public GameObject SecondAttackObject;
     public GameObject ThirdAttackObject;
+
 
     //Sets the first turn to the players
     #region MyRegion
@@ -47,9 +49,9 @@ public class TurnsSystem : MonoBehaviour
     {
         ClassCheck = 1;
         Turn = 1;
-        TennisBallThrow.SetActive(true);
-        SpinAttack.SetActive(true);
-        DisrespectfulSlap.SetActive(true);
+        BallThrow.SetActive(true);
+        SpinSmack.SetActive(true);
+        StrongSlap.SetActive(true);
     }
 
     //Sets ClassCheck to 2, the turn to 1 (the players turn), and activates all the mages attack buttons
@@ -59,7 +61,7 @@ public class TurnsSystem : MonoBehaviour
         Turn = 1;
         Fireball.SetActive(true);
         HealSpell.SetActive(true);
-        FlyingSwords.SetActive(true);
+        TwoSwords.SetActive(true);
     }
 
     //Sets the ClassCheck to 3, the turn to 1 (the players turn), and activates all the archers attack buttons
@@ -107,16 +109,16 @@ public class TurnsSystem : MonoBehaviour
             if (ClassCheck == 1)
             {
                 BossTurn();
-                TennisBallThrow.SetActive(false);
-                SpinAttack.SetActive(false);
-                DisrespectfulSlap.SetActive(false);
+                BallThrow.SetActive(false);
+                SpinSmack.SetActive(false);
+                StrongSlap.SetActive(false);
             }
             else if (ClassCheck == 2)
             {
                 BossTurn();
                 Fireball.SetActive(false);
                 HealSpell.SetActive(false);
-                FlyingSwords.SetActive(false);
+                TwoSwords.SetActive(false);
             }
             else
             {
@@ -130,63 +132,71 @@ public class TurnsSystem : MonoBehaviour
         {
             if (ClassCheck == 1)
             {
-                if (AttackSystem.PlayerStunned == 0)
+                CheckDisabledAttack();
+                if (AttackSystem.PlayerStunned == false)
                 {
                     Invoke("DowntimeWarrior", 4f);
                 } else
                 {
-                    AttackSystem.PlayerStunned -= 1;
-                    if(AttackSystem.PlayerStunned == 0)
-                    {
-                    }
+                    AttackSystem.PlayerStunned = false;
+                    BossTurn();
                 }
                 
             }
             else if (ClassCheck == 2)
             {
-                if (AttackSystem.PlayerStunned == 0)
+                if (AttackSystem.PlayerStunned == false)
                 {
 
                     Invoke("DowntimeMage", 4f);
                 }
                 else
                 {
-                    AttackSystem.PlayerStunned -= 1;
-                    if (AttackSystem.PlayerStunned == 0)
-                    {
-                    }
+                    AttackSystem.PlayerStunned = false;
+                    BossTurn();
                 }
 
             }
             else if (ClassCheck == 3)
             {
-                if (AttackSystem.PlayerStunned == 0)
+                if (AttackSystem.PlayerStunned == false)
                 {
                     Invoke("DowntimeArcher", 4f);
                 }
                 else
                 {
-                    AttackSystem.PlayerStunned -= 1;
-                    if (AttackSystem.PlayerStunned == 0)
-                    {
-
-                    }
+                    AttackSystem.PlayerStunned = false;
+                    BossTurn();
                 }
 
             }
         }
     }
 
+    public void CheckDisabledAttack()
+    {
+        if (AttackSystem.AttackDisabled >= 1 && AttackSystem.AttackDisabled <= 2)
+        {
+            AttackSystem.AttackDisabledText.text = ("" + AttackSystem.AttackDisabled.ToString());
+            AttackSystem.AttackDisabled -= 1;
+            GetComponent<Button>().interactable = false;
+        }
+        else
+        {
+            AttackSystem.AttackDisabledText.text = ("");
+        }
+    }
+
     //Turns off all attack buttons no matter what class the player is
     public void UIOff()
     {
-        TennisBallThrow.SetActive(false);
-        SpinAttack.SetActive(false);
-        DisrespectfulSlap.SetActive(false);
+        BallThrow.SetActive(false);
+        SpinSmack.SetActive(false);
+        StrongSlap.SetActive(false);
         
         Fireball.SetActive(false);
         HealSpell.SetActive(false);
-        FlyingSwords.SetActive(false);
+        TwoSwords.SetActive(false);
         
         SpiritArrow.SetActive(false);
         FallenArrow.SetActive(false);
@@ -198,15 +208,15 @@ public class TurnsSystem : MonoBehaviour
     {
         if (ClassCheck == 1)
         {
-            TennisBallThrow.SetActive(true);
-            SpinAttack.SetActive(true);
-            DisrespectfulSlap.SetActive(true);
+            BallThrow.SetActive(true);
+            SpinSmack.SetActive(true);
+            StrongSlap.SetActive(true);
         }
         else if (ClassCheck == 2)
         {
             Fireball.SetActive(true);
             HealSpell.SetActive(true);
-            FlyingSwords.SetActive(true);
+            TwoSwords.SetActive(true);
         }
         else if (ClassCheck == 3)
         {

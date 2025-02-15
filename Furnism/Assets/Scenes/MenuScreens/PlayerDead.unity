@@ -968,8 +968,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 623fcb9ad7acf2940825e55ecae52d08, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Player: {fileID: 1566092544}
-  PlayerMoveScript: {fileID: 0}
+  PMovement: {fileID: 0}
 --- !u!4 &1238213540
 Transform:
   m_ObjectHideFlags: 0
@@ -1200,6 +1199,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 377707192}
     m_Modifications:
+    - target: {fileID: 345676908802571209, guid: bd07400ec21890442965eb3d6cd5bf75, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -283
+      objectReference: {fileID: 0}
     - target: {fileID: 3651126566646577789, guid: bd07400ec21890442965eb3d6cd5bf75, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
@@ -1289,7 +1292,8 @@ PrefabInstance:
       value: Return2Menu + Advice
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 8406229256565043873, guid: bd07400ec21890442965eb3d6cd5bf75, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bd07400ec21890442965eb3d6cd5bf75, type: 3}

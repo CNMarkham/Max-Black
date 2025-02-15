@@ -45,8 +45,8 @@ public class HPSystem : MonoBehaviour
         BossHPNumMax = 100;
         BossHPNum = 100;
         HpSystem = this;
-        AttacksSystem.PlayerStunned = 0;
-        AttacksSystem.BossStunned = 0;
+        AttacksSystem.PlayerStunned = false;
+        AttacksSystem.BossStunned = false;
         AttacksSystem.PlayerBuffed = false;
         AttacksSystem.BossBuffed = false;
         PlayerSliderUpdate();
