@@ -24,8 +24,7 @@ public class AttacksSystem : MonoBehaviour
     public GameObject Warrior;
     public GameObject Mage;
     public GameObject Archer;
-    public GameObject PStunIcon;
-    public GameObject BStunIcon;
+    public GameObject BossStunnedIcon;
 
     [Header("Attack Vars")]
     public bool PlayerStunned;
@@ -44,14 +43,9 @@ public class AttacksSystem : MonoBehaviour
 
     private void Update()
     {
-        if(PlayerStunned == true)
-        {
-            PStunIcon.SetActive(true);
-        }
-
         if(BossStunned == true)
         {
-            BStunIcon.SetActive(true);
+            BossStunnedIcon.SetActive(true);
         }
     }
 
@@ -100,7 +94,7 @@ public class AttacksSystem : MonoBehaviour
         Invoke("PlayerAttackTextON", 1.5f);
         Invoke("PlayerAttackTextOFF", 8f);
         Warrior.GetComponent<Animator>().SetTrigger("1stAttack");
-        HpSystem.DMGTakenBoss -= DMGRoll;
+        HpSystem.DMGTakenBoss = DMGRoll;
         TurnsSystem.BossTurn();
         Invoke("SlowBAudio", 1.5f);
     }
@@ -113,7 +107,8 @@ public class AttacksSystem : MonoBehaviour
         Invoke("PlayerAttackTextON", 1.5f);
         Invoke("PlayerAttackTextOFF", 8f);
         Warrior.GetComponent<Animator>().SetTrigger("2ndAttack");
-        HpSystem.DMGTakenBoss -= DMGRoll;
+        HpSystem.DMGTakenBoss = DMGRoll;
+        HpSystem.BossSliderUpdate();
         HpSystem.PlayerDef += 2;
         TurnsSystem.BossTurn();
         Invoke("SlowBAudio", 1.5f);
@@ -127,7 +122,7 @@ public class AttacksSystem : MonoBehaviour
         Invoke("PlayerAttackTextON", 1.5f);
         Invoke("PlayerAttackTextOFF", 8f);
         Warrior.GetComponent<Animator>().SetTrigger("3rdAttack");
-        HpSystem.DMGTakenBoss -= DMGRoll;
+        HpSystem.DMGTakenBoss = DMGRoll;
         BossStunned = true;
         AttackDisabled = 2;
         TurnsSystem.BossTurn();
@@ -175,8 +170,6 @@ public class AttacksSystem : MonoBehaviour
         HpSystem.DMGTakenBoss = DMGRoll;
         HpSystem.PlayerDef -= 5;
         TurnsSystem.BossTurn();
-        HpSystem.PlayerSliderUpdate();
-        HpSystem.BossSliderUpdate();
         Invoke("SlowBAudio", 1.5f);
     }
 
@@ -199,8 +192,6 @@ public class AttacksSystem : MonoBehaviour
             HpSystem.PlayerHPNum += 7;
             BossStunned = true;
             TurnsSystem.BossTurn();
-            HpSystem.PlayerSliderUpdate();
-            HpSystem.BossSliderUpdate();
             Invoke("SlowBAudio", 1.5f);
         } else
         {
@@ -215,8 +206,6 @@ public class AttacksSystem : MonoBehaviour
             HpSystem.DMGTakenBoss = DMGRoll;
             HpSystem.PlayerHPNum += 7;
             TurnsSystem.BossTurn();
-            HpSystem.PlayerSliderUpdate();
-            HpSystem.BossSliderUpdate();
             Invoke("SlowBAudio", 1.5f);
         }
     }
@@ -279,9 +268,10 @@ public class AttacksSystem : MonoBehaviour
                 Invoke("BossAttackTextON", 1.5f);
                 Invoke("BossAttackTextOFF", 8f);
                 TheBoss.GetComponent<Animator>().SetTrigger("1stAttack");
-                HpSystem.DMGTakenBoss = DMGRoll;
+                HpSystem.DMGTakenPlayer = DMGRoll;
                 HpSystem.PlayerDef -= 3;
                 Invoke("SlowPAudio", 1.5f);
+                TurnsSystem.Turn = 2;
                 TurnsSystem.TurnSet();
             }
 
@@ -297,6 +287,7 @@ public class AttacksSystem : MonoBehaviour
                 HpSystem.DMGTakenPlayer = DMGRoll;
                 HpSystem.BossDef -= 2;
                 Invoke("SlowPAudio", 1.5f);
+                TurnsSystem.Turn = 2;
                 TurnsSystem.TurnSet();
             }
 
@@ -310,12 +301,14 @@ public class AttacksSystem : MonoBehaviour
                 HpSystem.BossHPNum += 4;
                 HpSystem.PlayerSliderUpdate();
                 HpSystem.BossSliderUpdate();
+                TurnsSystem.Turn = 2;
                 TurnsSystem.TurnSet();
             }
         }
         
-        if (BossStunned = true)
+        if (BossStunned == true)
         {
+            TurnsSystem.Turn = 2;
             TurnsSystem.TurnSet();
             BossStunned = false;
         }

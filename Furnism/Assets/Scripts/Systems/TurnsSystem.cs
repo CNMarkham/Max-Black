@@ -91,6 +91,7 @@ public class TurnsSystem : MonoBehaviour
         FirstAttackObject.SetActive(false);
         SecondAttackObject.SetActive(false);
         ThirdAttackObject.SetActive(false);
+        Turn = 2;
         TurnSet();
     }
 
@@ -179,7 +180,7 @@ public class TurnsSystem : MonoBehaviour
         {
             AttackSystem.AttackDisabledText.text = ("" + AttackSystem.AttackDisabled.ToString());
             AttackSystem.AttackDisabled -= 1;
-            GetComponent<Button>().interactable = false;
+            StrongSlap.GetComponent<Button>().interactable = false;
         }
         else
         {

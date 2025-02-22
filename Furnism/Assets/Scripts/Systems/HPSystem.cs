@@ -4,6 +4,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using JetBrains.Annotations;
 
 public class HPSystem : MonoBehaviour
 {
@@ -40,21 +41,18 @@ public class HPSystem : MonoBehaviour
     //Sets the player and bosses HP and maximum HP to 100, tells references to this script that this is HpSystem, sets both the player and the bosses stun counts to zero, sets the variables that check if the player or boss is buffed to false, and updates the player and the bosses HP bars
     void Start()
     {
-        PlayerHPNumMax = 100;
-        PlayerHPNum = 100;
         BossHPNumMax = 100;
         BossHPNum = 100;
         HpSystem = this;
+        PlayerDef = 0;
+        BossDef = 0;
         AttacksSystem.PlayerStunned = false;
         AttacksSystem.BossStunned = false;
         AttacksSystem.PlayerBuffed = false;
         AttacksSystem.BossBuffed = false;
-        PlayerSliderUpdate();
-        BossSliderUpdate();
     }
 
-   
-    void Update()
+    public void DeathCheck()
     {
         //Checks if the players HP is less than 0, if it is it sends you to the death screen
         if (PlayerHPNum <= 0)
@@ -64,15 +62,17 @@ public class HPSystem : MonoBehaviour
         }
 
         //Checks if the bosses HP is less than 0, if it is it sends you to the win screen
-        if(BossHPNum <= 0)
+        if (BossHPNum <= 0)
         {
             SceneManager.LoadScene(6);
         }
 
         //Checks if at any point the player has more HP than their max HP then it sets their HP to their maximum HP
-        if(PlayerHPNum > PlayerHPNumMax)
+        if (PlayerHPNum > PlayerHPNumMax)
         {
             PlayerHPNum = PlayerHPNumMax;
+            DMGTakenPlayer = 0;
+            //PlayerSliderUpdate();
         }
     }
 
@@ -119,12 +119,12 @@ public class HPSystem : MonoBehaviour
         } else if (DMGTakenPlayer > PlayerDef){
             DMGTakenPlayer = DMGTakenPlayer - PlayerDef;
         }
-        
         //Takes away the players HP for how much they should take from the attack, sets the players HP bar to say "Player HP: (Whatever HP they should be at) ", then sets the HP bars slider to whatever it should be at, and lastly sets the players defense text to their defense amount
         PlayerHPNum -= DMGTakenPlayer;
         PlayerHPSliderText.text = ("Player HP: " + PlayerHPNum);
         PlayerHPSlider.GetComponent<Slider>().value = (float)PlayerHPNum / 1 * 0.01f;
         PlayerDefText.text = (PlayerDef.ToString());
+        DeathCheck();
     }
 
     //Updates the bosses HP bar
@@ -143,5 +143,6 @@ public class HPSystem : MonoBehaviour
         BossHPSliderText.text = ("Boss HP: " + BossHPNum);
         BossHPSlider.GetComponent<Slider>().value = (float)BossHPNum / 1 * 0.01f;
         BossDefText.text = (BossDef.ToString());
+        DeathCheck();
     }
 }
