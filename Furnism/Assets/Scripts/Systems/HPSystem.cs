@@ -42,6 +42,8 @@ public class HPSystem : MonoBehaviour
     void Start()
     {
         BossHPNumMax = 100;
+        PlayerHPNum = 1;
+        PlayerHPNumMax = 1;
         BossHPNum = 100;
         HpSystem = this;
         PlayerDef = 0;

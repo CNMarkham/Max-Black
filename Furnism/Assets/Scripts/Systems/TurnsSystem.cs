@@ -44,6 +44,15 @@ public class TurnsSystem : MonoBehaviour
         Turn = 1;
     }
 
+    private void Update()
+    {
+        AttackSystem.AttackDisabledText.text = (AttackSystem.AttackDisabled.ToString());
+        if(AttackSystem.AttackDisabled >= 1)
+        {
+            StrongSlap.GetComponent<Button>().interactable = false;
+        }
+    }
+
     //Sets ClassCheck to 1, the turn to 1 (the players turn), and activates all the warriors attack buttons 
     public void DowntimeWarrior()
     {
@@ -78,10 +87,26 @@ public class TurnsSystem : MonoBehaviour
     public void BossTurn()
     {
         Turn = 2;
-        UIOff();        
+        UIOff();
         Invoke("BossAttackPlayer", 2f);
-        Invoke("TurnOffGameObjects", 7f);
+        Invoke("TurnOffGameObjects", 5f);
+    }
 
+    public void BossTurnStunned()
+    {
+        Turn = 2;
+        UIOff();
+        Invoke("BossAttackPlayer", 3f);
+        Turn = 2;
+        TurnSet();
+    }
+
+    public void BossTurnExtended()
+    {
+        Turn = 2;
+        UIOff();
+        Invoke("BossAttackPlayer", 2f);
+        Invoke("TurnOffGameObjects", 8f);
     }
 
     //Turns off all the bosses game objects, and checks whos turn it is
@@ -133,7 +158,6 @@ public class TurnsSystem : MonoBehaviour
         {
             if (ClassCheck == 1)
             {
-                CheckDisabledAttack();
                 if (AttackSystem.PlayerStunned == false)
                 {
                     Invoke("DowntimeWarrior", 4f);
@@ -178,13 +202,14 @@ public class TurnsSystem : MonoBehaviour
     {
         if (AttackSystem.AttackDisabled >= 1 && AttackSystem.AttackDisabled <= 2)
         {
-            AttackSystem.AttackDisabledText.text = ("" + AttackSystem.AttackDisabled.ToString());
+            AttackSystem.AttackDisabledText.text = (AttackSystem.AttackDisabled.ToString());
             AttackSystem.AttackDisabled -= 1;
             StrongSlap.GetComponent<Button>().interactable = false;
         }
         else
         {
             AttackSystem.AttackDisabledText.text = ("");
+            StrongSlap.GetComponent<Button>().interactable = true;
         }
     }
 
