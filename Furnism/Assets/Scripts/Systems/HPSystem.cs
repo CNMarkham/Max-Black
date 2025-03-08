@@ -74,7 +74,13 @@ public class HPSystem : MonoBehaviour
         {
             PlayerHPNum = PlayerHPNumMax;
             DMGTakenPlayer = 0;
-            //PlayerSliderUpdate();
+            PlayerSliderUpdate();
+        }
+        if (BossHPNum > BossHPNumMax)
+        {
+            BossHPNum = BossHPNumMax;
+            DMGTakenBoss = 0;
+            BossSliderUpdate();
         }
     }
 
@@ -124,7 +130,18 @@ public class HPSystem : MonoBehaviour
         //Takes away the players HP for how much they should take from the attack, sets the players HP bar to say "Player HP: (Whatever HP they should be at) ", then sets the HP bars slider to whatever it should be at, and lastly sets the players defense text to their defense amount
         PlayerHPNum -= DMGTakenPlayer;
         PlayerHPSliderText.text = ("Player HP: " + PlayerHPNum);
-        PlayerHPSlider.GetComponent<Slider>().value = (float)PlayerHPNum / 1 * 0.01f;
+        if(TurnsSystem.ClassCheck == 1)
+        {
+            PlayerHPSlider.GetComponent<Slider>().value = (float)PlayerHPNum / 1 * 0.01f;
+        }
+        if (TurnsSystem.ClassCheck == 2)
+        {
+            PlayerHPSlider.GetComponent<Slider>().value = (float)PlayerHPNum / 1 * 0.017f;
+        }
+        if (TurnsSystem.ClassCheck == 3)
+        {
+            PlayerHPSlider.GetComponent<Slider>().value = (float)PlayerHPNum / 1 * 0.018f;
+        }
         PlayerDefText.text = (PlayerDef.ToString());
         DeathCheck();
     }

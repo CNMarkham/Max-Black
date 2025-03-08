@@ -137,7 +137,7 @@ public class AttacksSystem : MonoBehaviour
         Mage.GetComponent<Animator>().SetTrigger("2ndAttack");
         PlayerGainHealth.text = "+25";
         PlayerLoseDefense.text = "-4";
-        TurnsSystem.BossTurn();
+        TurnsSystem.BossTurnExtended();
         Invoke("SlowBAudio", 1.5f);
     }
 
@@ -151,7 +151,7 @@ public class AttacksSystem : MonoBehaviour
         BossLoseHealth.text = "-" + DMGRoll.ToString();
         PlayerLoseDefense.text = "-5";
         HpSystem.DMGTakenBoss = DMGRoll;
-        TurnsSystem.BossTurn();
+        TurnsSystem.BossTurnExtended();
         Invoke("SlowBAudio", 1.5f);
     }
 
@@ -165,9 +165,11 @@ public class AttacksSystem : MonoBehaviour
             TurnsSystem.UIOff();
             DMGRoll = Random.Range(6, 10);
             HpSystem.PlayerHPNum += 7;
+            HpSystem.BossDef -= 3;
             BossStunned = true;
             Archer.GetComponent<Animator>().SetTrigger("1stAttack");
             BossLoseHealth.text = "-" + DMGRoll.ToString();
+            BossLoseDefense.text = "-3";
             PlayerGainHealth.text = "+7";
             HpSystem.DMGTakenBoss = DMGRoll;
             TurnsSystem.BossTurn();
@@ -177,8 +179,10 @@ public class AttacksSystem : MonoBehaviour
             TurnsSystem.UIOff();
             DMGRoll = Random.Range(6, 10);
             HpSystem.PlayerHPNum += 7;
+            HpSystem.BossDef -= 3;
             Archer.GetComponent<Animator>().SetTrigger("1stAttack");
             BossLoseHealth.text = "-" + DMGRoll.ToString();
+            BossLoseDefense.text = "-3";
             PlayerGainHealth.text = "+7";
             HpSystem.DMGTakenBoss = DMGRoll;
             TurnsSystem.BossTurn();

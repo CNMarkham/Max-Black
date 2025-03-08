@@ -89,7 +89,7 @@ public class TurnsSystem : MonoBehaviour
         Turn = 2;
         UIOff();
         Invoke("BossAttackPlayer", 2f);
-        Invoke("TurnOffGameObjects", 5f);
+        Invoke("TurnOffGameObjects", 6f);
     }
 
     public void BossTurnStunned()
@@ -108,6 +108,15 @@ public class TurnsSystem : MonoBehaviour
         Invoke("BossAttackPlayer", 2f);
         Invoke("TurnOffGameObjects", 8f);
     }
+
+    public void BossTurnHeal()
+    {
+        Turn = 2;
+        UIOff();
+        Invoke("BossAttackPlayer", 2f);
+        Invoke("TurnOffGameObjects", 8f);
+    }
+
 
     //Turns off all the bosses game objects, and checks whos turn it is
     void TurnOffGameObjects()
