@@ -211,7 +211,7 @@ public class TurnsSystem : MonoBehaviour
         }
     }
 
-    //If an attack is disabled makes the text tell you how many turns there are until it can be used once more.
+    //If an attack is disabled makes the text tell you how many turns there are until it can be used once more.s
     public void CheckDisabledAttack()
     {
         if (AttackSystem.AttackDisabled >= 1 && AttackSystem.AttackDisabled <= 2)

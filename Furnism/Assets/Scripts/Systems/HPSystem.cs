@@ -81,20 +81,6 @@ public class HPSystem : MonoBehaviour
             DMGTakenBoss = 0;
             BossSliderUpdate();
         }
-
-        //If either the player or boss has negative Hp set their Hp to 0 (For Aesthetic Purposes).
-        if (PlayerHPNum < 0)
-        {
-            PlayerHPNum = 0;
-            DMGTakenPlayer = 0;
-            PlayerSliderUpdate();
-        }
-        if (BossHPNum < 0)
-        {
-            BossHPNum = 0;
-            DMGTakenBoss = 0;
-            BossSliderUpdate();
-        }
     }
 
     //Sets the variables to what they need to be for the Warrior class.
@@ -130,7 +116,7 @@ public class HPSystem : MonoBehaviour
         BossSliderUpdate();
     }
     
-    //Updates the players HP bar
+    //Updates the players HP bar.
     public void PlayerSliderUpdate()
     {
         if(DMGTakenPlayer < PlayerDef)
@@ -157,7 +143,7 @@ public class HPSystem : MonoBehaviour
         DeathCheck();
     }
 
-    //Updates the bosses HP bar
+    //Updates the bosses HP bar.
     public void BossSliderUpdate()
     {
         if (DMGTakenBoss < BossDef)
