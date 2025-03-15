@@ -53,4 +53,9 @@ public class TouchDie : MonoBehaviour
     {
         SceneManager.LoadScene(PlayerPrefs.GetInt("LevelRespawnAt"));
     }
+
+    public void PlayAgainDiedToBoss()
+    {
+        SceneManager.LoadScene(1);
+    }
 }

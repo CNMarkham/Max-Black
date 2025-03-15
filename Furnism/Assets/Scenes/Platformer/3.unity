@@ -33481,6 +33481,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: ThePlayer(Nurp)
       objectReference: {fileID: 0}
+    - target: {fileID: 1650158686980009585, guid: ea1c8358cf2bc354c962541eae367464, type: 3}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     - target: {fileID: 3192327177449522386, guid: ea1c8358cf2bc354c962541eae367464, type: 3}
       propertyPath: jumpSlider
       value: 
@@ -77634,7 +77638,7 @@ GameObject:
   - component: {fileID: 1338036608}
   m_Layer: 6
   m_Name: characters_15
-  m_TagString: Untagged
+  m_TagString: Finish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

@@ -11272,7 +11272,7 @@ GameObject:
   - component: {fileID: 690993975}
   m_Layer: 0
   m_Name: Add_ground_2
-  m_TagString: Untagged
+  m_TagString: Finish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -18722,7 +18722,7 @@ GameObject:
   - component: {fileID: 1366809659}
   m_Layer: 5
   m_Name: Canvas
-  m_TagString: Untagged
+  m_TagString: Finish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -20174,7 +20174,7 @@ GameObject:
   - component: {fileID: 1461393832}
   m_Layer: 0
   m_Name: Add_ground_3
-  m_TagString: Untagged
+  m_TagString: Finish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -21342,7 +21342,7 @@ GameObject:
   - component: {fileID: 1547818479}
   m_Layer: 0
   m_Name: Add_ground_3 (1)
-  m_TagString: Untagged
+  m_TagString: Finish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -29418,7 +29418,7 @@ GameObject:
   - component: {fileID: 2039665468}
   m_Layer: 0
   m_Name: Add_ground_4 (1)
-  m_TagString: Untagged
+  m_TagString: Finish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -31605,6 +31605,10 @@ PrefabInstance:
     - target: {fileID: 1650158686980009585, guid: ea1c8358cf2bc354c962541eae367464, type: 3}
       propertyPath: m_Name
       value: ThePlayer(Nurp)
+      objectReference: {fileID: 0}
+    - target: {fileID: 1650158686980009585, guid: ea1c8358cf2bc354c962541eae367464, type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 3192327177449522386, guid: ea1c8358cf2bc354c962541eae367464, type: 3}
       propertyPath: jumpSlider

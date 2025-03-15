@@ -78,10 +78,14 @@ public class AttacksSystem : MonoBehaviour
         TurnsSystem.UIOff();
         DMGRoll = Random.Range(5, 9);
         Warrior.GetComponent<Animator>().SetTrigger("1stAttack");
+        if (HpSystem.BossDef > DMGRoll)
+        {
+            DMGRoll = 0;
+        }
         BossLoseHealth.text = "-" + DMGRoll.ToString();
         HpSystem.DMGTakenBoss = DMGRoll;
         TurnsSystem.CheckDisabledAttack();
-        TurnsSystem.BossTurn();
+        TurnsSystem.BossTurnExtended();
         Invoke("SlowBAudio", 1.5f);
     }
 
@@ -92,6 +96,10 @@ public class AttacksSystem : MonoBehaviour
         DMGRoll = Random.Range(3, 7);
         HpSystem.PlayerDef += 2;
         Warrior.GetComponent<Animator>().SetTrigger("2ndAttack");
+        if (HpSystem.BossDef > DMGRoll)
+        {
+            DMGRoll = 0;
+        }
         BossLoseHealth.text = "-" + DMGRoll.ToString();
         PlayerGainDefense.text = "+2";
         HpSystem.DMGTakenBoss = DMGRoll;
@@ -108,6 +116,10 @@ public class AttacksSystem : MonoBehaviour
         AttackDisabled = 2;
         BossStunned = true;
         Warrior.GetComponent<Animator>().SetTrigger("3rdAttack");
+        if (HpSystem.BossDef > DMGRoll)
+        {
+            DMGRoll = 0;
+        }
         BossLoseHealth.text = "-" + DMGRoll.ToString();
         HpSystem.DMGTakenBoss = DMGRoll;
         TurnsSystem.BossTurnStunned();
@@ -122,6 +134,10 @@ public class AttacksSystem : MonoBehaviour
         TurnsSystem.UIOff();
         DMGRoll = Random.Range(10, 14);
         Mage.GetComponent<Animator>().SetTrigger("1stAttack");
+        if (HpSystem.BossDef > DMGRoll)
+        {
+            DMGRoll = 0;
+        }
         BossLoseHealth.text += "-" + DMGRoll.ToString();
         HpSystem.DMGTakenBoss = DMGRoll;
         TurnsSystem.BossTurn();
@@ -136,7 +152,7 @@ public class AttacksSystem : MonoBehaviour
         HpSystem.PlayerDef -= 4;
         Mage.GetComponent<Animator>().SetTrigger("2ndAttack");
         PlayerGainHealth.text = "+25";
-        PlayerLoseDefense.text = "-4";
+        BossLoseDefense.text = "-4";
         TurnsSystem.BossTurnExtended();
         Invoke("SlowBAudio", 1.5f);
     }
@@ -148,10 +164,14 @@ public class AttacksSystem : MonoBehaviour
         DMGRoll = Random.Range(16, 20);
         HpSystem.PlayerDef -= 5;
         Mage.GetComponent<Animator>().SetTrigger("3rdAttack");
+        if (HpSystem.BossDef > DMGRoll)
+        {
+            DMGRoll = 0;
+        }
         BossLoseHealth.text = "-" + DMGRoll.ToString();
-        PlayerLoseDefense.text = "-5";
+        BossLoseDefense.text = "-5";
         HpSystem.DMGTakenBoss = DMGRoll;
-        TurnsSystem.BossTurnExtended();
+        TurnsSystem.BossTurnMoreExtended();
         Invoke("SlowBAudio", 1.5f);
     }
 
@@ -168,8 +188,12 @@ public class AttacksSystem : MonoBehaviour
             HpSystem.BossDef -= 3;
             BossStunned = true;
             Archer.GetComponent<Animator>().SetTrigger("1stAttack");
+            if (HpSystem.BossDef > DMGRoll)
+            {
+                DMGRoll = 0;
+            }
             BossLoseHealth.text = "-" + DMGRoll.ToString();
-            BossLoseDefense.text = "-3";
+            PlayerLoseDefense.text = "-3";
             PlayerGainHealth.text = "+7";
             HpSystem.DMGTakenBoss = DMGRoll;
             TurnsSystem.BossTurn();
@@ -181,8 +205,12 @@ public class AttacksSystem : MonoBehaviour
             HpSystem.PlayerHPNum += 7;
             HpSystem.BossDef -= 3;
             Archer.GetComponent<Animator>().SetTrigger("1stAttack");
+            if (HpSystem.BossDef > DMGRoll)
+            {
+                DMGRoll = 0;
+            }
             BossLoseHealth.text = "-" + DMGRoll.ToString();
-            BossLoseDefense.text = "-3";
+            PlayerLoseDefense.text = "-3";
             PlayerGainHealth.text = "+7";
             HpSystem.DMGTakenBoss = DMGRoll;
             TurnsSystem.BossTurn();
@@ -210,8 +238,12 @@ public class AttacksSystem : MonoBehaviour
         DMGRoll = Random.Range(3, 7);
         HpSystem.BossDef -= 3;
         Archer.GetComponent<Animator>().SetTrigger("3rdAttack");
+        if (HpSystem.BossDef > DMGRoll)
+        {
+            DMGRoll = 0;
+        }
         BossLoseHealth.text = "-" + DMGRoll.ToString();
-        BossLoseDefense.text = "-3";
+        PlayerLoseDefense.text = "-3";
         HpSystem.DMGTakenBoss = DMGRoll;
         TurnsSystem.BossTurn();
         Invoke("SlowBAudio", 1.5f);
@@ -265,8 +297,12 @@ public class AttacksSystem : MonoBehaviour
                 DMGRoll = Random.Range(1, 4);
                 HpSystem.PlayerDef -= 3;
                 TheBoss.GetComponent<Animator>().SetTrigger("1stAttack");
+                if (HpSystem.PlayerDef > DMGRoll)
+                {
+                    DMGRoll = 0;
+                }
                 PlayerLoseHealth.text = "-" + DMGRoll.ToString();
-                PlayerLoseDefense.text = "-3";
+                BossLoseDefense.text = "-3";
                 HpSystem.DMGTakenPlayer = DMGRoll;
                 Invoke("SlowPAudio", 1.5f);
                 TurnsSystem.Turn = 2;
@@ -281,8 +317,12 @@ public class AttacksSystem : MonoBehaviour
                 DMGRoll = Random.Range(7, 13);
                 HpSystem.BossDef -= 2;
                 TheBoss.GetComponent<Animator>().SetTrigger("2ndAttack");
+                if (HpSystem.PlayerDef > DMGRoll)
+                {
+                    DMGRoll = 0;
+                }
                 PlayerLoseHealth.text = "-" + DMGRoll.ToString();
-                BossLoseDefense.text = "-2";
+                PlayerLoseDefense.text = "-2";
                 HpSystem.DMGTakenPlayer = DMGRoll;
                 Invoke("SlowPAudio", 1.5f);
                 TurnsSystem.Turn = 2;
@@ -297,6 +337,10 @@ public class AttacksSystem : MonoBehaviour
                 HpSystem.BossHPNum += 4;
                 HpSystem.BossDef += 2;
                 TheBoss.GetComponent<Animator>().SetTrigger("3rdAttack");
+                if (HpSystem.PlayerDef > DMGRoll)
+                {
+                    DMGRoll = 0;
+                }
                 BossGainHealth.text = "+4";
                 BossGainDefense.text = "+2";
                 Invoke("SlowPAudio", 1.5f);

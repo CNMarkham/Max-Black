@@ -35,7 +35,7 @@ public class TurnsSystem : MonoBehaviour
     public GameObject ThirdAttackObject;
 
 
-    //Sets the first turn to the players
+    //Sets the first turn to the players.
     #region MyRegion
 
     #endregion
@@ -44,6 +44,7 @@ public class TurnsSystem : MonoBehaviour
         Turn = 1;
     }
 
+    //When StrongSlap is on cooldown make its button uninteractable.
     private void Update()
     {
         AttackSystem.AttackDisabledText.text = (AttackSystem.AttackDisabled.ToString());
@@ -53,7 +54,7 @@ public class TurnsSystem : MonoBehaviour
         }
     }
 
-    //Sets ClassCheck to 1, the turn to 1 (the players turn), and activates all the warriors attack buttons 
+    //Sets it to the Players turn, and activates all the Warriors attack buttons.
     public void DowntimeWarrior()
     {
         ClassCheck = 1;
@@ -63,7 +64,7 @@ public class TurnsSystem : MonoBehaviour
         StrongSlap.SetActive(true);
     }
 
-    //Sets ClassCheck to 2, the turn to 1 (the players turn), and activates all the mages attack buttons
+    //Sets it to the Players turn, and activates all the Mages attack buttons.
     public void DowntimeMage()
     {
         ClassCheck = 2;
@@ -73,7 +74,7 @@ public class TurnsSystem : MonoBehaviour
         TwoSwords.SetActive(true);
     }
 
-    //Sets the ClassCheck to 3, the turn to 1 (the players turn), and activates all the archers attack buttons
+    //Sets it to the Players turn, and activates all the Archers attack buttons. 
     public void DowntimeArcher()
     {
         ClassCheck = 3;
@@ -83,7 +84,7 @@ public class TurnsSystem : MonoBehaviour
         ArrowRain.SetActive(true);
     }
 
-    //Sets the turn to 2 (the bosses turn), turns off all buttons, tells the boss to attack the player, and turns off all the bosses game objects after that
+    //Sets it to the Bosses turn, turns off all buttons, and tells the Boss to attack the Player.
     public void BossTurn()
     {
         Turn = 2;
@@ -92,6 +93,7 @@ public class TurnsSystem : MonoBehaviour
         Invoke("TurnOffGameObjects", 6f);
     }
 
+    //Cuts off the waiting time for the Players buttons to reappear as the Bosses turn will be skipped due to it being stunned.
     public void BossTurnStunned()
     {
         Turn = 2;
@@ -101,6 +103,7 @@ public class TurnsSystem : MonoBehaviour
         TurnSet();
     }
 
+    //Same as BossTurn but takes longer to give the Player back its controls.
     public void BossTurnExtended()
     {
         Turn = 2;
@@ -109,16 +112,17 @@ public class TurnsSystem : MonoBehaviour
         Invoke("TurnOffGameObjects", 8f);
     }
 
-    public void BossTurnHeal()
+    //Same as BossTurnExtended but takes even longer to give the Player back its controls.
+    public void BossTurnMoreExtended()
     {
         Turn = 2;
         UIOff();
         Invoke("BossAttackPlayer", 2f);
-        Invoke("TurnOffGameObjects", 8f);
+        Invoke("TurnOffGameObjects", 10f);
     }
 
 
-    //Turns off all the bosses game objects, and checks whos turn it is
+    //Turns off all the bosses game objects, and checks whos turn it is.
     void TurnOffGameObjects()
     {
         TheBossesCanvas.SetActive(false);
@@ -129,7 +133,7 @@ public class TurnsSystem : MonoBehaviour
         TurnSet();
     }
 
-    //Makes the boss choose an attack to attack the player with
+    //Makes the boss choose an attack to attack the player with.
     void BossAttackPlayer()
     {
         AttackSystem.BossAttack();
@@ -138,7 +142,7 @@ public class TurnsSystem : MonoBehaviour
     public void TurnSet()
 
     {
-        //If its the players turn, it then checks what class the player chose, and turns off that classes attack buttons, and if its not the players turn, then it first checks what class the player is, then checks for stun, if the player isn't stunned it will make it the players turn and turn all of that classes attack buttons on, however if the player is stunned then it takes away 1 turn of stun
+        //Checks whose turn it is if it's it checks if the Player is stunned or not, if they are make it the bosses turn. And if it isn't the Players turn it continues the Bosses.
         if (Turn == 1)
         {
             if (ClassCheck == 1)
@@ -207,6 +211,7 @@ public class TurnsSystem : MonoBehaviour
         }
     }
 
+    //If an attack is disabled makes the text tell you how many turns there are until it can be used once more.
     public void CheckDisabledAttack()
     {
         if (AttackSystem.AttackDisabled >= 1 && AttackSystem.AttackDisabled <= 2)

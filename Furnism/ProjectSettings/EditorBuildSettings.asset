@@ -29,4 +29,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/MenuScreens/Level Select.unity
     guid: ae6daa1b61acb0641a27b4135873e1c5
+  - enabled: 1
+    path: Assets/Scenes/MenuScreens/PlayerDeadToBoss.unity
+    guid: c661ffa59923493479b8789003e20607
   m_configObjects: {}
