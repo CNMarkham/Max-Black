@@ -108,7 +108,7 @@ public class TurnsSystem : MonoBehaviour
     {
         Turn = 2;
         UIOff();
-        Invoke("BossAttackPlayer", 2f);
+        Invoke("BossAttackPlayer", 4f);
         Invoke("TurnOffGameObjects", 8f);
     }
 
@@ -117,7 +117,7 @@ public class TurnsSystem : MonoBehaviour
     {
         Turn = 2;
         UIOff();
-        Invoke("BossAttackPlayer", 2f);
+        Invoke("BossAttackPlayer", 6f);
         Invoke("TurnOffGameObjects", 10f);
     }
 
@@ -129,8 +129,6 @@ public class TurnsSystem : MonoBehaviour
         FirstAttackObject.SetActive(false);
         SecondAttackObject.SetActive(false);
         ThirdAttackObject.SetActive(false);
-        Turn = 2;
-        TurnSet();
     }
 
     //Makes the boss choose an attack to attack the player with.

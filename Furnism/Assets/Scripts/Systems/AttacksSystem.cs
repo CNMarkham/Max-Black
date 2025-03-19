@@ -104,7 +104,7 @@ public class AttacksSystem : MonoBehaviour
         PlayerGainDefense.text = "+2";
         HpSystem.DMGTakenBoss = DMGRoll;
         TurnsSystem.CheckDisabledAttack();
-        TurnsSystem.BossTurnExtended();
+        TurnsSystem.BossTurnMoreExtended();
         Invoke("SlowBAudio", 1.5f);
     }
 
@@ -227,7 +227,7 @@ public class AttacksSystem : MonoBehaviour
         Archer.GetComponent<Animator>().SetTrigger("2ndAttack");
         PlayerLoseHealth.text = "-5";
         PlayerGainDefense.text = "+3";
-        TurnsSystem.BossTurn();
+        TurnsSystem.BossTurnExtended();
         Invoke("SlowPAudio", 1.5f);
     }
 
