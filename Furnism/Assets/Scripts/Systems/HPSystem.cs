@@ -133,7 +133,7 @@ public class HPSystem : MonoBehaviour
         }
         if (TurnsSystem.ClassCheck == 2)
         {
-            PlayerHPSlider.GetComponent<Slider>().value = (float)PlayerHPNum / 1 * 0.017f;
+            PlayerHPSlider.GetComponent<Slider>().value = (float)PlayerHPNum / 1 * 0.0175f;
         }
         if (TurnsSystem.ClassCheck == 3)
         {
